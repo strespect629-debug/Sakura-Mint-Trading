@@ -1,0 +1,403 @@
+1 <!DOCTYPE html>
+2 <html lang="en">
+3	<head>
+4	<meta charset="UTF-8">
+5	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+6	<title>Japan Sourcing Service — Source from Japan with Confidence</title>
+7	<link rel="preconnect" href="https://fonts.googleapis.com">
+8	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+9	<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap" rel="stylesheet">
+10	
+11	<style>
+12	  *, *::before, *::after {
+13	    box-sizing: border-box;
+14	    margin: 0;
+15	    padding: 0;
+16	  }
+17	
+18	  :root {
+19	    --navy: #0b1f45;
+20	    --navy-mid: #132b5e;
+21	    --blue: #1a5fb4;
+22	    --blue-bright: #2470d4;
+23	    --blue-light: #dbeafe;
+24	    --blue-pale: #eff6ff;
+25	    --gold: #c9a84c;
+26	    --gold-light: #f5edd0;
+27	    --white: #f9fafb;
+28	    --off-white: #f1f4f9;
+29	    --gray-1: #e4e9f2;
+30	    --gray-2: #9bacc4;
+31	    --gray-3: #4e6082;
+32	    --text-main: #0f1e3d;
+33	    --text-body: #334770;
+34	    --text-muted: #6b7fa3;
+35	    --radius: 6px;
+36	    --radius-lg: 14px;
+37	  }
+38	
+39	  html {
+40	    scroll-behavior: smooth;
+41	  }
+42	
+43	  body {
+44	    font-family: 'DM Sans', sans-serif;
+45	    background: var(--white);
+46	    color: var(--text-main);
+47	    line-height: 1.6;
+48	    -webkit-font-smoothing: antialiased;
+49	  }
+50	
+51	  /* ─── NAV ──────────────────────────────────────────────── */
+52	  nav {
+53	    position: fixed;
+54	    top: 0;
+55	    left: 0;
+56	    right: 0;
+57	    z-index: 100;
+58	    background: rgba(11, 31, 69, 0.97);
+59	    backdrop-filter: blur(12px);
+60	    border-bottom: 1px solid rgba(255,255,255,0.07);
+61	  }
+62	
+63	  .nav-inner {
+64	    max-width: 1180px;
+65	    margin: 0 auto;
+66	    padding: 0 28px;
+67	    height: 64px;
+68	    display: flex;
+69	    align-items: center;
+70	    justify-content: space-between;
+71	  }
+72	
+73	  .nav-logo {
+74	    display: flex;
+75	    align-items: center;
+76	    gap: 10px;
+77	    text-decoration: none;
+78	  }
+79	
+80	  .nav-logo-mark {
+81	    width: 34px;
+82	    height: 34px;
+83	    background: var(--gold);
+84	    border-radius: 4px;
+85	    display: flex;
+86	    align-items: center;
+87	    justify-content: center;
+88	    flex-shrink: 0;
+89	  }
+90	
+91	  .nav-logo-mark svg {
+92	    width: 18px;
+93	    height: 18px;
+94	    fill: var(--navy);
+95	  }
+96	
+97	  .nav-logo-text {
+98	    font-family: 'DM Serif Display', serif;
+99	    font-size: 1.1rem;
+100	    color: #ffffff;
+101	    letter-spacing: 0.01em;
+102	    line-height: 1.2;
+103	  }
+104	
+105	  .nav-logo-sub {
+106	    display: block;
+107	    font-family: 'DM Sans', sans-serif;
+108	    font-size: 0.62rem;
+109	    font-weight: 300;
+110	    letter-spacing: 0.12em;
+111	    text-transform: uppercase;
+112	    color: var(--gray-2);
+113	    margin-top: 1px;
+114	  }
+115	
+116	  .nav-cta {
+117	    display: inline-flex;
+118	    align-items: center;
+119	    gap: 7px;
+120	    background: var(--gold);
+121	    color: var(--navy);
+122	    text-decoration: none;
+123	    font-size: 0.8rem;
+124	    font-weight: 600;
+125	    letter-spacing: 0.04em;
+126	    padding: 8px 18px;
+127	    border-radius: var(--radius);
+128	    transition: background 0.2s, transform 0.15s;
+129	  }
+130	
+131	  .nav-cta:hover {
+132	    background: #dbb85a;
+133	    transform: translateY(-1px);
+134	  }
+135	
+136	  /* ─── HERO ─────────────────────────────────────────────── */
+137	  .hero {
+138	    position: relative;
+139	    min-height: 100vh;
+140	    background: var(--navy);
+141	    overflow: hidden;
+142	    display: flex;
+143	    align-items: center;
+144	  }
+145	
+146	  /* Geometric background pattern */
+147	  .hero-bg {
+148	    position: absolute;
+149	    inset: 0;
+150	    pointer-events: none;
+151	  }
+152	
+153	  .hero-bg::before {
+154	    content: '';
+155	    position: absolute;
+156	    top: -10%;
+157	    right: -5%;
+158	    width: 65%;
+159	    height: 110%;
+160	    background: linear-gradient(145deg, #132b5e 0%, #0d2150 40%, #091a3f 100%);
+161	    clip-path: polygon(12% 0%, 100% 0%, 100% 100%, 0% 100%);
+162	  }
+163	
+164	  .hero-grid-overlay {
+165	    position: absolute;
+166	    inset: 0;
+167	    background-image:
+168	      linear-gradient(rgba(201,168,76,0.04) 1px, transparent 1px),
+169	      linear-gradient(90deg, rgba(201,168,76,0.04) 1px, transparent 1px);
+170	    background-size: 60px 60px;
+171	  }
+172	
+173	  .hero-circle-1 {
+174	    position: absolute;
+175	    top: 20%;
+176	    right: 8%;
+177	    width: 420px;
+178	    height: 420px;
+179	    border-radius: 50%;
+180	    border: 1px solid rgba(201,168,76,0.12);
+181	    animation: pulse-ring 6s ease-in-out infinite;
+182	  }
+183	
+184	  .hero-circle-2 {
+185	    position: absolute;
+186	    top: 20%;
+187	    right: 8%;
+188	    width: 280px;
+189	    height: 280px;
+190	    border-radius: 50%;
+191	    border: 1px solid rgba(201,168,76,0.18);
+192	    top: calc(20% + 70px);
+193	    right: calc(8% + 70px);
+194	    animation: pulse-ring 6s ease-in-out infinite 1.5s;
+195	  }
+196	
+197	  @keyframes pulse-ring {
+198	    0%, 100% { opacity: 0.6; transform: scale(1); }
+199	    50% { opacity: 1; transform: scale(1.02); }
+200	  }
+201	
+202	  .hero-inner {
+203	    position: relative;
+204	    z-index: 2;
+205	    max-width: 1180px;
+206	    margin: 0 auto;
+207	    padding: 120px 28px 80px;
+208	    display: grid;
+209	    grid-template-columns: 1fr 1fr;
+210	    gap: 60px;
+211	    align-items: center;
+212	  }
+213	
+214	  .hero-content {
+215	    opacity: 0;
+216	    transform: translateY(24px);
+217	    animation: fade-up 0.9s cubic-bezier(0.16, 1, 0.3, 1) 0.2s forwards;
+218	  }
+219	
+220	  .hero-eyebrow {
+221	    display: inline-flex;
+222	    align-items: center;
+223	    gap: 8px;
+224	    background: rgba(201,168,76,0.12);
+225	    border: 1px solid rgba(201,168,76,0.25);
+226	    color: var(--gold);
+227	    font-size: 0.72rem;
+228	    font-weight: 500;
+229	    letter-spacing: 0.14em;
+230	    text-transform: uppercase;
+231	    padding: 5px 14px;
+232	    border-radius: 100px;
+233	    margin-bottom: 28px;
+234	  }
+235	
+236	  .hero-eyebrow::before {
+237	    content: '';
+238	    width: 5px;
+239	    height: 5px;
+240	    background: var(--gold);
+241	    border-radius: 50%;
+242	  }
+243	
+244	  .hero-title {
+245	    font-family: 'DM Serif Display', serif;
+246	    font-size: clamp(2.6rem, 5vw, 4.2rem);
+247	    line-height: 1.1;
+248	    color: #ffffff;
+249	    margin-bottom: 22px;
+250	    letter-spacing: -0.01em;
+251	  }
+252	
+253	  .hero-title em {
+254	    font-style: italic;
+255	    color: var(--gold);
+256	  }
+257	
+258	  .hero-subtitle {
+259	    font-size: 1.1rem;
+260	    font-weight: 300;
+261	    color: var(--gray-2);
+262	    line-height: 1.7;
+263	    margin-bottom: 40px;
+264	    max-width: 440px;
+265	  }
+266	
+267	  .hero-actions {
+268	    display: flex;
+269	    flex-wrap: wrap;
+270	    gap: 14px;
+271	    align-items: center;
+272	  }
+273	
+274	  .btn-primary {
+275	    display: inline-flex;
+276	    align-items: center;
+277	    gap: 10px;
+278	    background: var(--gold);
+279	    color: var(--navy);
+280	    text-decoration: none;
+281	    font-size: 0.92rem;
+282	    font-weight: 600;
+283	    letter-spacing: 0.02em;
+284	    padding: 14px 28px;
+285	    border-radius: var(--radius);
+286	    transition: all 0.2s;
+287	    position: relative;
+288	    overflow: hidden;
+289	  }
+290	
+291	  .btn-primary::after {
+292	    content: '';
+293	    position: absolute;
+294	    inset: 0;
+295	    background: rgba(255,255,255,0);
+296	    transition: background 0.2s;
+297	  }
+298	
+299	  .btn-primary:hover {
+300	    background: #dbb85a;
+301	    transform: translateY(-2px);
+302	    box-shadow: 0 10px 30px rgba(201,168,76,0.35);
+303	  }
+304	
+305	  .btn-primary svg {
+306	    width: 16px;
+307	    height: 16px;
+308	    fill: none;
+309	    stroke: currentColor;
+310	    stroke-width: 2;
+311	    stroke-linecap: round;
+312	    stroke-linejoin: round;
+313	    transition: transform 0.2s;
+314	  }
+315	
+316	  .btn-primary:hover svg {
+317	    transform: translateX(3px);
+318	  }
+319	
+320	  .hero-trust {
+321	    margin-top: 56px;
+322	    padding-top: 36px;
+323	    border-top: 1px solid rgba(255,255,255,0.08);
+324	    display: flex;
+325	    gap: 36px;
+326	  }
+327	
+328	  .trust-item {
+329	    display: flex;
+330	    flex-direction: column;
+331	    gap: 3px;
+332	  }
+333	
+334	  .trust-num {
+335	    font-family: 'DM Serif Display', serif;
+336	    font-size: 1.8rem;
+337	    color: #ffffff;
+338	    line-height: 1;
+339	  }
+340	
+341	  .trust-label {
+342	    font-size: 0.72rem;
+343	    font-weight: 400;
+344	    color: var(--gray-2);
+345	    letter-spacing: 0.06em;
+346	    text-transform: uppercase;
+347	  }
+348	
+349	  /* Hero illustration */
+350	  .hero-visual {
+351	    opacity: 0;
+352	    transform: translateY(16px);
+353	    animation: fade-up 0.9s cubic-bezier(0.16, 1, 0.3, 1) 0.45s forwards;
+354	  }
+355	
+356	  .hero-card-stack {
+357	    position: relative;
+358	    max-width: 380px;
+359	    margin-left: auto;
+360	  }
+361	
+362	  .h-card {
+363	    background: rgba(255,255,255,0.05);
+364	    border: 1px solid rgba(255,255,255,0.1);
+365	    border-radius: var(--radius-lg);
+366	    backdrop-filter: blur(10px);
+367	    padding: 22px 24px;
+368	  }
+369	
+370	  .h-card-main {
+371	    position: relative;
+372	    z-index: 3;
+373	  }
+374	
+375	  .h-card-back {
+376	    position: absolute;
+377	    top: -14px;
+378	    left: 14px;
+379	    right: -14px;
+380	    bottom: 14px;
+381	    background: rgba(255,255,255,0.025);
+382	    border: 1px solid rgba(255,255,255,0.06);
+383	    border-radius: var(--radius-lg);
+384	    z-index: 2;
+385	  }
+386	
+387	  .h-card-back2 {
+388	    position: absolute;
+389	    top: -26px;
+390	    left: 26px;
+391	    right: -26px;
+392	    bottom: 26px;
+393	    background: rgba(255,255,255,0.012);
+394	    border: 1px solid rgba(255,255,255,0.04);
+395	    border-radius: var(--radius-lg);
+396	    z-index: 1;
+397	  }
+398	
+399	  .h-card-label {
+400	    font-size: 0.65rem;
+401	    letter-spacing: 0.14em;
+
+... [truncated]
