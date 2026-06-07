@@ -1,5 +1,1884 @@
 <!DOCTYPE html>
+<html lang="en"><!DOCTYPE html>
 <html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sakura Mint Trading | Japan Sourcing & Export</title>
+<meta name="description" content="Japan sourcing and export support for overseas buyers. We help source new Japanese products and used vehicles from Japan.">
+<style>
+  :root {
+    --navy: #0a1628;
+    --navy-mid: #0f2040;
+    --navy-light: #162d55;
+    --gold: #c9a84c;
+    --gold-light: #e8c96a;
+    --gold-pale: #f5e6b8;
+    --cream: #faf6ee;
+    --white: #ffffff;
+    --text-light: #b8c8e0;
+    --text-muted: #7a92b4;
+    --border: rgba(201,168,76,0.2);
+    --border-strong: rgba(201,168,76,0.45);
+    --shadow: 0 4px 32px rgba(0,0,0,0.35);
+    --radius: 4px;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    background: var(--navy);
+    color: var(--cream);
+    line-height: 1.7;
+    font-size: 16px;
+  }
+
+  /* ── HEADER ── */
+  header {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    background: rgba(10,22,40,0.96);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border);
+    padding: 0 2rem;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .header-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+  }
+
+  .header-logo .mark {
+    width: 32px;
+    height: 32px;
+  }
+
+  .header-logo .wordmark {
+    font-size: 0.95rem;
+    font-weight: normal;
+    letter-spacing: 0.12em;
+    color: var(--gold);
+    text-transform: uppercase;
+  }
+
+  .header-controls {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .header-controls select {
+    background: rgba(255,255,255,0.06);
+    border: 1px solid var(--border-strong);
+    color: var(--gold-pale);
+    font-family: inherit;
+    font-size: 0.78rem;
+    letter-spacing: 0.05em;
+    padding: 0.35rem 0.6rem;
+    border-radius: var(--radius);
+    cursor: pointer;
+    outline: none;
+    appearance: none;
+    -webkit-appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%23c9a84c'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 0.5rem center;
+    padding-right: 1.6rem;
+  }
+
+  .header-controls select:hover {
+    border-color: var(--gold);
+  }
+
+  /* ── HERO ── */
+  .hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 8rem 2rem 6rem;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero-bg {
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(ellipse 70% 60% at 50% 40%, rgba(201,168,76,0.07) 0%, transparent 70%),
+      radial-gradient(ellipse 40% 40% at 20% 80%, rgba(201,168,76,0.04) 0%, transparent 60%);
+  }
+
+  .hero-seigaiha {
+    position: absolute;
+    inset: 0;
+    opacity: 0.025;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60'%3E%3Ccircle cx='30' cy='60' r='30' fill='none' stroke='%23c9a84c' stroke-width='1.5'/%3E%3Ccircle cx='0' cy='60' r='30' fill='none' stroke='%23c9a84c' stroke-width='1.5'/%3E%3Ccircle cx='60' cy='60' r='30' fill='none' stroke='%23c9a84c' stroke-width='1.5'/%3E%3Ccircle cx='15' cy='30' r='30' fill='none' stroke='%23c9a84c' stroke-width='1.5'/%3E%3Ccircle cx='45' cy='30' r='30' fill='none' stroke='%23c9a84c' stroke-width='1.5'/%3E%3Ccircle cx='30' cy='0' r='30' fill='none' stroke='%23c9a84c' stroke-width='1.5'/%3E%3C/svg%3E");
+    background-size: 60px 60px;
+  }
+
+  .hero-line {
+    width: 1px;
+    height: 80px;
+    background: linear-gradient(to bottom, transparent, var(--gold), transparent);
+    margin: 0 auto 2.5rem;
+    position: relative;
+  }
+
+  .hero-tag {
+    font-size: 0.72rem;
+    letter-spacing: 0.35em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 1.5rem;
+    position: relative;
+  }
+
+  h1.hero-title {
+    font-size: clamp(2.4rem, 5vw, 4rem);
+    font-weight: normal;
+    letter-spacing: 0.06em;
+    color: var(--white);
+    line-height: 1.1;
+    margin-bottom: 0.5rem;
+    position: relative;
+  }
+
+  h1.hero-title span,
+  h1.hero-title em {
+    color: var(--gold);
+    font-style: normal;
+  }
+
+  .hero-subtitle {
+    font-size: 0.8rem;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-bottom: 2rem;
+    position: relative;
+  }
+
+  .hero-desc {
+    font-size: 1.1rem;
+    color: var(--text-light);
+    max-width: 620px;
+    margin: 0 auto 1.25rem;
+    position: relative;
+  }
+
+  .hero-notice {
+    position: relative;
+    max-width: 700px;
+    margin: 0 auto 2rem;
+    padding: 1rem 1.25rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: rgba(255,255,255,0.035);
+    color: var(--text-light);
+    font-size: 0.92rem;
+  }
+
+  .hero-notice strong {
+    color: var(--gold-pale);
+    font-weight: normal;
+  }
+
+  .hero-cards {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    max-width: 900px;
+    margin: 0 auto 3rem;
+  }
+
+  .hero-card {
+    background: rgba(255,255,255,0.06);
+    border: 1px solid var(--border);
+    border-radius: 1rem;
+    padding: 1rem 1.25rem;
+    min-width: 220px;
+    text-align: center;
+  }
+
+  .hero-card h3 {
+    font-size: 0.95rem;
+    color: var(--white);
+    margin: 0;
+    line-height: 1.4;
+  }
+
+  .hero-title {
+    font-size: clamp(2.4rem, 5vw, 4rem);
+    font-weight: normal;
+    letter-spacing: 0.06em;
+    color: var(--white);
+    line-height: 1.15;
+    margin-bottom: 0.75rem;
+    position: relative;
+    word-break: break-word;
+  }
+
+  .process-list {
+    margin: 1.5rem 0 0 1.25rem;
+    padding-left: 1rem;
+    color: var(--text-light);
+    font-size: 0.95rem;
+    line-height: 1.75;
+  }
+
+  .process-list li {
+    margin-bottom: 0.75rem;
+  }
+
+  .btn-primary {
+    display: inline-block;
+    position: relative;
+    padding: 1rem 2.5rem;
+    background: transparent;
+    border: 1px solid var(--gold);
+    color: var(--gold);
+    font-family: inherit;
+    font-size: 0.8rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+    border-radius: var(--radius);
+  }
+
+  .btn-primary::before {
+    content: '';
+    position: absolute;
+    inset: -4px;
+    border: 1px solid rgba(201,168,76,0.2);
+    border-radius: calc(var(--radius) + 2px);
+    transition: opacity 0.3s;
+  }
+
+  .btn-primary:hover {
+    background: var(--gold);
+    color: var(--navy);
+    box-shadow: 0 0 30px rgba(201,168,76,0.3);
+  }
+
+  /* ── SECTIONS ── */
+  section {
+    padding: 6rem 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .section-divider {
+    height: 1px;
+    background: linear-gradient(to right, transparent, var(--border-strong), transparent);
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .section-cta {
+    max-width: 1100px;
+    margin: -2rem auto 5rem;
+    padding: 0 2rem;
+    text-align: center;
+  }
+
+  .section-cta-note {
+    margin-top: 0.9rem;
+    color: var(--text-muted);
+    font-size: 0.86rem;
+  }
+
+  .section-label {
+    font-size: 0.68rem;
+    letter-spacing: 0.4em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 0.75rem;
+    display: block;
+  }
+
+  h2 {
+    font-size: clamp(1.6rem, 3vw, 2.2rem);
+    font-weight: normal;
+    letter-spacing: 0.04em;
+    color: var(--white);
+    margin-bottom: 3rem;
+  }
+
+  h2 em {
+    color: var(--gold);
+    font-style: normal;
+  }
+
+  /* ── SERVICES GRID ── */
+  .grid-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .card {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 2rem 1.75rem;
+    transition: border-color 0.3s, background 0.3s;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 2px;
+    background: linear-gradient(to right, transparent, var(--gold), transparent);
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+
+  .card:hover {
+    border-color: var(--border-strong);
+    background: rgba(201,168,76,0.04);
+  }
+
+  .card:hover::before {
+    opacity: 1;
+  }
+
+  .card-icon {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 1.25rem;
+    color: var(--gold);
+  }
+
+  .card h3 {
+    font-size: 1rem;
+    font-weight: normal;
+    letter-spacing: 0.06em;
+    color: var(--white);
+    margin-bottom: 0.75rem;
+  }
+
+  .card p {
+    font-size: 0.88rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+  }
+
+  /* ── SUPPORTED / NOT SUPPORTED ── */
+  .two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .check-list, .x-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .check-list li, .x-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    font-size: 0.9rem;
+    color: var(--text-light);
+  }
+
+  .check-list li::before {
+    content: '✦';
+    color: var(--gold);
+    font-size: 0.7rem;
+    margin-top: 0.3rem;
+    flex-shrink: 0;
+  }
+
+  .x-list li::before {
+    content: '×';
+    color: #c05555;
+    font-size: 1rem;
+    line-height: 1.3;
+    flex-shrink: 0;
+  }
+
+  .panel {
+    background: rgba(255,255,255,0.025);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 2rem 1.75rem;
+  }
+
+  .panel h3 {
+    font-size: 0.75rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 1.5rem;
+  }
+
+  /* ── HOW IT WORKS ── */
+  .steps {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    position: relative;
+    max-width: 680px;
+  }
+
+  .steps::before {
+    content: '';
+    position: absolute;
+    left: 19px;
+    top: 10px;
+    bottom: 10px;
+    width: 1px;
+    background: linear-gradient(to bottom, var(--gold), rgba(201,168,76,0.1));
+  }
+
+  .step {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+    padding: 1.25rem 0;
+  }
+
+  .step-num {
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--gold);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem;
+    color: var(--gold);
+    letter-spacing: 0.05em;
+    flex-shrink: 0;
+    background: var(--navy);
+    position: relative;
+    z-index: 1;
+  }
+
+  .step-body h3 {
+    font-size: 1rem;
+    font-weight: normal;
+    color: var(--white);
+    margin-bottom: 0.25rem;
+  }
+
+  .step-body p {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+  }
+
+  /* ── NOTICE ── */
+  .notice-box {
+    border: 1px solid rgba(201,168,76,0.35);
+    border-left: 3px solid var(--gold);
+    background: rgba(201,168,76,0.04);
+    border-radius: var(--radius);
+    padding: 2rem 2.25rem;
+  }
+
+  .notice-box h3 {
+    font-size: 0.7rem;
+    letter-spacing: 0.35em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 1.25rem;
+  }
+
+  .notice-box ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.85rem;
+  }
+
+  .notice-box li {
+    font-size: 0.88rem;
+    color: var(--text-light);
+    padding-left: 1.25rem;
+    position: relative;
+  }
+
+  .notice-box li::before {
+    content: '—';
+    position: absolute;
+    left: 0;
+    color: var(--gold);
+  }
+
+  /* ── FAQ ── */
+  .faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    max-width: 780px;
+  }
+
+  .faq-item {
+    border-bottom: 1px solid var(--border);
+    padding: 1.75rem 0;
+  }
+
+  .faq-q {
+    font-size: 1rem;
+    color: var(--white);
+    margin-bottom: 0.75rem;
+    display: flex;
+    gap: 1rem;
+  }
+
+  .faq-q::before {
+    content: 'Q';
+    color: var(--gold);
+    font-size: 0.8rem;
+    letter-spacing: 0.1em;
+    margin-top: 0.1rem;
+    flex-shrink: 0;
+  }
+
+  .faq-a {
+    font-size: 0.88rem;
+    color: var(--text-muted);
+    padding-left: 1.75rem;
+    line-height: 1.7;
+  }
+
+  /* ── ABOUT ── */
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: start;
+  }
+
+  .about-text p {
+    font-size: 0.95rem;
+    color: var(--text-light);
+    margin-bottom: 1rem;
+  }
+
+  .about-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  .meta-row {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    border-left: 2px solid var(--gold);
+    padding-left: 1rem;
+  }
+
+  .meta-label {
+    font-size: 0.65rem;
+    letter-spacing: 0.35em;
+    text-transform: uppercase;
+    color: var(--gold);
+  }
+
+  .meta-value {
+    font-size: 0.9rem;
+    color: var(--text-light);
+  }
+
+  /* ── CONTACT ── */
+  .contact-inner {
+    text-align: center;
+    max-width: 560px;
+    margin: 0 auto;
+  }
+
+  .contact-inner p {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    margin-bottom: 2rem;
+  }
+
+  /* ── FOOTER ── */
+  footer {
+    border-top: 1px solid var(--border);
+    padding: 3rem 2rem;
+    text-align: center;
+  }
+
+  .footer-logo {
+    font-size: 1rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 0.25rem;
+  }
+
+  .footer-sub {
+    font-size: 0.7rem;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-bottom: 1.5rem;
+  }
+
+  .footer-copy {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    letter-spacing: 0.05em;
+  }
+
+  /* ── SAKURA MARK SVG ── */
+  .sakura-mark {
+    display: block;
+  }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 768px) {
+    header { padding: 0 1rem; }
+    .header-logo .wordmark { font-size: 0.78rem; }
+    .header-controls { gap: 0.5rem; }
+    .header-controls select { font-size: 0.7rem; padding: 0.3rem 0.4rem; padding-right: 1.4rem; }
+
+    section { padding: 4rem 1.25rem; }
+    .section-cta { padding: 0 1.25rem; margin: -1rem auto 4rem; }
+    .two-col { grid-template-columns: 1fr; }
+    .about-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+    .grid-3 { grid-template-columns: 1fr; }
+    .steps::before { left: 19px; }
+  }
+
+  /* ── ANIMATIONS ── */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(24px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .hero > * {
+    position: relative;
+    animation: fadeUp 0.9s ease both;
+  }
+
+  .hero-line { animation-delay: 0.1s; }
+  .hero-tag { animation-delay: 0.2s; }
+  .hero-title { animation-delay: 0.3s; }
+  .hero-subtitle { animation-delay: 0.4s; }
+  .hero-desc { animation-delay: 0.5s; }
+  .hero-notice { animation-delay: 0.6s; }
+  .btn-primary { animation-delay: 0.7s; }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <a href="#" class="header-logo">
+    <svg class="mark" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="16" cy="16" r="15" stroke="#c9a84c" stroke-width="1"/>
+      <path d="M16 4 C16 4 20 10 16 14 C12 10 16 4 16 4Z" fill="#c9a84c" opacity="0.85"/>
+      <path d="M16 4 C16 4 20 10 16 14 C12 10 16 4 16 4Z" fill="#c9a84c" opacity="0.85" transform="rotate(72 16 16)"/>
+      <path d="M16 4 C16 4 20 10 16 14 C12 10 16 4 16 4Z" fill="#c9a84c" opacity="0.85" transform="rotate(144 16 16)"/>
+      <path d="M16 4 C16 4 20 10 16 14 C12 10 16 4 16 4Z" fill="#c9a84c" opacity="0.85" transform="rotate(216 16 16)"/>
+      <path d="M16 4 C16 4 20 10 16 14 C12 10 16 4 16 4Z" fill="#c9a84c" opacity="0.85" transform="rotate(288 16 16)"/>
+      <circle cx="16" cy="16" r="3" fill="#c9a84c"/>
+    </svg>
+    <span class="wordmark" data-i18n="site_name">Sakura Mint Trading</span>
+  </a>
+  <div class="header-controls">
+    <select id="langSelect" title="Select language" aria-label="Language">
+      <option value="en">English</option>
+      <option value="ja">日本語</option>
+      <option value="es">Español</option>
+      <option value="fr">Français</option>
+      <option value="de">Deutsch</option>
+      <option value="ar">العربية</option>
+    </select>
+  </div>
+</header>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-seigaiha"></div>
+  <div class="hero-line"></div>
+  <p class="hero-tag" data-i18n="hero_tag">Japan Sourcing & Export</p>
+  <h1 class="hero-title" data-i18n="hero_title">Japan Sourcing & Export for Overseas Buyers</h1>
+  <p class="hero-subtitle" data-i18n="hero_subtitle">Established in Japan</p>
+  <p class="hero-desc" data-i18n="hero_desc">We help overseas buyers source new Japanese products and used vehicles from Japan.</p>
+  <div class="hero-notice">
+    <p data-i18n-html="hero_notice">We currently support <strong>new Japanese products</strong> and <strong>used vehicles</strong> only.</p>
+  </div>
+  <div class="hero-cards">
+    <div class="hero-card"><h3 data-i18n="hero_card1">Japan-Based Sourcing Support</h3></div>
+    <div class="hero-card"><h3 data-i18n="hero_card2">Direct Supplier Communication</h3></div>
+    <div class="hero-card"><h3 data-i18n="hero_card3">Worldwide Buyer Support</h3></div>
+  </div>
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSctA2PWcNKrdu-iDVQWSe3nX9YeWiDeEe7qZ1-dBR3pC6qe3Q/viewform?usp=dialog" target="_blank" rel="noopener" class="btn-primary" id="heroCtaBtn" data-i18n="cta_button">Request Form</a>
+</div>
+
+<div class="section-divider"></div>
+
+<!-- SERVICES -->
+<section id="services">
+  <span class="section-label" data-i18n="nav_services">Services</span>
+  <h2 data-i18n="services_h2">What We <em>Offer</em></h2>
+  <div class="grid-3">
+    <div class="card">
+      <svg class="card-icon" viewBox="0 0 40 40" fill="none"><rect x="6" y="10" width="28" height="22" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M14 10V8a6 6 0 0112 0v2" stroke="currentColor" stroke-width="1.5"/><circle cx="20" cy="21" r="3" stroke="currentColor" stroke-width="1.5"/></svg>
+      <h3 data-i18n="svc1_title">New Japanese Product Sourcing</h3>
+      <p data-i18n="svc1_desc">We source new products directly from Japanese retailers, manufacturers, and wholesalers on your behalf.</p>
+    </div>
+    <div class="card">
+      <svg class="card-icon" viewBox="0 0 40 40" fill="none"><rect x="4" y="18" width="32" height="12" rx="3" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="30" r="4" stroke="currentColor" stroke-width="1.5"/><circle cx="28" cy="30" r="4" stroke="currentColor" stroke-width="1.5"/><path d="M4 22l5-10h22l5 10" stroke="currentColor" stroke-width="1.5"/></svg>
+      <h3 data-i18n="svc2_title">Used Vehicle Sourcing</h3>
+      <p data-i18n="svc2_desc">We assist with the purchase and export of used vehicles from Japan's well-maintained domestic market.</p>
+    </div>
+    <div class="card">
+      <svg class="card-icon" viewBox="0 0 40 40" fill="none"><path d="M8 20a12 12 0 1024 0A12 12 0 008 20z" stroke="currentColor" stroke-width="1.5"/><path d="M20 8v12l6 4" stroke="currentColor" stroke-width="1.5"/></svg>
+      <h3 data-i18n="svc3_title">Supplier Communication</h3>
+      <p data-i18n="svc3_desc">We handle all communication with Japanese suppliers, bridging the language and cultural gap for you.</p>
+    </div>
+    <div class="card">
+      <svg class="card-icon" viewBox="0 0 40 40" fill="none"><path d="M8 32l6-14 6 8 6-16 6 22" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+      <h3 data-i18n="svc4_title">Export Support</h3>
+      <p data-i18n="svc4_desc">We prepare and manage documentation required for international export from Japan.</p>
+    </div>
+    <div class="card">
+      <svg class="card-icon" viewBox="0 0 40 40" fill="none"><rect x="4" y="10" width="22" height="16" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M26 16h6l4 6v6h-10V16z" stroke="currentColor" stroke-width="1.5"/><circle cx="10" cy="30" r="3" stroke="currentColor" stroke-width="1.5"/><circle cx="30" cy="30" r="3" stroke="currentColor" stroke-width="1.5"/></svg>
+      <h3 data-i18n="svc5_title">Shipping Coordination</h3>
+      <p data-i18n="svc5_desc">We coordinate with freight forwarders and shipping companies to arrange delivery to your location.</p>
+    </div>
+    <div class="card">
+      <svg class="card-icon" viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="14" stroke="currentColor" stroke-width="1.5"/><path d="M20 6C20 6 28 12 28 20C28 28 20 34 20 34" stroke="currentColor" stroke-width="1.5"/><path d="M20 6C20 6 12 12 12 20C12 28 20 34 20 34" stroke="currentColor" stroke-width="1.5"/><path d="M6 20h28" stroke="currentColor" stroke-width="1.5"/></svg>
+      <h3 data-i18n="svc6_title">International Shipping Support</h3>
+      <p data-i18n="svc6_desc">We provide guidance on international logistics, customs clearance preparation, and tracking support.</p>
+    </div>
+  </div>
+</section>
+
+<div class="section-cta">
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSctA2PWcNKrdu-iDVQWSe3nX9YeWiDeEe7qZ1-dBR3pC6qe3Q/viewform?usp=dialog" target="_blank" rel="noopener" class="btn-primary" data-i18n="cta_button">Request Form</a>
+  <p class="section-cta-note" data-i18n="section_cta_note">Tell us what you want to source from Japan.</p>
+</div>
+
+<div class="section-divider"></div>
+
+<!-- SUPPORTED REQUESTS -->
+<section id="supported">
+  <span class="section-label" data-i18n="nav_supported">Coverage</span>
+  <h2 data-i18n="supported_h2">Supported <em>Requests</em></h2>
+  <div class="two-col">
+    <div class="panel">
+      <h3 data-i18n="supported_yes_title">✦ Available</h3>
+      <ul class="check-list">
+        <li data-i18n="sup1">New Japanese Products</li>
+        <li data-i18n="sup2">Used Vehicles</li>
+        <li data-i18n="sup3">Automotive Parts</li>
+        <li data-i18n="sup4">Tools &amp; Equipment</li>
+        <li data-i18n="sup5">Electronics (new)</li>
+        <li data-i18n="sup6">Anime &amp; Japanese Goods</li>
+        <li data-i18n="sup7">Japanese Consumer Products</li>
+        <li data-i18n="sup8">Industrial Equipment</li>
+      </ul>
+    </div>
+    <div class="panel">
+      <h3 data-i18n="supported_no_title">× Not Supported</h3>
+      <ul class="x-list">
+        <li data-i18n="not1">Used consumer goods (excluding vehicles)</li>
+        <li data-i18n="not2">Prohibited or restricted items</li>
+        <li data-i18n="not3">Counterfeit products</li>
+        <li data-i18n="not4">Dangerous goods</li>
+        <li data-i18n="not5">Items not legally exportable from Japan or importable into your country</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- HOW IT WORKS -->
+<section id="process">
+  <span class="section-label" data-i18n="nav_process">Process</span>
+  <h2 data-i18n="process_h2">How It <em>Works</em></h2>
+  <div class="steps">
+    <div class="step">
+      <div class="step-num">01</div>
+      <div class="step-body">
+        <h3 data-i18n="step1_title">Submit Request Form</h3>
+        <p data-i18n="step1_desc">Fill out our request form with the product or vehicle details you are looking for.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">02</div>
+      <div class="step-body">
+        <h3 data-i18n="step2_title">We Review Your Request</h3>
+        <p data-i18n="step2_desc">Our team reviews the feasibility of sourcing your item within Japan.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">03</div>
+      <div class="step-body">
+        <h3 data-i18n="step3_title">Quotation</h3>
+        <p data-i18n="step3_desc">We provide a detailed quotation including product price, fees, and estimated shipping costs.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">04</div>
+      <div class="step-body">
+        <h3 data-i18n="step4_title">Payment Confirmation</h3>
+        <p data-i18n="step4_desc">You review and approve the quotation. Payment is only requested after your approval.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">05</div>
+      <div class="step-body">
+        <h3 data-i18n="step5_title">Purchase / Sourcing</h3>
+        <p data-i18n="step5_desc">We proceed with the purchase from the Japanese supplier upon receiving payment.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">06</div>
+      <div class="step-body">
+        <h3 data-i18n="step6_title">Export Preparation</h3>
+        <p data-i18n="step6_desc">We arrange all export documentation, inspection, and packaging requirements.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">07</div>
+      <div class="step-body">
+        <h3 data-i18n="step7_title">Shipping / Tracking</h3>
+        <p data-i18n="step7_desc">Your order is shipped internationally with tracking information provided to you.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- PAYMENT POLICY -->
+<section id="payment-policy">
+  <span class="section-label" data-i18n="nav_payment_policy">Payment Policy</span>
+  <h2 data-i18n="payment_policy_h2">Payment Policy</h2>
+  <div class="notice-box">
+    <ul>
+      <li data-i18n="payment_policy1">Quotations are provided before any payment request.</li>
+      <li data-i18n="payment_policy2">No purchase is made without buyer approval.</li>
+      <li data-i18n="payment_policy3">Full payment confirmation is required before purchasing products or vehicles.</li>
+      <li data-i18n="payment_policy4">Sakura Mint Trading does not purchase products or vehicles before payment is received.</li>
+      <li data-i18n="payment_policy5">International shipping costs do not include import duties, taxes, customs fees, or charges imposed by the destination country.</li>
+      <li data-i18n="payment_policy6">Import duties, taxes, customs fees, registration fees, inspection fees, and any other destination-country charges are the buyer's responsibility.</li>
+    </ul>
+  </div>
+</section>
+
+<div class="section-cta">
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSctA2PWcNKrdu-iDVQWSe3nX9YeWiDeEe7qZ1-dBR3pC6qe3Q/viewform?usp=dialog" target="_blank" rel="noopener" class="btn-primary" data-i18n="cta_button">Request Form</a>
+  <p class="section-cta-note" data-i18n="payment_cta_note">Request the form to begin sourcing from Japan.</p>
+</div>
+
+<div class="section-divider"></div>
+
+<!-- IMPORTANT NOTICE -->
+<section id="notice">
+  <span class="section-label" data-i18n="nav_notice">Notice</span>
+  <h2 data-i18n="notice_h2">Important <em>Notice</em></h2>
+  <div class="notice-box">
+    <h3 data-i18n="notice_box_title">Please Read Before Ordering</h3>
+    <ul>
+      <li data-i18n="notice1">Buyers are responsible for confirming whether requested products or vehicles can be legally imported into their country.</li>
+      <li data-i18n="notice2">Import and export regulations vary by country. Buyers must confirm import restrictions, customs duties, taxes, permits, manufacturer restrictions, country-specific prohibitions, and shipping limitations before placing an order.</li>
+      <li data-i18n="notice3">Sakura Mint Trading does not guarantee that every requested item can be purchased, exported, or imported.</li>
+      <li data-i18n="notice4">No purchase will be made without buyer approval of the quotation.</li>
+      <li data-i18n="notice5">All purchases are made only after payment confirmation.</li>
+      <li data-i18n="notice6">Sakura Mint Trading does not purchase products or vehicles before payment is received.</li>
+      <li data-i18n="notice7">International shipping costs do not include import duties, taxes, customs fees, or other charges imposed by the destination country.</li>
+    </ul>
+  </div>
+</section>
+
+<div class="section-cta">
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSctA2PWcNKrdu-iDVQWSe3nX9YeWiDeEe7qZ1-dBR3pC6qe3Q/viewform?usp=dialog" target="_blank" rel="noopener" class="btn-primary" data-i18n="cta_button">Request Form</a>
+  <p class="section-cta-note" data-i18n="notice_cta_note">Please confirm import rules in your country before submitting a request.</p>
+</div>
+
+<div class="section-divider"></div>
+
+<!-- FAQ -->
+<section id="faq">
+  <span class="section-label" data-i18n="nav_faq">FAQ</span>
+  <h2 data-i18n="faq_h2">Frequently Asked <em>Questions</em></h2>
+  <div class="faq-list">
+    <div class="faq-item">
+      <p class="faq-q" data-i18n="faq1_q">Can you source used vehicles?</p>
+      <p class="faq-a" data-i18n="faq1_a">Yes, we can assist with used vehicle sourcing from Japan.</p>
+    </div>
+    <div class="faq-item">
+      <p class="faq-q" data-i18n="faq2_q">Can you purchase products from Japanese websites?</p>
+      <p class="faq-a" data-i18n="faq2_a">Yes, we can assist with new Japanese product sourcing from domestic retailers and online platforms.</p>
+    </div>
+    <div class="faq-item">
+      <p class="faq-q" data-i18n="faq3_q">Do you handle used products?</p>
+      <p class="faq-a" data-i18n="faq3_a">Currently, used items are limited to vehicles only. We do not handle used consumer goods, used electronics, or used brand items at this time.</p>
+    </div>
+    <div class="faq-item">
+      <p class="faq-q" data-i18n="faq4_q">When do I pay?</p>
+      <p class="faq-a" data-i18n="faq4_a">Payment is requested only after you have reviewed and approved the quotation. No payment is required at the inquiry stage.</p>
+    </div>
+    <div class="faq-item">
+      <p class="faq-q" data-i18n="faq5_q">Can all products be exported?</p>
+      <p class="faq-a" data-i18n="faq5_a">Not necessarily. Availability depends on export regulations, import rules in your country, supplier conditions, and shipping limitations. We will advise on feasibility during the review stage.</p>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- ABOUT -->
+<section id="about">
+  <span class="section-label" data-i18n="nav_about">About</span>
+  <h2 data-i18n="about_h2">About <em>Us</em></h2>
+  <div class="about-grid">
+    <div class="about-text">
+      <p>Sakura Mint Trading is a Japan-based sourcing and export support service for overseas buyers seeking products and vehicles from Japan.</p>
+
+      <p>We assist international clients by communicating directly with Japanese suppliers, retailers, manufacturers, and exporters on their behalf.</p>
+
+      <p>Our goal is to simplify the sourcing and export process while helping buyers access products available in the Japanese market.</p>
+
+      <h3 style="margin-top:1rem;">Why Choose Sakura Mint Trading</h3>
+      <ul style="margin-top:0.5rem; list-style: none; padding-left: 0;">
+        <li style="margin:0.35rem 0;">• Based in Japan</li>
+        <li style="margin:0.35rem 0;">• Direct communication with Japanese suppliers</li>
+        <li style="margin:0.35rem 0;">• Support for overseas buyers</li>
+        <li style="margin:0.35rem 0;">• Quotation approval before purchase</li>
+        <li style="margin:0.35rem 0;">• Worldwide export assistance</li>
+      </ul>
+    </div>
+    <div class="about-meta">
+      <div class="meta-row">
+        <span class="meta-label">Business Type</span>
+        <span class="meta-value">Japan Sourcing & Export Service</span>
+      </div>
+      <div class="meta-row">
+        <span class="meta-label" data-i18n="about_label_location">Location</span>
+        <span class="meta-value" data-i18n="about_location_val">Japan</span>
+      </div>
+      <div class="meta-row">
+        <span class="meta-label" data-i18n="about_label_service">Service Area</span>
+        <span class="meta-value" data-i18n="about_service_val">Worldwide</span>
+      </div>
+      <div class="meta-row">
+        <span class="meta-label">Support</span>
+        <span class="meta-value">Product Sourcing & Used Vehicle Export</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="contact-inner">
+    <span class="section-label" data-i18n="nav_contact">Contact</span>
+    <h2 data-i18n="contact_h2">Ready to <em>Source from Japan?</em></h2>
+    <p data-i18n="contact_desc">Tell us what product or vehicle you are looking for. Submit your request form and we will review your inquiry.</p>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSctA2PWcNKrdu-iDVQWSe3nX9YeWiDeEe7qZ1-dBR3pC6qe3Q/viewform?usp=dialog" target="_blank" rel="noopener" class="btn-primary" id="contactCtaBtn" data-i18n="cta_button">Request Form</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">Sakura Mint Trading</div>
+  <div class="footer-sub" data-i18n="hero_tag">Japan Sourcing &amp; Export</div>
+  <div class="footer-copy" data-i18n="footer_copy">© 2026 Sakura Mint Trading. All rights reserved.</div>
+</footer>
+
+<script>
+(function() {
+  var translations = {
+    en: {
+      site_name: "Sakura Mint Trading",
+      hero_tag: "Japan Sourcing & Export",
+      hero_subtitle: "Established in Japan",
+      hero_desc: "Japan Sourcing & Export Support for Overseas Buyers",
+      hero_notice: "We currently support <strong>new Japanese products</strong> and <strong>used vehicles</strong> only.",
+      hero_title: "Japan Sourcing & Export for Overseas Buyers",
+      hero_card1: "Japan-Based Sourcing Support",
+      hero_card2: "Direct Supplier Communication",
+      hero_card3: "Worldwide Buyer Support",
+      payment_process_desc: "To protect both buyers and our business, all purchases are processed only after payment confirmation.",
+      payment_step1: "Submit Request",
+      payment_step2: "Receive Quotation",
+      payment_step3: "Buyer Approval",
+      payment_step4: "Invoice Issued",
+      payment_step5: "Payment Confirmation",
+      payment_step6: "Purchase & Export",
+      payment_step7: "Shipping & Tracking",
+      payment_step8: "Payment Policy",
+      payment_policy1: "Quotations are provided before any payment request.",
+      payment_policy2: "No purchase is made without buyer approval.",
+      payment_policy3: "Full payment confirmation is required before purchasing products or vehicles.",
+      payment_policy4: "Sakura Mint Trading does not purchase products or vehicles before payment is received.",
+      payment_policy5: "International shipping costs do not include import duties, taxes, customs fees, or charges imposed by the destination country.",
+      payment_policy6: "Import duties, taxes, customs fees, registration fees, inspection fees, and any other destination-country charges are the buyer's responsibility.",
+      notice5: "All purchases are made only after payment confirmation.",
+      notice6: "Sakura Mint Trading does not purchase products or vehicles before payment is received.",
+      notice7: "International shipping costs do not include import duties, taxes, customs fees, or other charges imposed by the destination country.",
+      faq7_q: "What payment methods do you accept?",
+      faq7_a: "Payment instructions will be provided after quotation approval. Available payment methods may vary depending on the country and transaction requirements.",
+      faq8_q: "Do I need to pay before you purchase the item?",
+      faq8_a: "Yes. Payment confirmation is required before we purchase products or vehicles on behalf of the buyer.",
+      faq9_q: "Can I pay after receiving the product?",
+      faq9_a: "No. All orders require payment confirmation before purchase and export arrangements begin.",
+      faq10_q: "Are import duties, taxes, or customs fees included in the shipping cost?",
+      faq10_a: "No. International shipping costs do not include import duties, taxes, customs fees, or other destination-country charges. These charges are the buyer's responsibility.",
+      about_p4: "We are based in Japan and communicate directly with Japanese suppliers on behalf of overseas buyers.",
+      about_p5: "We follow a quotation-first process. Buyers review and approve all quotations before any purchase is made.",
+      payment_cta_note: "Request the form to begin sourcing from Japan.",
+      section_cta_note: "Tell us what you want to source from Japan.",
+      notice_cta_note: "Please confirm import rules in your country before submitting a request.",
+      cta_button: "Request Form",
+      nav_services: "Services",
+      nav_supported: "Coverage",
+      nav_process: "Process",
+      nav_notice: "Notice",
+      nav_payment_process: "Payment Process",
+      nav_payment_policy: "Payment Policy",
+      nav_faq: "FAQ",
+      nav_about: "About",
+      nav_contact: "Contact",
+      services_h2_plain: "What We Offer",
+      payment_process_h2: "Payment Process",
+      payment_policy_h2: "Payment Policy",
+      svc1_title: "New Japanese Product Sourcing",
+      svc1_desc: "We source new products directly from Japanese retailers, manufacturers, and wholesalers on your behalf.",
+      svc2_title: "Used Vehicle Sourcing",
+      svc2_desc: "We assist with the purchase and export of used vehicles from Japan's well-maintained domestic market.",
+      svc3_title: "Supplier Communication",
+      svc3_desc: "We handle all communication with Japanese suppliers, bridging the language and cultural gap for you.",
+      svc4_title: "Export Support",
+      svc4_desc: "We prepare and manage documentation required for international export from Japan.",
+      svc5_title: "Shipping Coordination",
+      svc5_desc: "We coordinate with freight forwarders and shipping companies to arrange delivery to your location.",
+      svc6_title: "International Shipping Support",
+      svc6_desc: "We provide guidance on international logistics, customs clearance preparation, and tracking support.",
+      supported_yes_title: "✦ Available",
+      supported_no_title: "× Not Supported",
+      sup1: "New Japanese Products",
+      sup2: "Used Vehicles",
+      sup3: "Automotive Parts",
+      sup4: "Tools & Equipment",
+      sup5: "Electronics (new)",
+      sup6: "Anime & Japanese Goods",
+      sup7: "Japanese Consumer Products",
+      sup8: "Industrial Equipment",
+      not1: "Used consumer goods (excluding vehicles)",
+      not2: "Prohibited or restricted items",
+      not3: "Counterfeit products",
+      not4: "Dangerous goods",
+      not5: "Items not legally exportable from Japan or importable into your country",
+      step1_title: "Submit Request Form",
+      step1_desc: "Fill out our request form with the product or vehicle details you are looking for.",
+      step2_title: "We Review Your Request",
+      step2_desc: "Our team reviews the feasibility of sourcing your item within Japan.",
+      step3_title: "Quotation",
+      step3_desc: "We provide a detailed quotation including product price, fees, and estimated shipping costs.",
+      step4_title: "Payment Confirmation",
+      step4_desc: "You review and approve the quotation. Payment is only requested after your approval.",
+      step5_title: "Purchase / Sourcing",
+      step5_desc: "We proceed with the purchase from the Japanese supplier upon receiving payment.",
+      step6_title: "Export Preparation",
+      step6_desc: "We arrange all export documentation, inspection, and packaging requirements.",
+      step7_title: "Shipping / Tracking",
+      step7_desc: "Your order is shipped internationally with tracking information provided to you.",
+      notice_box_title: "Please Read Before Ordering",
+      notice1: "Buyers are responsible for confirming whether requested products or vehicles can be legally imported into their country.",
+      notice2: "Import and export regulations vary by country. Buyers must confirm import restrictions, customs duties, taxes, permits, manufacturer restrictions, country-specific prohibitions, and shipping limitations before placing an order.",
+      notice3: "Sakura Mint Trading does not guarantee that every requested item can be purchased, exported, or imported.",
+      notice4: "No purchase will be made without buyer approval of the quotation.",
+      faq1_q: "Can you source used vehicles?",
+      faq1_a: "Yes, we can assist with used vehicle sourcing from Japan.",
+      faq2_q: "Can you purchase products from Japanese websites?",
+      faq2_a: "Yes, we can assist with new Japanese product sourcing from domestic retailers and online platforms.",
+      faq3_q: "Do you handle used products?",
+      faq3_a: "Currently, used items are limited to vehicles only. We do not handle used consumer goods, used electronics, or used brand items at this time.",
+      faq4_q: "When do I pay?",
+      faq4_a: "Payment is requested only after you have reviewed and approved the quotation. No payment is required at the inquiry stage.",
+      faq5_q: "Can all products be exported?",
+      faq5_a: "Not necessarily. Availability depends on export regulations, import rules in your country, supplier conditions, and shipping limitations. We will advise on feasibility during the review stage.",
+      faq6_q: "Do you require payment before providing a quotation?",
+      faq6_a: "No. Quotations are provided before any payment request.",
+      about_p1: "Sakura Mint Trading is a Japan-based sourcing and export support service helping overseas buyers access Japanese products and used vehicles.",
+      about_p2: "We communicate directly with Japanese suppliers, retailers, manufacturers, and exporters on behalf of our clients.",
+      about_p3: "Our goal is to simplify the purchasing and export process for international buyers who wish to source products from Japan.",
+      about_label_operator: "Operator",
+      about_label_location: "Location",
+      about_label_service: "Service Area",
+      about_location_val: "Japan",
+      about_service_val: "Worldwide",
+      contact_desc: "Tell us what product or vehicle you are looking for. Submit your request form and we will review your inquiry.",
+      contact_h2_plain: "Ready to Source from Japan?",
+      contact_email_label: "Email",
+      footer_copy: "© 2026 Sakura Mint Trading. All rights reserved.",
+      supported_h2_plain: "Supported Requests",
+      process_h2_plain: "How It Works",
+      notice_h2_plain: "Important Notice",
+      faq_h2_plain: "Frequently Asked Questions",
+      about_h2_plain: "About Us"
+    },
+    ja: {
+      site_name: "サクラミント・トレーディング",
+      hero_tag: "日本からの調達・輸出サポート",
+      hero_subtitle: "日本拠点",
+      hero_desc: "海外バイヤー向けの日本調達・輸出サポート",
+      hero_notice: "現在の対応範囲は<strong>日本の新品商品</strong>と<strong>中古車</strong>のみです。",
+      hero_title: "海外バイヤー向け 日本調達・輸出サポート",
+      hero_card1: "日本拠点の調達サポート",
+      hero_card2: "国内サプライヤーとの直接対応",
+      hero_card3: "世界中のバイヤーに対応",
+      payment_process_desc: "バイヤーと当社の双方を守るため、すべての購入は支払い確認後にのみ進められます。",
+      payment_step1: "リクエスト送信",
+      payment_step2: "見積もり受領",
+      payment_step3: "バイヤー承認",
+      payment_step4: "請求書発行",
+      payment_step5: "支払い確認",
+      payment_step6: "購入・輸出",
+      payment_step7: "発送・追跡",
+      payment_step8: "支払い方針",
+      payment_policy1: "見積もりは、いかなる支払い要求より前にご提示します。",
+      payment_policy2: "バイヤー様の承認なしに購入することはありません。",
+      payment_policy3: "商品または車両を購入する前に、全額支払い確認が必要です。",
+      payment_policy4: "サクラミント・トレーディングは、支払いを受け取る前に商品や車両を購入しません。",
+      payment_policy5: "国際送料には、輸入関税、税金、通関手数料、または輸入先国が課す料金は含まれません。",
+      payment_policy6: "輸入関税、税金、通関手数料、登録料、検査料、その他の輸入先国の料金はバイヤー様の負担です。",
+      notice5: "すべての購入は支払い確認後にのみ行われます。",
+      notice6: "サクラミント・トレーディングは、支払いを受け取る前に商品や車両を購入しません。",
+      notice7: "国際送料には、輸入関税、税金、通関手数料、または輸入先国が課すその他の料金は含まれません。",
+      faq7_q: "どのような支払い方法に対応していますか？",
+      faq7_a: "見積もり承認後に支払い方法をご案内します。利用可能な支払い方法は国や取引要件によって異なります。",
+      faq8_q: "商品を購入する前に支払いが必要ですか？",
+      faq8_a: "はい。商品または車両をバイヤー様に代わって購入する前に、支払い確認が必要です。",
+      faq9_q: "商品を受け取った後に支払うことはできますか？",
+      faq9_a: "いいえ。すべての注文は、購入および輸出手配を開始する前に支払い確認が必要です。",
+      faq10_q: "送料には関税や税金、通関手数料が含まれますか？",
+      faq10_a: "いいえ。国際送料には、輸入関税、税金、通関手数料、またはその他の輸入先国の料金は含まれません。これらの料金はバイヤー様の負担です。",
+      about_p4: "当社は日本拠点であり、海外バイヤーに代わって日本のサプライヤーと直接連絡を取ります。",
+      about_p5: "見積もり優先のプロセスを採用しています。購入前にすべての見積もりをバイヤー様が確認・承認します。",
+      payment_cta_note: "日本からの調達を開始するにはフォームをご利用ください。",
+      section_cta_note: "日本から調達したい商品・車両をお知らせください。",
+      notice_cta_note: "リクエスト前に、輸入国側の規制をご確認ください。",
+      cta_button: "お問い合わせフォーム",
+      nav_services: "サービス",
+      nav_supported: "対応範囲",
+      nav_process: "ご利用の流れ",
+      nav_notice: "重要事項",
+      nav_payment_process: "支払いプロセス",
+      nav_payment_policy: "支払い方針",
+      nav_faq: "よくある質問",
+      nav_about: "会社概要",
+      nav_contact: "お問い合わせ",
+      services_h2_plain: "提供サービス",
+      payment_process_h2: "支払いプロセス",
+      payment_policy_h2: "支払い方針",
+      svc1_title: "新品商品の買付代行",
+      svc1_desc: "日本国内の小売店・メーカー・卸業者から、新品商品をお客様に代わって調達いたします。",
+      svc2_title: "中古車の買付・輸出",
+      svc2_desc: "整備状態の良い日本の中古車市場から、ご希望の車両を調達・輸出いたします。",
+      svc3_title: "サプライヤーとの交渉",
+      svc3_desc: "日本語でのサプライヤーとのやり取りを代行し、言語・文化の壁を取り除きます。",
+      svc4_title: "輸出サポート",
+      svc4_desc: "日本からの国際輸出に必要な書類の作成・手配を行います。",
+      svc5_title: "配送の手配",
+      svc5_desc: "フォワーダーや運送会社と連携し、お客様の元へ配送を手配いたします。",
+      svc6_title: "国際輸送サポート",
+      svc6_desc: "通関準備・追跡情報の提供など、国際輸送全般のサポートを行います。",
+      supported_yes_title: "✦ 対応可能",
+      supported_no_title: "× 対応不可",
+      sup1: "日本の新品商品",
+      sup2: "中古車",
+      sup3: "自動車部品",
+      sup4: "工具・機器",
+      sup5: "電子機器（新品）",
+      sup6: "アニメグッズ・日本グッズ",
+      sup7: "日本の消費者向け商品",
+      sup8: "産業機器",
+      not1: "中古一般消費財（車を除く）",
+      not2: "禁止品・制限品",
+      not3: "偽造品・コピー品",
+      not4: "危険物",
+      not5: "日本から合法的に輸出できない、または輸入国に合法的に持ち込めない商品",
+      step1_title: "お問い合わせフォームの送信",
+      step1_desc: "ご希望の商品・車両の詳細をフォームにご記入ください。",
+      step2_title: "リクエストの確認",
+      step2_desc: "弊社チームが日本国内での調達可否を確認します。",
+      step3_title: "見積もりの提示",
+      step3_desc: "商品価格・手数料・送料の見積もりをご提示いたします。",
+      step4_title: "支払い確認",
+      step4_desc: "見積もりをご確認・ご承認いただいた後に、お支払いをお願いいたします。",
+      step5_title: "購入・調達",
+      step5_desc: "お支払い確認後、日本のサプライヤーから購入手続きを進めます。",
+      step6_title: "輸出準備",
+      step6_desc: "輸出に必要な書類作成・検査・梱包の手配を行います。",
+      step7_title: "発送・追跡",
+      step7_desc: "国際発送後、追跡情報をお知らせいたします。",
+      notice_box_title: "ご注文前に必ずお読みください",
+      notice1: "ご希望の商品や車両が輸入国に合法的に持ち込めるかどうかは、バイヤー様ご自身でご確認ください。",
+      notice2: "輸出入規制は国によって異なります。輸入制限・関税・税金・許可証・メーカー制限・国別禁止品・輸送制限について、ご注文前に必ずご確認ください。",
+      notice3: "サクラミント・トレーディングは、すべてのリクエスト商品の購入・輸出・輸入を保証するものではありません。",
+      notice4: "見積もりをご承認いただかない限り、購入手続きは行いません。",
+      faq1_q: "中古車の調達はできますか？",
+      faq1_a: "はい、日本からの中古車調達・輸出をサポートしております。",
+      faq2_q: "日本のウェブサイトから商品を購入してもらえますか？",
+      faq2_a: "はい、日本国内の小売店やオンラインプラットフォームからの新品商品調達をサポートしております。",
+      faq3_q: "中古品は取り扱っていますか？",
+      faq3_a: "現時点では、中古品は車のみ対応しております。中古家電・中古ブランド品・一般中古品などは現在対象外です。",
+      faq4_q: "支払いはいつですか？",
+      faq4_a: "見積もりをご確認・ご承認いただいた後のみ、お支払いをお願いいたします。お問い合わせ段階での支払いは不要です。",
+      faq5_q: "すべての商品を輸出できますか？",
+      faq5_a: "必ずしも可能とは限りません。輸出規制・輸入国のルール・サプライヤーの条件・輸送制限によって異なります。確認結果は審査段階でお知らせします。",
+      faq6_q: "見積もり前に支払いが必要ですか？",
+      faq6_a: "いいえ。お支払いは見積もりをご確認・ご承認いただいた後のみです。",
+      about_p1: "サクラミント・トレーディングは、日本拠点の調達・輸出サポートサービスです。海外バイヤーの方々が日本の新品商品や中古車を入手できるようサポートします。",
+      about_p2: "お客様に代わって、日本国内のサプライヤー、小売店、メーカー、輸出関係者と直接やり取りします。",
+      about_p3: "日本から商品を調達したい海外バイヤーの購入・輸出プロセスを、できるだけ分かりやすく簡単にすることを目的としています。",
+      about_label_operator: "運営者",
+      about_label_location: "所在地",
+      about_label_service: "サービス地域",
+      about_location_val: "日本",
+      about_service_val: "全世界対応",
+      contact_desc: "ご希望の商品や車両についてお知らせください。リクエストフォームを送信していただければ、内容を確認のうえご連絡いたします。",
+      contact_email_label: "メール",
+      footer_copy: "© 2026 Sakura Mint Trading. All rights reserved.",
+      supported_h2_plain: "対応リクエスト",
+      process_h2_plain: "ご利用の流れ",
+      notice_h2_plain: "重要事項",
+      faq_h2_plain: "よくある質問",
+      about_h2_plain: "会社概要",
+      contact_h2_plain: "お問い合わせ"
+    },
+    es: {
+      site_name: "Sakura Mint Trading",
+      hero_tag: "Abastecimiento y exportación desde Japón",
+      hero_subtitle: "Con sede en Japón",
+      hero_desc: "Abastecimiento y exportación para compradores internacionales",
+      hero_notice: "Actualmente apoyamos solo <strong>productos japoneses nuevos</strong> y <strong>vehículos usados</strong>.",
+      hero_title: "Abastecimiento y exportación desde Japón para compradores internacionales",
+      hero_card1: "Soporte de abastecimiento desde Japón",
+      hero_card2: "Comunicación directa con proveedores",
+      hero_card3: "Soporte para compradores globales",
+      payment_process_desc: "Para proteger tanto a los compradores como a nuestro negocio, todas las compras se procesan solo después de la confirmación del pago.",
+      payment_step1: "Enviar solicitud",
+      payment_step2: "Recibir cotización",
+      payment_step3: "Aprobación del comprador",
+      payment_step4: "Emisión de factura",
+      payment_step5: "Confirmación de pago",
+      payment_step6: "Compra y exportación",
+      payment_step7: "Envío y seguimiento",
+      payment_step8: "Política de pago",
+      payment_policy1: "Las cotizaciones se proporcionan antes de cualquier solicitud de pago.",
+      payment_policy2: "No se realiza ninguna compra sin la aprobación del comprador.",
+      payment_policy3: "Se requiere la confirmación de pago completo antes de comprar productos o vehículos.",
+      payment_policy4: "Sakura Mint Trading no compra productos o vehículos antes de recibir el pago.",
+      payment_policy5: "Los costos de envío internacional no incluyen aranceles, impuestos, tarifas aduaneras ni cargos impuestos por el país de destino.",
+      payment_policy6: "Los aranceles de importación, impuestos, tarifas aduaneras, tarifas de registro, tarifas de inspección y cualquier otro cargo del país de destino son responsabilidad del comprador.",
+      notice5: "Todas las compras se realizan solo después de la confirmación del pago.",
+      notice6: "Sakura Mint Trading no compra productos o vehículos antes de recibir el pago.",
+      notice7: "Los costos de envío internacional no incluyen aranceles, impuestos, tarifas aduaneras ni otros cargos impuestos por el país de destino.",
+      faq7_q: "¿Qué métodos de pago aceptan?",
+      faq7_a: "Las instrucciones de pago se proporcionarán después de la aprobación de la cotización. Los métodos disponibles pueden variar según el país y los requisitos de la transacción.",
+      faq8_q: "¿Necesito pagar antes de que compren el artículo?",
+      faq8_a: "Sí. Se requiere la confirmación del pago antes de que compremos productos o vehículos en nombre del comprador.",
+      faq9_q: "¿Puedo pagar después de recibir el producto?",
+      faq9_a: "No. Todos los pedidos requieren confirmación de pago antes de que comiencen la compra y los arreglos de exportación.",
+      faq10_q: "¿Los costos de envío incluyen aranceles, impuestos o tarifas aduaneras?",
+      faq10_a: "No. Los costos de envío internacional no incluyen aranceles, impuestos, tarifas aduaneras u otros cargos del país de destino. Estos cargos son responsabilidad del comprador.",
+      about_p4: "Estamos ubicados en Japón y nos comunicamos directamente con proveedores japoneses en nombre de compradores en el extranjero.",
+      about_p5: "Seguimos un proceso que prioriza la cotización. Los compradores revisan y aprueban todas las cotizaciones antes de cualquier compra.",
+      payment_cta_note: "Solicite el formulario para comenzar el abastecimiento desde Japón.",
+      section_cta_note: "Cuéntenos qué desea obtener de Japón.",
+      notice_cta_note: "Confirme las reglas de importación en su país antes de enviar una solicitud.",
+      cta_button: "Formulario de solicitud",
+      nav_services: "Servicios",
+      nav_supported: "Cobertura",
+      nav_process: "Proceso",
+      nav_notice: "Aviso",
+      nav_payment_process: "Proceso de pago",
+      nav_payment_policy: "Política de pago",
+      nav_faq: "Preguntas frecuentes",
+      nav_about: "Acerca de",
+      nav_contact: "Contacto",
+      services_h2_plain: "Ofrecemos",
+      payment_process_h2: "Proceso de pago",
+      payment_policy_h2: "Política de pago",
+      svc1_title: "Abastecimiento de productos japoneses nuevos",
+      svc1_desc: "Obtenemos productos nuevos directamente de minoristas, fabricantes y mayoristas japoneses.",
+      svc2_title: "Abastecimiento de vehículos usados",
+      svc2_desc: "Ayudamos con la compra y exportación de vehículos usados del mercado japonés.",
+      svc3_title: "Comunicación con proveedores",
+      svc3_desc: "Gestionamos toda la comunicación con proveedores japoneses en su nombre.",
+      svc4_title: "Soporte de exportación",
+      svc4_desc: "Preparamos y gestionamos la documentación necesaria para la exportación internacional.",
+      svc5_title: "Coordinación de envíos",
+      svc5_desc: "Coordinamos con agentes de carga y empresas de transporte para entregar su pedido.",
+      svc6_title: "Soporte de envíos internacionales",
+      svc6_desc: "Ofrecemos orientación sobre logística internacional, despacho aduanero y seguimiento.",
+      supported_yes_title: "✦ Disponible",
+      supported_no_title: "× No disponible",
+      sup1: "Productos japoneses nuevos",
+      sup2: "Vehículos usados",
+      sup3: "Piezas de automóvil",
+      sup4: "Herramientas y equipos",
+      sup5: "Electrónica (nueva)",
+      sup6: "Artículos de anime y japoneses",
+      sup7: "Productos de consumo japoneses",
+      sup8: "Equipos industriales",
+      not1: "Bienes de consumo usados (excepto vehículos)",
+      not2: "Artículos prohibidos o restringidos",
+      not3: "Productos falsificados",
+      not4: "Mercancías peligrosas",
+      not5: "Artículos que no pueden exportarse legalmente de Japón o importarse a su país",
+      step1_title: "Enviar formulario",
+      step1_desc: "Complete el formulario con los detalles del producto o vehículo que busca.",
+      step2_title: "Revisamos su solicitud",
+      step2_desc: "Nuestro equipo verifica la viabilidad de obtener el artículo en Japón.",
+      step3_title: "Cotización",
+      step3_desc: "Proporcionamos una cotización detallada con precio, tarifas y costos de envío estimados.",
+      step4_title: "Confirmación de pago",
+      step4_desc: "Revisa y aprueba la cotización. El pago solo se solicita tras su aprobación.",
+      step5_title: "Compra / Abastecimiento",
+      step5_desc: "Procedemos con la compra al proveedor japonés una vez recibido el pago.",
+      step6_title: "Preparación de exportación",
+      step6_desc: "Gestionamos toda la documentación, inspección y empaque para la exportación.",
+      step7_title: "Envío / Seguimiento",
+      step7_desc: "Su pedido se envía internacionalmente con información de seguimiento.",
+      notice_box_title: "Lea antes de realizar un pedido",
+      notice1: "Los compradores son responsables de confirmar si los productos pueden importarse legalmente a su país.",
+      notice2: "Las regulaciones varían por país. Confirme restricciones, aranceles, impuestos y permisos antes de ordenar.",
+      notice3: "Sakura Mint Trading no garantiza que todos los artículos puedan comprarse, exportarse o importarse.",
+      notice4: "No se realizará ninguna compra sin la aprobación del comprador de la cotización.",
+      faq1_q: "¿Pueden obtener vehículos usados?",
+      faq1_a: "Sí, podemos ayudar con el abastecimiento de vehículos usados desde Japón.",
+      faq2_q: "¿Pueden comprar en sitios web japoneses?",
+      faq2_a: "Sí, ayudamos con el abastecimiento de productos japoneses nuevos.",
+      faq3_q: "¿Manejan productos usados?",
+      faq3_a: "Actualmente, los artículos usados se limitan solo a vehículos.",
+      faq4_q: "¿Cuándo pago?",
+      faq4_a: "El pago se solicita solo después de aprobar la cotización.",
+      faq5_q: "¿Todos los productos pueden exportarse?",
+      faq5_a: "No necesariamente. Depende de regulaciones de exportación, reglas de importación y limitaciones de envío.",
+      faq6_q: "¿Requieren pago antes de proporcionar una cotización?",
+      faq6_a: "No. Las cotizaciones se proporcionan antes de solicitar cualquier pago.",
+      about_p1: "Sakura Mint Trading es un servicio de abastecimiento y exportación con sede en Japón.",
+      about_p2: "Gestionamos todo el proceso para que usted pueda centrarse en su negocio.",
+      about_p3: "Nuestro objetivo es simplificar la compra y exportación para compradores internacionales que desean obtener productos de Japón.",
+      about_label_operator: "Operador",
+      about_label_location: "Ubicación",
+      about_label_service: "Área de servicio",
+      about_location_val: "Japón",
+      about_service_val: "Mundial",
+      contact_desc: "Cuéntenos qué producto o vehículo está buscando. Envíe su formulario de solicitud y revisaremos su consulta.",
+      contact_email_label: "Correo",
+      footer_copy: "© 2026 Sakura Mint Trading. Todos los derechos reservados.",
+      supported_h2_plain: "Solicitudes aceptadas",
+      process_h2_plain: "Cómo funciona",
+      notice_h2_plain: "Aviso importante",
+      faq_h2_plain: "Preguntas frecuentes",
+      about_h2_plain: "Acerca de nosotros",
+      contact_h2_plain: "Contáctenos"
+    },
+    fr: {
+      site_name: "Sakura Mint Trading",
+      hero_tag: "Approvisionnement & exportation depuis le Japon",
+      hero_subtitle: "Basé au Japon",
+      hero_desc: "Support d’approvisionnement et d’exportation pour acheteurs internationaux",
+      hero_notice: "Nous prenons actuellement en charge uniquement les <strong>nouveaux produits japonais</strong> et les <strong>véhicules d’occasion</strong>.",
+      hero_title: "Approvisionnement et exportation depuis le Japon pour acheteurs internationaux",
+      hero_card1: "Support d’approvisionnement basé au Japon",
+      hero_card2: "Communication directe avec les fournisseurs",
+      hero_card3: "Support pour acheteurs du monde entier",
+      payment_process_desc: "Pour protéger à la fois les acheteurs et notre entreprise, tous les achats sont traités uniquement après confirmation du paiement.",
+      payment_step1: "Soumettre la demande",
+      payment_step2: "Recevoir le devis",
+      payment_step3: "Approbation de l’acheteur",
+      payment_step4: "Facture émise",
+      payment_step5: "Confirmation du paiement",
+      payment_step6: "Achat et exportation",
+      payment_step7: "Expédition et suivi",
+      payment_step8: "Politique de paiement",
+      payment_policy1: "Les devis sont fournis avant toute demande de paiement.",
+      payment_policy2: "Aucun achat n’est effectué sans l’approbation de l’acheteur.",
+      payment_policy3: "La confirmation du paiement complet est requise avant l’achat de produits ou de véhicules.",
+      payment_policy4: "Sakura Mint Trading n’achète pas de produits ou de véhicules avant réception du paiement.",
+      payment_policy5: "Les frais d’expédition internationale n’incluent pas les droits d’importation, taxes, frais de douane ou frais imposés par le pays de destination.",
+      payment_policy6: "Les droits d’importation, taxes, frais de douane, frais d’enregistrement, frais d’inspection et tous les autres frais du pays de destination sont à la charge de l’acheteur.",
+      notice5: "Tous les achats sont effectués uniquement après confirmation du paiement.",
+      notice6: "Sakura Mint Trading n’achète pas de produits ou de véhicules avant réception du paiement.",
+      notice7: "Les frais d’expédition internationale n’incluent pas les droits d’importation, taxes, frais de douane ou autres frais imposés par le pays de destination.",
+      faq7_q: "Quels moyens de paiement acceptez-vous ?",
+      faq7_a: "Les instructions de paiement sont fournies après l’approbation du devis. Les méthodes disponibles peuvent varier selon le pays et les exigences de la transaction.",
+      faq8_q: "Dois-je payer avant que vous n’achetiez l’article ?",
+      faq8_a: "Oui. La confirmation du paiement est requise avant que nous n’achetions des produits ou véhicules au nom de l’acheteur.",
+      faq9_q: "Puis-je payer après réception du produit ?",
+      faq9_a: "Non. Toutes les commandes exigent une confirmation de paiement avant le début de l’achat et de l’exportation.",
+      faq10_q: "Les droits d’importation, taxes ou frais de douane sont-ils inclus dans les frais d’expédition ?",
+      faq10_a: "Non. Les frais d’expédition internationale n’incluent pas les droits d’importation, taxes, frais de douane ou autres frais du pays de destination. Ces frais sont à la charge de l’acheteur.",
+      about_p4: "Nous sommes basés au Japon et communiquons directement avec les fournisseurs japonais pour le compte des acheteurs étrangers.",
+      about_p5: "Nous suivons un processus axé sur le devis. Les acheteurs examinent et approuvent tous les devis avant tout achat.",
+      payment_cta_note: "Demandez le formulaire pour commencer l’approvisionnement depuis le Japon.",
+      section_cta_note: "Dites-nous ce que vous souhaitez sourcer depuis le Japon.",
+      notice_cta_note: "Veuillez confirmer les règles d’importation de votre pays avant d’envoyer une demande.",
+      cta_button: "Formulaire de demande",
+      nav_services: "Services",
+      nav_supported: "Couverture",
+      nav_process: "Processus",
+      nav_notice: "Avis",
+      nav_payment_process: "Processus de paiement",
+      nav_payment_policy: "Politique de paiement",
+      nav_faq: "FAQ",
+      nav_about: "À propos",
+      nav_contact: "Contact",
+      services_h2_plain: "Offrons",
+      payment_process_h2: "Processus de paiement",
+      payment_policy_h2: "Politique de paiement",
+      svc1_title: "Approvisionnement en nouveaux produits japonais",
+      svc1_desc: "Nous sourceons des produits neufs directement auprès de détaillants, fabricants et grossistes japonais.",
+      svc2_title: "Approvisionnement en véhicules d'occasion",
+      svc2_desc: "Nous aidons à l'achat et à l'exportation de véhicules d'occasion du marché japonais.",
+      svc3_title: "Communication avec les fournisseurs",
+      svc3_desc: "Nous gérons toutes les communications avec les fournisseurs japonais en votre nom.",
+      svc4_title: "Support à l'exportation",
+      svc4_desc: "Nous préparons et gérons la documentation nécessaire à l'exportation internationale.",
+      svc5_title: "Coordination de l'expédition",
+      svc5_desc: "Nous coordonnons avec les transitaires pour organiser la livraison chez vous.",
+      svc6_title: "Support expédition internationale",
+      svc6_desc: "Nous fournissons des conseils sur la logistique internationale et le dédouanement.",
+      supported_yes_title: "✦ Disponible",
+      supported_no_title: "× Non disponible",
+      sup1: "Nouveaux produits japonais",
+      sup2: "Véhicules d'occasion",
+      sup3: "Pièces automobiles",
+      sup4: "Outils & équipements",
+      sup5: "Électronique (neuf)",
+      sup6: "Articles anime & japonais",
+      sup7: "Produits de consommation japonais",
+      sup8: "Équipements industriels",
+      not1: "Biens de consommation usagés (hors véhicules)",
+      not2: "Articles interdits ou restreints",
+      not3: "Produits contrefaits",
+      not4: "Matières dangereuses",
+      not5: "Articles non exportables légalement du Japon ou non importables dans votre pays",
+      step1_title: "Soumettre le formulaire",
+      step1_desc: "Remplissez notre formulaire avec les détails du produit ou véhicule souhaité.",
+      step2_title: "Examen de votre demande",
+      step2_desc: "Notre équipe vérifie la faisabilité de l'approvisionnement au Japon.",
+      step3_title: "Devis",
+      step3_desc: "Nous fournissons un devis détaillé incluant prix, frais et coûts d'expédition estimés.",
+      step4_title: "Confirmation de paiement",
+      step4_desc: "Vous examinez et approuvez le devis. Le paiement n'est demandé qu'après approbation.",
+      step5_title: "Achat / Approvisionnement",
+      step5_desc: "Nous procédons à l'achat auprès du fournisseur japonais après réception du paiement.",
+      step6_title: "Préparation à l'exportation",
+      step6_desc: "Nous gérons toute la documentation, l'inspection et l'emballage pour l'exportation.",
+      step7_title: "Expédition / Suivi",
+      step7_desc: "Votre commande est expédiée internationalement avec les informations de suivi.",
+      notice_box_title: "À lire avant de commander",
+      notice1: "Les acheteurs sont responsables de vérifier si les produits peuvent être légalement importés dans leur pays.",
+      notice2: "Les réglementations varient selon les pays. Vérifiez les restrictions, droits de douane et taxes avant de commander.",
+      notice3: "Sakura Mint Trading ne garantit pas que tous les articles peuvent être achetés, exportés ou importés.",
+      notice4: "Aucun achat ne sera effectué sans l'approbation du devis par l'acheteur.",
+      faq1_q: "Pouvez-vous sourcer des véhicules d'occasion ?",
+      faq1_a: "Oui, nous pouvons aider à l'approvisionnement en véhicules d'occasion depuis le Japon.",
+      faq2_q: "Pouvez-vous acheter sur des sites japonais ?",
+      faq2_a: "Oui, nous aidons à l'approvisionnement en nouveaux produits japonais.",
+      faq3_q: "Traitez-vous les produits d'occasion ?",
+      faq3_a: "Actuellement, les articles d'occasion sont limités aux véhicules uniquement.",
+      faq4_q: "Quand dois-je payer ?",
+      faq4_a: "Le paiement n'est demandé qu'après approbation du devis.",
+      faq5_q: "Tous les produits peuvent-ils être exportés ?",
+      faq5_a: "Pas nécessairement. Cela dépend des réglementations d'exportation et d'importation.",
+      faq6_q: "Demandez-vous un paiement avant le devis ?",
+      faq6_a: "Non. Les devis sont fournis avant toute demande de paiement.",
+      about_p1: "Sakura Mint Trading est un service d'approvisionnement et d'exportation basé au Japon.",
+      about_p2: "Nous gérons l'ensemble du processus pour que vous puissiez vous concentrer sur votre activité.",
+      about_p3: "Notre objectif est de simplifier le processus d’achat et d’exportation pour les acheteurs internationaux qui souhaitent sourcer des produits du Japon.",
+      about_label_operator: "Opérateur",
+      about_label_location: "Localisation",
+      about_label_service: "Zone de service",
+      about_location_val: "Japon",
+      about_service_val: "Mondial",
+      contact_desc: "Dites-nous quel produit ou véhicule vous recherchez. Soumettez votre formulaire de demande et nous examinerons votre demande.",
+      contact_email_label: "Email",
+      footer_copy: "© 2026 Sakura Mint Trading. Tous droits réservés.",
+      supported_h2_plain: "Demandes acceptées",
+      process_h2_plain: "Comment ça marche",
+      notice_h2_plain: "Avis important",
+      faq_h2_plain: "Questions fréquentes",
+      about_h2_plain: "À propos de nous",
+      contact_h2_plain: "Nous contacter"
+    },
+    de: {
+      site_name: "Sakura Mint Trading",
+      hero_tag: "Beschaffung & Export aus Japan",
+      hero_subtitle: "In Japan ansässig",
+      hero_desc: "Beschaffungs- und Exportservice für internationale Käufer",
+      hero_notice: "Wir unterstützen derzeit nur <strong>neue japanische Produkte</strong> und <strong>Gebrauchtfahrzeuge</strong>.",
+      hero_title: "Beschaffung und Export aus Japan für internationale Käufer",
+      hero_card1: "Beschaffungsunterstützung aus Japan",
+      hero_card2: "Direkte Lieferantenkommunikation",
+      hero_card3: "Weltweite Käuferunterstützung",
+      payment_process_desc: "Zum Schutz von Käufern und unserem Geschäft werden alle Einkäufe nur nach Zahlungsbestätigung abgewickelt.",
+      payment_step1: "Anfrage senden",
+      payment_step2: "Angebot erhalten",
+      payment_step3: "Käufergenehmigung",
+      payment_step4: "Rechnung ausgestellt",
+      payment_step5: "Zahlungsbestätigung",
+      payment_step6: "Kauf und Export",
+      payment_step7: "Versand und Tracking",
+      payment_step8: "Zahlungsrichtlinie",
+      payment_policy1: "Angebote werden vor jeder Zahlungsanforderung bereitgestellt.",
+      payment_policy2: "Es wird kein Kauf ohne Genehmigung des Käufers getätigt.",
+      payment_policy3: "Vor dem Kauf von Produkten oder Fahrzeugen ist die vollständige Zahlungsbestätigung erforderlich.",
+      payment_policy4: "Sakura Mint Trading kauft keine Produkte oder Fahrzeuge, bevor die Zahlung eingegangen ist.",
+      payment_policy5: "Internationale Versandkosten beinhalten keine Einfuhrzölle, Steuern, Zollgebühren oder Gebühren, die vom Bestimmungsland erhoben werden.",
+      payment_policy6: "Einfuhrzölle, Steuern, Zollgebühren, Registrierungsgebühren, Inspektionsgebühren und andere Gebühren des Bestimmungslandes liegen in der Verantwortung des Käufers.",
+      notice5: "Alle Einkäufe werden nur nach Zahlungsbestätigung getätigt.",
+      notice6: "Sakura Mint Trading kauft keine Produkte oder Fahrzeuge, bevor die Zahlung eingegangen ist.",
+      notice7: "Internationale Versandkosten beinhalten keine Einfuhrzölle, Steuern, Zollgebühren oder andere vom Bestimmungsland erhobene Gebühren.",
+      faq7_q: "Welche Zahlungsmethoden akzeptieren Sie?",
+      faq7_a: "Zahlungsanweisungen werden nach Angebotsfreigabe bereitgestellt. Die verfügbaren Methoden können je nach Land und Transaktionsanforderungen variieren.",
+      faq8_q: "Muss ich bezahlen, bevor Sie den Artikel kaufen?",
+      faq8_a: "Ja. Vor dem Kauf von Produkten oder Fahrzeugen im Namen des Käufers ist die Zahlungsbestätigung erforderlich.",
+      faq9_q: "Kann ich nach Erhalt des Produkts bezahlen?",
+      faq9_a: "Nein. Alle Bestellungen erfordern eine Zahlungsbestätigung, bevor der Kauf und die Exportabwicklung beginnen.",
+      faq10_q: "Sind Einfuhrzölle, Steuern oder Zollgebühren im Versandpreis enthalten?",
+      faq10_a: "Nein. Internationale Versandkosten beinhalten keine Einfuhrzölle, Steuern, Zollgebühren oder andere Gebühren des Bestimmungslandes. Diese Gebühren trägt der Käufer.",
+      about_p4: "Wir haben unseren Sitz in Japan und kommunizieren direkt mit japanischen Lieferanten im Namen ausländischer Käufer.",
+      about_p5: "Wir folgen einem anfragebasierten Angebotsprozess. Käufer prüfen und genehmigen alle Angebote, bevor ein Kauf getätigt wird.",
+      payment_cta_note: "Fordern Sie das Formular an, um die Beschaffung aus Japan zu starten.",
+      section_cta_note: "Teilen Sie uns mit, was Sie aus Japan beschaffen möchten.",
+      notice_cta_note: "Bitte prüfen Sie die Importregeln Ihres Landes, bevor Sie eine Anfrage senden.",
+      cta_button: "Anforderungsformular",
+      nav_services: "Leistungen",
+      nav_supported: "Abdeckung",
+      nav_process: "Ablauf",
+      nav_notice: "Hinweis",
+      nav_payment_process: "Zahlungsprozess",
+      nav_payment_policy: "Zahlungsrichtlinie",
+      nav_faq: "FAQ",
+      nav_about: "Über uns",
+      nav_contact: "Kontakt",
+      services_h2_plain: "Bieten",
+      payment_process_h2: "Zahlungsprozess",
+      payment_policy_h2: "Zahlungsrichtlinie",
+      svc1_title: "Beschaffung neuer japanischer Produkte",
+      svc1_desc: "Wir beschaffen neue Produkte direkt von japanischen Händlern, Herstellern und Großhändlern.",
+      svc2_title: "Gebrauchtfahrzeug-Beschaffung",
+      svc2_desc: "Wir unterstützen beim Kauf und Export von Gebrauchtfahrzeugen aus Japan.",
+      svc3_title: "Lieferantenkommunikation",
+      svc3_desc: "Wir übernehmen die gesamte Kommunikation mit japanischen Lieferanten.",
+      svc4_title: "Export-Support",
+      svc4_desc: "Wir bereiten alle erforderlichen Dokumente für den internationalen Export vor.",
+      svc5_title: "Versandkoordination",
+      svc5_desc: "Wir koordinieren mit Spediteuren und Reedereien für die Lieferung.",
+      svc6_title: "Internationaler Versandsupport",
+      svc6_desc: "Wir beraten zu internationaler Logistik, Zollabwicklung und Sendungsverfolgung.",
+      supported_yes_title: "✦ Verfügbar",
+      supported_no_title: "× Nicht verfügbar",
+      sup1: "Neue japanische Produkte",
+      sup2: "Gebrauchtfahrzeuge",
+      sup3: "Kfz-Teile",
+      sup4: "Werkzeuge & Ausrüstung",
+      sup5: "Elektronik (neu)",
+      sup6: "Anime- & japanische Waren",
+      sup7: "Japanische Konsumgüter",
+      sup8: "Industrieausrüstung",
+      not1: "Gebrauchte Konsumgüter (außer Fahrzeuge)",
+      not2: "Verbotene oder eingeschränkte Waren",
+      not3: "Gefälschte Produkte",
+      not4: "Gefährliche Güter",
+      not5: "Waren, die nicht legal aus Japan exportiert oder in Ihr Land importiert werden können",
+      step1_title: "Formular absenden",
+      step1_desc: "Füllen Sie unser Formular mit den Produkt- oder Fahrzeugdetails aus.",
+      step2_title: "Wir prüfen Ihre Anfrage",
+      step2_desc: "Unser Team prüft die Machbarkeit der Beschaffung in Japan.",
+      step3_title: "Angebot",
+      step3_desc: "Wir erstellen ein detailliertes Angebot mit Preis, Gebühren und Versandkosten.",
+      step4_title: "Zahlungsbestätigung",
+      step4_desc: "Sie prüfen und genehmigen das Angebot. Zahlung erfolgt erst nach Ihrer Genehmigung.",
+      step5_title: "Kauf / Beschaffung",
+      step5_desc: "Nach Zahlungseingang kaufen wir beim japanischen Lieferanten.",
+      step6_title: "Exportvorbereitung",
+      step6_desc: "Wir organisieren alle Exportdokumente, Inspektionen und Verpackungsanforderungen.",
+      step7_title: "Versand / Sendungsverfolgung",
+      step7_desc: "Ihre Bestellung wird international versendet mit Tracking-Informationen.",
+      notice_box_title: "Bitte vor der Bestellung lesen",
+      notice1: "Käufer sind dafür verantwortlich zu prüfen, ob Produkte legal in ihr Land importiert werden können.",
+      notice2: "Import- und Exportvorschriften variieren je nach Land. Bitte prüfen Sie alle Beschränkungen vor der Bestellung.",
+      notice3: "Sakura Mint Trading garantiert nicht, dass alle Artikel gekauft, exportiert oder importiert werden können.",
+      notice4: "Es wird kein Kauf ohne Genehmigung des Angebots durch den Käufer getätigt.",
+      faq1_q: "Können Sie Gebrauchtfahrzeuge beschaffen?",
+      faq1_a: "Ja, wir können bei der Beschaffung von Gebrauchtfahrzeugen aus Japan helfen.",
+      faq2_q: "Können Sie Produkte von japanischen Websites kaufen?",
+      faq2_a: "Ja, wir helfen bei der Beschaffung neuer japanischer Produkte.",
+      faq3_q: "Bearbeiten Sie Gebrauchtwaren?",
+      faq3_a: "Derzeit sind Gebrauchtwaren auf Fahrzeuge beschränkt.",
+      faq4_q: "Wann zahle ich?",
+      faq4_a: "Die Zahlung wird erst nach Genehmigung des Angebots angefordert.",
+      faq5_q: "Können alle Produkte exportiert werden?",
+      faq5_a: "Nicht unbedingt. Dies hängt von Export- und Importvorschriften ab.",
+      faq6_q: "Verlangen Sie eine Zahlung vor dem Angebot?",
+      faq6_a: "Nein. Angebote werden vor jeder Zahlungsanforderung bereitgestellt.",
+      about_p1: "Sakura Mint Trading ist ein in Japan ansässiger Beschaffungs- und Exportservice.",
+      about_p2: "Wir übernehmen den gesamten Prozess, damit Sie sich auf Ihr Geschäft konzentrieren können.",
+      about_p3: "Unser Ziel ist es, den Kauf- und Exportprozess für internationale Käufer zu vereinfachen, die Produkte aus Japan beschaffen möchten.",
+      about_label_operator: "Betreiber",
+      about_label_location: "Standort",
+      about_label_service: "Servicegebiet",
+      about_location_val: "Japan",
+      about_service_val: "Weltweit",
+      contact_desc: "Teilen Sie uns mit, welches Produkt oder Fahrzeug Sie suchen. Senden Sie Ihr Anfrageformular und wir prüfen Ihre Anfrage.",
+      contact_email_label: "E-Mail",
+      footer_copy: "© 2026 Sakura Mint Trading. Alle Rechte vorbehalten.",
+      supported_h2_plain: "Unterstützte Anfragen",
+      process_h2_plain: "So funktioniert es",
+      notice_h2_plain: "Wichtiger Hinweis",
+      faq_h2_plain: "Häufig gestellte Fragen",
+      about_h2_plain: "Über uns",
+      contact_h2_plain: "Kontakt aufnehmen"
+    },
+    ar: {
+      site_name: "ساكورا مينت ترايدنج",
+      hero_tag: "التوريد والتصدير من اليابان",
+      hero_subtitle: "مقرها في اليابان",
+      hero_desc: "دعم التوريد والتصدير للمشترين الدوليين",
+      hero_notice: "ندعم حالياً فقط <strong>المنتجات اليابانية الجديدة</strong> و<strong>السيارات المستعملة</strong>.",
+      hero_title: "التوريد والتصدير من اليابان للمشترين الدوليين",
+      hero_card1: "دعم التوريد من اليابان",
+      hero_card2: "التواصل المباشر مع الموردين",
+      hero_card3: "دعم المشترين حول العالم",
+      payment_process_desc: "لحماية كل من المشترين وأعمالنا، تتم جميع عمليات الشراء فقط بعد تأكيد الدفع.",
+      payment_step1: "إرسال الطلب",
+      payment_step2: "استلام عرض السعر",
+      payment_step3: "موافقة المشتري",
+      payment_step4: "إصدار الفاتورة",
+      payment_step5: "تأكيد الدفع",
+      payment_step6: "الشراء والتصدير",
+      payment_step7: "الشحن والتتبع",
+      payment_step8: "سياسة الدفع",
+      payment_policy1: "يتم تقديم عروض الأسعار قبل أي طلب للدفع.",
+      payment_policy2: "لا يتم إجراء أي عملية شراء دون موافقة المشتري.",
+      nav_payment_process: "عملية الدفع",
+      nav_payment_policy: "سياسة الدفع",
+      payment_process_h2: "عملية الدفع",
+      payment_policy_h2: "سياسة الدفع",
+      payment_policy3: "يجب تأكيد الدفع الكامل قبل شراء المنتجات أو المركبات.",
+      payment_policy4: "ساكورا مينت ترايدنج لا تشتري المنتجات أو المركبات قبل استلام الدفع.",
+      payment_policy5: "تكاليف الشحن الدولي لا تشمل الرسوم الجمركية أو الضرائب أو رسوم الجمارك أو الرسوم التي يفرضها بلد الوجهة.",
+      payment_policy6: "الرسوم الجمركية، الضرائب، رسوم الجمارك، رسوم التسجيل، رسوم الفحص، وأي رسوم أخرى في بلد الوجهة هي مسؤولية المشتري.",
+      notice5: "يتم إجراء جميع المشتريات فقط بعد تأكيد الدفع.",
+      notice6: "ساكورا مينت ترايدنج لا تشتري المنتجات أو المركبات قبل استلام الدفع.",
+      notice7: "تكاليف الشحن الدولي لا تشمل الرسوم الجمركية أو الضرائب أو رسوم الجمارك أو أي رسوم أخرى يفرضها بلد الوجهة.",
+      faq7_q: "ما طرق الدفع التي تقبلونها؟",
+      faq7_a: "سيتم تقديم تعليمات الدفع بعد الموافقة على عرض السعر. قد تختلف طرق الدفع المتاحة حسب البلد ومتطلبات المعاملة.",
+      faq8_q: "هل أحتاج إلى الدفع قبل أن تشتروا العنصر؟",
+      faq8_a: "نعم. يتم طلب تأكيد الدفع قبل أن نشتري المنتجات أو المركبات نيابة عن المشتري.",
+      faq9_q: "هل يمكنني الدفع بعد استلام المنتج؟",
+      faq9_a: "لا. تتطلب جميع الطلبات تأكيد الدفع قبل بدء عملية الشراء والترتيبات التصديرية.",
+      faq10_q: "هل تشمل تكاليف الشحن الرسوم الجمركية أو الضرائب أو رسوم الجمارك؟",
+      faq10_a: "لا. تكاليف الشحن الدولي لا تشمل الرسوم الجمركية أو الضرائب أو رسوم الجمارك أو أي رسوم أخرى لبلد الوجهة. هذه الرسوم هي مسؤولية المشتري.",
+      about_p4: "نحن نقع في اليابان ونتواصل مباشرة مع الموردين اليابانيين نيابة عن المشترين الخارجيين.",
+      about_p5: "نتبع عملية تركز على العرض. يراجع المشترون جميع العروض ويوافقون عليها قبل أي عملية شراء.",
+      payment_cta_note: "اطلب النموذج لبدء التوريد من اليابان.",
+      section_cta_note: "أخبرنا بما تريد توريده من اليابان.",
+      notice_cta_note: "يرجى تأكيد قواعد الاستيراد في بلدك قبل إرسال الطلب.",
+      cta_button: "نموذج الطلب",
+      nav_services: "الخدمات",
+      nav_supported: "التغطية",
+      nav_process: "كيف يعمل",
+      nav_notice: "تنبيه",
+      nav_faq: "الأسئلة الشائعة",
+      nav_about: "من نحن",
+      nav_contact: "اتصل بنا",
+      svc1_title: "توريد منتجات يابانية جديدة",
+      svc1_desc: "نوفر منتجات جديدة مباشرة من تجار التجزئة والمصنعين والموزعين اليابانيين.",
+      svc2_title: "توريد السيارات المستعملة",
+      svc2_desc: "نساعد في شراء وتصدير السيارات المستعملة من السوق الياباني.",
+      svc3_title: "التواصل مع الموردين",
+      svc3_desc: "نتولى جميع الاتصالات مع الموردين اليابانيين نيابةً عنك.",
+      svc4_title: "دعم التصدير",
+      svc4_desc: "نعد ونُدير جميع الوثائق اللازمة للتصدير الدولي من اليابان.",
+      svc5_title: "تنسيق الشحن",
+      svc5_desc: "ننسق مع شركات الشحن لترتيب توصيل طلبك.",
+      svc6_title: "دعم الشحن الدولي",
+      svc6_desc: "نقدم إرشادات حول اللوجستيات الدولية والتخليص الجمركي والتتبع.",
+      supported_yes_title: "✦ متاح",
+      supported_no_title: "× غير متاح",
+      sup1: "منتجات يابانية جديدة",
+      sup2: "سيارات مستعملة",
+      sup3: "قطع غيار السيارات",
+      sup4: "أدوات ومعدات",
+      sup5: "إلكترونيات (جديدة)",
+      sup6: "بضائع أنيمي ويابانية",
+      sup7: "منتجات استهلاكية يابانية",
+      sup8: "معدات صناعية",
+      not1: "السلع الاستهلاكية المستعملة (باستثناء السيارات)",
+      not2: "العناصر المحظورة أو المقيدة",
+      not3: "منتجات مقلدة",
+      not4: "بضائع خطرة",
+      not5: "العناصر التي لا يمكن تصديرها قانونياً من اليابان أو استيرادها إلى بلدك",
+      step1_title: "إرسال نموذج الطلب",
+      step1_desc: "املأ نموذج الطلب بتفاصيل المنتج أو السيارة التي تبحث عنها.",
+      step2_title: "مراجعة طلبك",
+      step2_desc: "يقوم فريقنا بمراجعة إمكانية توفير المنتج في اليابان.",
+      step3_title: "عرض الأسعار",
+      step3_desc: "نقدم عرض سعر تفصيلياً يشمل سعر المنتج والرسوم وتكاليف الشحن.",
+      step4_title: "تأكيد الدفع",
+      step4_desc: "تراجع وتوافق على عرض السعر. يُطلب الدفع فقط بعد موافقتك.",
+      step5_title: "الشراء / التوريد",
+      step5_desc: "نتابع عملية الشراء من المورد الياباني بعد استلام الدفع.",
+      step6_title: "التحضير للتصدير",
+      step6_desc: "نرتب جميع وثائق التصدير والفحص ومتطلبات التعبئة.",
+      step7_title: "الشحن / التتبع",
+      step7_desc: "يتم شحن طلبك دولياً مع تزويدك بمعلومات التتبع.",
+      notice_box_title: "يرجى القراءة قبل الطلب",
+      notice1: "يتحمل المشترون مسؤولية التأكد من إمكانية استيراد المنتجات قانونياً إلى بلدهم.",
+      notice2: "تتباين لوائح الاستيراد والتصدير حسب البلد. يجب التحقق من القيود والرسوم الجمركية والضرائب قبل الطلب.",
+      notice3: "لا تضمن ساكورا مينت ترايدنج إمكانية شراء أو تصدير أو استيراد جميع العناصر المطلوبة.",
+      notice4: "لن يتم إجراء أي عملية شراء دون موافقة المشتري على عرض الأسعار.",
+      faq1_q: "هل يمكنكم توفير سيارات مستعملة؟",
+      faq1_a: "نعم، يمكننا المساعدة في توريد السيارات المستعملة من اليابان.",
+      faq2_q: "هل يمكنكم الشراء من مواقع يابانية؟",
+      faq2_a: "نعم، نساعد في توريد المنتجات اليابانية الجديدة.",
+      faq3_q: "هل تتعاملون مع المنتجات المستعملة؟",
+      faq3_a: "حالياً، العناصر المستعملة مقتصرة على السيارات فقط.",
+      faq4_q: "متى أدفع؟",
+      faq4_a: "يُطلب الدفع فقط بعد مراجعة وموافقة عرض الأسعار.",
+      faq5_q: "هل يمكن تصدير جميع المنتجات؟",
+      faq5_a: "ليس بالضرورة. يعتمد ذلك على لوائح التصدير والاستيراد وقيود الشحن.",
+      faq6_q: "هل تطلبون الدفع قبل تقديم عرض السعر؟",
+      faq6_a: "لا. يتم تقديم عروض الأسعار قبل أي طلب للدفع.",
+      about_p1: "ساكورا مينت ترايدنج خدمة توريد وتصدير مقرها اليابان.",
+      about_p2: "نتولى العملية بأكملها حتى تتمكن من التركيز على عملك.",
+      about_p3: "هدفنا هو تبسيط عملية الشراء والتصدير للمشترين الدوليين الذين يرغبون في توريد المنتجات من اليابان.",
+      about_label_operator: "المشغل",
+      about_label_location: "الموقع",
+      about_label_service: "منطقة الخدمة",
+      about_location_val: "اليابان",
+      about_service_val: "عالمي",
+      contact_desc: "أخبرنا بالمنتج أو المركبة التي تبحث عنها. قدّم نموذج الطلب وسنراجع استفسارك.",
+      contact_email_label: "البريد الإلكتروني",
+      footer_copy: "© 2026 Sakura Mint Trading. جميع الحقوق محفوظة.",
+      supported_h2_plain: "الطلبات المدعومة",
+      process_h2_plain: "كيف يعمل",
+      notice_h2_plain: "تنبيه مهم",
+      faq_h2_plain: "الأسئلة الشائعة",
+      about_h2_plain: "من نحن",
+      contact_h2_plain: "تواصل معنا"
+    }
+  };
+
+  var h2Sections = {
+    services_h2: { key: 'services_h2_plain', gold: 'Offer', ja_gold: 'サービス', es_gold: 'Offer', fr_gold: 'Offrons', de_gold: 'Bieten', ar_gold: 'نقدمه' },
+    supported_h2: { key: 'supported_h2_plain', gold: 'Requests', ja_gold: 'リクエスト', es_gold: 'Solicitudes', fr_gold: 'Demandes', de_gold: 'Anfragen', ar_gold: 'الطلبات' },
+    process_h2: { key: 'process_h2_plain', gold: 'Works', ja_gold: 'の流れ', es_gold: 'Funciona', fr_gold: 'Fonctionne', de_gold: 'Funktioniert', ar_gold: 'يعمل' },
+    notice_h2: { key: 'notice_h2_plain', gold: 'Notice', ja_gold: '事項', es_gold: 'Aviso', fr_gold: 'Avis', de_gold: 'Hinweis', ar_gold: 'تنبيه' },
+    faq_h2: { key: 'faq_h2_plain', gold: 'Questions', ja_gold: '質問', es_gold: 'Preguntas', fr_gold: 'Questions', de_gold: 'Fragen', ar_gold: 'الأسئلة' },
+    about_h2: { key: 'about_h2_plain', gold: 'Us', ja_gold: '概要', es_gold: 'Nosotros', fr_gold: 'Nous', de_gold: 'Uns', ar_gold: 'نحن' },
+    contact_h2: { key: 'contact_h2_plain', gold: 'Touch', ja_gold: 'わせ', es_gold: 'Touch', fr_gold: 'Touch', de_gold: 'Touch', ar_gold: 'معنا' }
+  };
+
+  function applyH2(lang, t) {
+    var goldKeys = {
+      en: { services_h2: 'Offer', supported_h2: 'Requests', process_h2: 'Works', notice_h2: 'Notice', faq_h2: 'Questions', about_h2: 'Us', contact_h2: 'Touch' },
+      ja: { services_h2: 'サービス', supported_h2: 'リクエスト', process_h2: '流れ', notice_h2: '事項', faq_h2: '質問', about_h2: '概要', contact_h2: 'お問い合わせ' },
+      es: { services_h2: 'Ofrecemos', supported_h2: 'Aceptadas', process_h2: 'Funciona', notice_h2: 'Aviso', faq_h2: 'Frecuentes', about_h2: 'Nosotros', contact_h2: 'Contacto' },
+      fr: { services_h2: 'Offrons', supported_h2: 'Acceptées', process_h2: 'Fonctionne', notice_h2: 'Important', faq_h2: 'Fréquentes', about_h2: 'Nous', contact_h2: 'Contacter' },
+      de: { services_h2: 'Bieten', supported_h2: 'Anfragen', process_h2: 'Funktioniert', notice_h2: 'Hinweis', faq_h2: 'Fragen', about_h2: 'Uns', contact_h2: 'Kontakt' },
+      ar: { services_h2: 'نقدمه', supported_h2: 'المدعومة', process_h2: 'يعمل', notice_h2: 'مهم', faq_h2: 'الشائعة', about_h2: 'نحن', contact_h2: 'معنا' }
+    };
+    var gk = goldKeys[lang] || goldKeys['en'];
+    var plainMap = {
+      services_h2: t.services_h2_plain,
+      supported_h2: t.supported_h2_plain,
+      process_h2: t.process_h2_plain,
+      notice_h2: t.notice_h2_plain,
+      faq_h2: t.faq_h2_plain,
+      about_h2: t.about_h2_plain,
+      contact_h2: t.contact_h2_plain
+    };
+    Object.keys(plainMap).forEach(function(id) {
+      var el = document.querySelector('[data-i18n="' + id + '"]');
+      if (!el) return;
+      var full = plainMap[id];
+      var gold = gk[id];
+      if (gold && full.indexOf(gold) !== -1) {
+        var idx = full.lastIndexOf(gold);
+        var before = full.substring(0, idx);
+        var after = full.substring(idx + gold.length);
+        el.innerHTML = before + '<em>' + gold + '</em>' + after;
+      } else {
+        el.textContent = full;
+      }
+    });
+  }
+
+  function setLang(lang) {
+    var t = translations[lang] || translations['en'];
+    var dir = (lang === 'ar') ? 'rtl' : 'ltr';
+    document.documentElement.lang = lang === 'ja' ? 'ja' : (lang === 'ar' ? 'ar' : 'en');
+    document.documentElement.dir = dir;
+
+    var specialH2 = ['services_h2','supported_h2','process_h2','notice_h2','faq_h2','about_h2','contact_h2'];
+
+    document.querySelectorAll('[data-i18n-html]').forEach(function(el) {
+      var key = el.getAttribute('data-i18n-html');
+      if (t[key] !== undefined) {
+        el.innerHTML = t[key];
+      }
+    });
+
+    document.querySelectorAll('[data-i18n]').forEach(function(el) {
+      var key = el.getAttribute('data-i18n');
+      if (specialH2.indexOf(key) !== -1) return;
+      if (t[key] !== undefined) {
+        el.textContent = t[key];
+      }
+    });
+
+    applyH2(lang, t);
+  }
+
+  var langSelect = document.getElementById('langSelect');
+  langSelect.addEventListener('change', function() {
+    setLang(this.value);
+  });
+
+  setLang('en');
+})();
+</script>
+</body>
+</html>
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
