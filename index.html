@@ -617,22 +617,6 @@
     margin-bottom: 2rem;
   }
 
-  .contact-email {
-    display: block;
-    font-size: 0.85rem;
-    color: var(--text-muted);
-    margin-top: 1.5rem;
-    text-decoration: none;
-  }
-
-  .contact-email:hover {
-    color: var(--gold-pale);
-  }
-
-  .contact-email span {
-    color: var(--gold);
-  }
-
   /* ── FOOTER ── */
   footer {
     border-top: 1px solid var(--border);
@@ -719,29 +703,6 @@
     <span class="wordmark" data-i18n="site_name">Sakura Mint Trading</span>
   </a>
   <div class="header-controls">
-    <select id="countrySelect" title="Select country" aria-label="Country">
-      <option value="">Country</option>
-      <option value="US">United States</option>
-      <option value="CA">Canada</option>
-      <option value="AU">Australia</option>
-      <option value="GB">United Kingdom</option>
-      <option value="FR">France</option>
-      <option value="DE">Germany</option>
-      <option value="ES">Spain</option>
-      <option value="IT">Italy</option>
-      <option value="AE">United Arab Emirates</option>
-      <option value="SA">Saudi Arabia</option>
-      <option value="ZA">South Africa</option>
-      <option value="SG">Singapore</option>
-      <option value="MY">Malaysia</option>
-      <option value="TH">Thailand</option>
-      <option value="PH">Philippines</option>
-      <option value="ID">Indonesia</option>
-      <option value="IN">India</option>
-      <option value="BR">Brazil</option>
-      <option value="MX">Mexico</option>
-      <option value="OT">Other</option>
-    </select>
     <select id="langSelect" title="Select language" aria-label="Language">
       <option value="en">English</option>
       <option value="ja">日本語</option>
@@ -1038,10 +999,10 @@
   <div class="about-grid">
     <div class="about-text">
       <p data-i18n="about_p1">Sakura Mint Trading is a Japan-based sourcing and export support service helping overseas buyers access Japanese products and used vehicles.</p>
-      <p data-i18n="about_p2">We communicate directly with Japanese suppliers, retailers, manufacturers, and exporters on behalf of our clients.</p>
-      <p data-i18n="about_p4">We are based in Japan and communicate directly with Japanese suppliers on behalf of overseas buyers.</p>
+      <p data-i18n="about_p2">We are based in Japan and communicate directly with Japanese suppliers, retailers, manufacturers, and exporters on behalf of overseas buyers.</p>
+      <p data-i18n="about_p4">Our service focuses on sourcing new Japanese products and used vehicles while providing export support and international shipping coordination.</p>
       <p data-i18n="about_p5">We follow a quotation-first process. Buyers review and approve all quotations before any purchase is made.</p>
-      <p data-i18n="about_p3">Our goal is to simplify the purchasing and export process for international buyers who wish to source products from Japan.</p>
+      <p data-i18n="about_p3">We aim to simplify the purchasing process for overseas buyers who want access to products available in Japan.</p>
     </div>
     <div class="about-meta">
       <div class="meta-row">
@@ -1055,6 +1016,10 @@
       <div class="meta-row">
         <span class="meta-label" data-i18n="about_label_service">Service Area</span>
         <span class="meta-value" data-i18n="about_service_val">Worldwide</span>
+      </div>
+      <div class="meta-row">
+        <span class="meta-label" data-i18n="about_label_support">Support Type</span>
+        <span class="meta-value" data-i18n="about_support_val">Japan Product Sourcing & Export</span>
       </div>
     </div>
   </div>
@@ -1940,14 +1905,6 @@
 
     applyH2(lang, t);
   }
-
-  var savedCountry = localStorage.getItem('smt_country') || '';
-  var countrySelect = document.getElementById('countrySelect');
-  if (savedCountry) countrySelect.value = savedCountry;
-
-  countrySelect.addEventListener('change', function() {
-    localStorage.setItem('smt_country', this.value);
-  });
 
   var langSelect = document.getElementById('langSelect');
   langSelect.addEventListener('change', function() {
