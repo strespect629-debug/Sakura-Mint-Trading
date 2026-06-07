@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Sakura Mint Trading | Japan Sourcing & Export</title>
-<meta name="description" content="Japan sourcing and export support for new Japanese products and used vehicles.">
+<meta name="description" content="Japan sourcing and export support for overseas buyers. We help source new Japanese products and used vehicles from Japan.">
 <style>
   :root {
     --navy: #0a1628;
@@ -181,7 +181,7 @@
   .hero-notice {
     position: relative;
     max-width: 700px;
-    margin: 0 auto 3rem;
+    margin: 0 auto 2rem;
     padding: 1rem 1.25rem;
     border: 1px solid var(--border);
     border-radius: var(--radius);
@@ -193,6 +193,54 @@
   .hero-notice strong {
     color: var(--gold-pale);
     font-weight: normal;
+  }
+
+  .hero-cards {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    max-width: 900px;
+    margin: 0 auto 3rem;
+  }
+
+  .hero-card {
+    background: rgba(255,255,255,0.06);
+    border: 1px solid var(--border);
+    border-radius: 1rem;
+    padding: 1rem 1.25rem;
+    min-width: 220px;
+    text-align: center;
+  }
+
+  .hero-card h3 {
+    font-size: 0.95rem;
+    color: var(--white);
+    margin: 0;
+    line-height: 1.4;
+  }
+
+  .hero-title {
+    font-size: clamp(2.4rem, 5vw, 4rem);
+    font-weight: normal;
+    letter-spacing: 0.06em;
+    color: var(--white);
+    line-height: 1.15;
+    margin-bottom: 0.75rem;
+    position: relative;
+    word-break: break-word;
+  }
+
+  .process-list {
+    margin: 1.5rem 0 0 1.25rem;
+    padding-left: 1rem;
+    color: var(--text-light);
+    font-size: 0.95rem;
+    line-height: 1.75;
+  }
+
+  .process-list li {
+    margin-bottom: 0.75rem;
   }
 
   .btn-primary {
@@ -711,11 +759,16 @@
   <div class="hero-seigaiha"></div>
   <div class="hero-line"></div>
   <p class="hero-tag" data-i18n="hero_tag">Japan Sourcing & Export</p>
-  <h1 class="hero-title">Sakura Mint <em>Trading</em></h1>
+  <h1 class="hero-title" data-i18n="hero_title">Japan Sourcing & Export for Overseas Buyers</h1>
   <p class="hero-subtitle" data-i18n="hero_subtitle">Established in Japan</p>
-  <p class="hero-desc" data-i18n="hero_desc">Japan Sourcing &amp; Export Support for Overseas Buyers</p>
+  <p class="hero-desc" data-i18n="hero_desc">We help overseas buyers source new Japanese products and used vehicles from Japan.</p>
   <div class="hero-notice">
     <p data-i18n-html="hero_notice">We currently support <strong>new Japanese products</strong> and <strong>used vehicles</strong> only.</p>
+  </div>
+  <div class="hero-cards">
+    <div class="hero-card"><h3 data-i18n="hero_card1">Japan-Based Sourcing Support</h3></div>
+    <div class="hero-card"><h3 data-i18n="hero_card2">Direct Supplier Communication</h3></div>
+    <div class="hero-card"><h3 data-i18n="hero_card3">Worldwide Buyer Support</h3></div>
   </div>
   <a href="https://docs.google.com/forms/d/e/1FAIpQLSctA2PWcNKrdu-iDVQWSe3nX9YeWiDeEe7qZ1-dBR3pC6qe3Q/viewform?usp=dialog" target="_blank" rel="noopener" class="btn-primary" id="heroCtaBtn" data-i18n="cta_button">Request Form</a>
 </div>
@@ -859,6 +912,50 @@
 
 <div class="section-divider"></div>
 
+<!-- PAYMENT PROCESS -->
+<section id="payment-process">
+  <span class="section-label" data-i18n="nav_payment_process">Payment Process</span>
+  <h2 data-i18n="payment_process_h2">Payment Process</h2>
+  <div class="panel">
+    <p data-i18n="payment_process_desc">To protect both buyers and our business, all purchases are processed only after payment confirmation.</p>
+    <ol class="process-list">
+      <li data-i18n="payment_step1">Submit Request</li>
+      <li data-i18n="payment_step2">Receive Quotation</li>
+      <li data-i18n="payment_step3">Buyer Approval</li>
+      <li data-i18n="payment_step4">Invoice Issued</li>
+      <li data-i18n="payment_step5">Payment Confirmation</li>
+      <li data-i18n="payment_step6">Purchase & Export</li>
+      <li data-i18n="payment_step7">Shipping & Tracking</li>
+      <li data-i18n="payment_step8">Payment Policy</li>
+    </ol>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- PAYMENT POLICY -->
+<section id="payment-policy">
+  <span class="section-label" data-i18n="nav_payment_policy">Payment Policy</span>
+  <h2 data-i18n="payment_policy_h2">Payment Policy</h2>
+  <div class="notice-box">
+    <ul>
+      <li data-i18n="payment_policy1">Quotations are provided before any payment request.</li>
+      <li data-i18n="payment_policy2">No purchase is made without buyer approval.</li>
+      <li data-i18n="payment_policy3">Full payment confirmation is required before purchasing products or vehicles.</li>
+      <li data-i18n="payment_policy4">Sakura Mint Trading does not purchase products or vehicles before payment is received.</li>
+      <li data-i18n="payment_policy5">International shipping costs do not include import duties, taxes, customs fees, or charges imposed by the destination country.</li>
+      <li data-i18n="payment_policy6">Import duties, taxes, customs fees, registration fees, inspection fees, and any other destination-country charges are the buyer's responsibility.</li>
+    </ul>
+  </div>
+</section>
+
+<div class="section-cta">
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSctA2PWcNKrdu-iDVQWSe3nX9YeWiDeEe7qZ1-dBR3pC6qe3Q/viewform?usp=dialog" target="_blank" rel="noopener" class="btn-primary" data-i18n="cta_button">Request Form</a>
+  <p class="section-cta-note" data-i18n="payment_cta_note">Request the form to begin sourcing from Japan.</p>
+</div>
+
+<div class="section-divider"></div>
+
 <!-- IMPORTANT NOTICE -->
 <section id="notice">
   <span class="section-label" data-i18n="nav_notice">Notice</span>
@@ -870,6 +967,9 @@
       <li data-i18n="notice2">Import and export regulations vary by country. Buyers must confirm import restrictions, customs duties, taxes, permits, manufacturer restrictions, country-specific prohibitions, and shipping limitations before placing an order.</li>
       <li data-i18n="notice3">Sakura Mint Trading does not guarantee that every requested item can be purchased, exported, or imported.</li>
       <li data-i18n="notice4">No purchase will be made without buyer approval of the quotation.</li>
+      <li data-i18n="notice5">All purchases are made only after payment confirmation.</li>
+      <li data-i18n="notice6">Sakura Mint Trading does not purchase products or vehicles before payment is received.</li>
+      <li data-i18n="notice7">International shipping costs do not include import duties, taxes, customs fees, or other charges imposed by the destination country.</li>
     </ul>
   </div>
 </section>
@@ -910,6 +1010,22 @@
       <p class="faq-q" data-i18n="faq6_q">Do you require payment before providing a quotation?</p>
       <p class="faq-a" data-i18n="faq6_a">No. Quotations are provided before any payment request.</p>
     </div>
+    <div class="faq-item">
+      <p class="faq-q" data-i18n="faq7_q">What payment methods do you accept?</p>
+      <p class="faq-a" data-i18n="faq7_a">Payment instructions will be provided after quotation approval. Available payment methods may vary depending on the country and transaction requirements.</p>
+    </div>
+    <div class="faq-item">
+      <p class="faq-q" data-i18n="faq8_q">Do I need to pay before you purchase the item?</p>
+      <p class="faq-a" data-i18n="faq8_a">Yes. Payment confirmation is required before we purchase products or vehicles on behalf of the buyer.</p>
+    </div>
+    <div class="faq-item">
+      <p class="faq-q" data-i18n="faq9_q">Can I pay after receiving the product?</p>
+      <p class="faq-a" data-i18n="faq9_a">No. All orders require payment confirmation before purchase and export arrangements begin.</p>
+    </div>
+    <div class="faq-item">
+      <p class="faq-q" data-i18n="faq10_q">Are import duties, taxes, or customs fees included in the shipping cost?</p>
+      <p class="faq-a" data-i18n="faq10_a">No. International shipping costs do not include import duties, taxes, customs fees, or other destination-country charges. These charges are the buyer's responsibility.</p>
+    </div>
   </div>
 </section>
 
@@ -923,6 +1039,8 @@
     <div class="about-text">
       <p data-i18n="about_p1">Sakura Mint Trading is a Japan-based sourcing and export support service helping overseas buyers access Japanese products and used vehicles.</p>
       <p data-i18n="about_p2">We communicate directly with Japanese suppliers, retailers, manufacturers, and exporters on behalf of our clients.</p>
+      <p data-i18n="about_p4">We are based in Japan and communicate directly with Japanese suppliers on behalf of overseas buyers.</p>
+      <p data-i18n="about_p5">We follow a quotation-first process. Buyers review and approve all quotations before any purchase is made.</p>
       <p data-i18n="about_p3">Our goal is to simplify the purchasing and export process for international buyers who wish to source products from Japan.</p>
     </div>
     <div class="about-meta">
@@ -951,8 +1069,7 @@
     <h2 data-i18n="contact_h2">Get in <em>Touch</em></h2>
     <p data-i18n="contact_desc">For sourcing inquiries, please use the request form. We will respond as promptly as possible.</p>
     <a href="https://docs.google.com/forms/d/e/1FAIpQLSctA2PWcNKrdu-iDVQWSe3nX9YeWiDeEe7qZ1-dBR3pC6qe3Q/viewform?usp=dialog" target="_blank" rel="noopener" class="btn-primary" id="contactCtaBtn" data-i18n="cta_button">Request Form</a>
-    <p class="section-cta-note" data-i18n="response_time">Response Time: Usually within 24-72 hours</p>
-    <a href="mailto:strespect629@gmail.com" class="contact-email"><span data-i18n="contact_email_label">Email</span>: strespect629@gmail.com</a>
+    <p class="section-cta-note" data-i18n="response_time">Typical response time: 24–72 hours</p>
   </div>
 </section>
 
@@ -972,6 +1089,39 @@
       hero_subtitle: "Established in Japan",
       hero_desc: "Japan Sourcing & Export Support for Overseas Buyers",
       hero_notice: "We currently support <strong>new Japanese products</strong> and <strong>used vehicles</strong> only.",
+      hero_title: "Japan Sourcing & Export for Overseas Buyers",
+      hero_card1: "Japan-Based Sourcing Support",
+      hero_card2: "Direct Supplier Communication",
+      hero_card3: "Worldwide Buyer Support",
+      payment_process_desc: "To protect both buyers and our business, all purchases are processed only after payment confirmation.",
+      payment_step1: "Submit Request",
+      payment_step2: "Receive Quotation",
+      payment_step3: "Buyer Approval",
+      payment_step4: "Invoice Issued",
+      payment_step5: "Payment Confirmation",
+      payment_step6: "Purchase & Export",
+      payment_step7: "Shipping & Tracking",
+      payment_step8: "Payment Policy",
+      payment_policy1: "Quotations are provided before any payment request.",
+      payment_policy2: "No purchase is made without buyer approval.",
+      payment_policy3: "Full payment confirmation is required before purchasing products or vehicles.",
+      payment_policy4: "Sakura Mint Trading does not purchase products or vehicles before payment is received.",
+      payment_policy5: "International shipping costs do not include import duties, taxes, customs fees, or charges imposed by the destination country.",
+      payment_policy6: "Import duties, taxes, customs fees, registration fees, inspection fees, and any other destination-country charges are the buyer's responsibility.",
+      notice5: "All purchases are made only after payment confirmation.",
+      notice6: "Sakura Mint Trading does not purchase products or vehicles before payment is received.",
+      notice7: "International shipping costs do not include import duties, taxes, customs fees, or other charges imposed by the destination country.",
+      faq7_q: "What payment methods do you accept?",
+      faq7_a: "Payment instructions will be provided after quotation approval. Available payment methods may vary depending on the country and transaction requirements.",
+      faq8_q: "Do I need to pay before you purchase the item?",
+      faq8_a: "Yes. Payment confirmation is required before we purchase products or vehicles on behalf of the buyer.",
+      faq9_q: "Can I pay after receiving the product?",
+      faq9_a: "No. All orders require payment confirmation before purchase and export arrangements begin.",
+      faq10_q: "Are import duties, taxes, or customs fees included in the shipping cost?",
+      faq10_a: "No. International shipping costs do not include import duties, taxes, customs fees, or other destination-country charges. These charges are the buyer's responsibility.",
+      about_p4: "We are based in Japan and communicate directly with Japanese suppliers on behalf of overseas buyers.",
+      about_p5: "We follow a quotation-first process. Buyers review and approve all quotations before any purchase is made.",
+      payment_cta_note: "Request the form to begin sourcing from Japan.",
       section_cta_note: "Tell us what you want to source from Japan.",
       notice_cta_note: "Please confirm import rules in your country before submitting a request.",
       cta_button: "Request Form",
@@ -979,10 +1129,14 @@
       nav_supported: "Coverage",
       nav_process: "Process",
       nav_notice: "Notice",
+      nav_payment_process: "Payment Process",
+      nav_payment_policy: "Payment Policy",
       nav_faq: "FAQ",
       nav_about: "About",
       nav_contact: "Contact",
       services_h2_plain: "What We Offer",
+      payment_process_h2: "Payment Process",
+      payment_policy_h2: "Payment Policy",
       svc1_title: "New Japanese Product Sourcing",
       svc1_desc: "We source new products directly from Japanese retailers, manufacturers, and wholesalers on your behalf.",
       svc2_title: "Used Vehicle Sourcing",
@@ -1066,6 +1220,39 @@
       hero_subtitle: "日本拠点",
       hero_desc: "海外バイヤー向けの日本調達・輸出サポート",
       hero_notice: "現在の対応範囲は<strong>日本の新品商品</strong>と<strong>中古車</strong>のみです。",
+      hero_title: "海外バイヤー向け 日本調達・輸出サポート",
+      hero_card1: "日本拠点の調達サポート",
+      hero_card2: "国内サプライヤーとの直接対応",
+      hero_card3: "世界中のバイヤーに対応",
+      payment_process_desc: "バイヤーと当社の双方を守るため、すべての購入は支払い確認後にのみ進められます。",
+      payment_step1: "リクエスト送信",
+      payment_step2: "見積もり受領",
+      payment_step3: "バイヤー承認",
+      payment_step4: "請求書発行",
+      payment_step5: "支払い確認",
+      payment_step6: "購入・輸出",
+      payment_step7: "発送・追跡",
+      payment_step8: "支払い方針",
+      payment_policy1: "見積もりは、いかなる支払い要求より前にご提示します。",
+      payment_policy2: "バイヤー様の承認なしに購入することはありません。",
+      payment_policy3: "商品または車両を購入する前に、全額支払い確認が必要です。",
+      payment_policy4: "サクラミント・トレーディングは、支払いを受け取る前に商品や車両を購入しません。",
+      payment_policy5: "国際送料には、輸入関税、税金、通関手数料、または輸入先国が課す料金は含まれません。",
+      payment_policy6: "輸入関税、税金、通関手数料、登録料、検査料、その他の輸入先国の料金はバイヤー様の負担です。",
+      notice5: "すべての購入は支払い確認後にのみ行われます。",
+      notice6: "サクラミント・トレーディングは、支払いを受け取る前に商品や車両を購入しません。",
+      notice7: "国際送料には、輸入関税、税金、通関手数料、または輸入先国が課すその他の料金は含まれません。",
+      faq7_q: "どのような支払い方法に対応していますか？",
+      faq7_a: "見積もり承認後に支払い方法をご案内します。利用可能な支払い方法は国や取引要件によって異なります。",
+      faq8_q: "商品を購入する前に支払いが必要ですか？",
+      faq8_a: "はい。商品または車両をバイヤー様に代わって購入する前に、支払い確認が必要です。",
+      faq9_q: "商品を受け取った後に支払うことはできますか？",
+      faq9_a: "いいえ。すべての注文は、購入および輸出手配を開始する前に支払い確認が必要です。",
+      faq10_q: "送料には関税や税金、通関手数料が含まれますか？",
+      faq10_a: "いいえ。国際送料には、輸入関税、税金、通関手数料、またはその他の輸入先国の料金は含まれません。これらの料金はバイヤー様の負担です。",
+      about_p4: "当社は日本拠点であり、海外バイヤーに代わって日本のサプライヤーと直接連絡を取ります。",
+      about_p5: "見積もり優先のプロセスを採用しています。購入前にすべての見積もりをバイヤー様が確認・承認します。",
+      payment_cta_note: "日本からの調達を開始するにはフォームをご利用ください。",
       section_cta_note: "日本から調達したい商品・車両をお知らせください。",
       notice_cta_note: "リクエスト前に、輸入国側の規制をご確認ください。",
       cta_button: "お問い合わせフォーム",
@@ -1073,10 +1260,14 @@
       nav_supported: "対応範囲",
       nav_process: "ご利用の流れ",
       nav_notice: "重要事項",
+      nav_payment_process: "支払いプロセス",
+      nav_payment_policy: "支払い方針",
       nav_faq: "よくある質問",
       nav_about: "会社概要",
       nav_contact: "お問い合わせ",
       services_h2_plain: "提供サービス",
+      payment_process_h2: "支払いプロセス",
+      payment_policy_h2: "支払い方針",
       svc1_title: "新品商品の買付代行",
       svc1_desc: "日本国内の小売店・メーカー・卸業者から、新品商品をお客様に代わって調達いたします。",
       svc2_title: "中古車の買付・輸出",
@@ -1160,6 +1351,39 @@
       hero_subtitle: "Con sede en Japón",
       hero_desc: "Abastecimiento y exportación para compradores internacionales",
       hero_notice: "Actualmente apoyamos solo <strong>productos japoneses nuevos</strong> y <strong>vehículos usados</strong>.",
+      hero_title: "Abastecimiento y exportación desde Japón para compradores internacionales",
+      hero_card1: "Soporte de abastecimiento desde Japón",
+      hero_card2: "Comunicación directa con proveedores",
+      hero_card3: "Soporte para compradores globales",
+      payment_process_desc: "Para proteger tanto a los compradores como a nuestro negocio, todas las compras se procesan solo después de la confirmación del pago.",
+      payment_step1: "Enviar solicitud",
+      payment_step2: "Recibir cotización",
+      payment_step3: "Aprobación del comprador",
+      payment_step4: "Emisión de factura",
+      payment_step5: "Confirmación de pago",
+      payment_step6: "Compra y exportación",
+      payment_step7: "Envío y seguimiento",
+      payment_step8: "Política de pago",
+      payment_policy1: "Las cotizaciones se proporcionan antes de cualquier solicitud de pago.",
+      payment_policy2: "No se realiza ninguna compra sin la aprobación del comprador.",
+      payment_policy3: "Se requiere la confirmación de pago completo antes de comprar productos o vehículos.",
+      payment_policy4: "Sakura Mint Trading no compra productos o vehículos antes de recibir el pago.",
+      payment_policy5: "Los costos de envío internacional no incluyen aranceles, impuestos, tarifas aduaneras ni cargos impuestos por el país de destino.",
+      payment_policy6: "Los aranceles de importación, impuestos, tarifas aduaneras, tarifas de registro, tarifas de inspección y cualquier otro cargo del país de destino son responsabilidad del comprador.",
+      notice5: "Todas las compras se realizan solo después de la confirmación del pago.",
+      notice6: "Sakura Mint Trading no compra productos o vehículos antes de recibir el pago.",
+      notice7: "Los costos de envío internacional no incluyen aranceles, impuestos, tarifas aduaneras ni otros cargos impuestos por el país de destino.",
+      faq7_q: "¿Qué métodos de pago aceptan?",
+      faq7_a: "Las instrucciones de pago se proporcionarán después de la aprobación de la cotización. Los métodos disponibles pueden variar según el país y los requisitos de la transacción.",
+      faq8_q: "¿Necesito pagar antes de que compren el artículo?",
+      faq8_a: "Sí. Se requiere la confirmación del pago antes de que compremos productos o vehículos en nombre del comprador.",
+      faq9_q: "¿Puedo pagar después de recibir el producto?",
+      faq9_a: "No. Todos los pedidos requieren confirmación de pago antes de que comiencen la compra y los arreglos de exportación.",
+      faq10_q: "¿Los costos de envío incluyen aranceles, impuestos o tarifas aduaneras?",
+      faq10_a: "No. Los costos de envío internacional no incluyen aranceles, impuestos, tarifas aduaneras u otros cargos del país de destino. Estos cargos son responsabilidad del comprador.",
+      about_p4: "Estamos ubicados en Japón y nos comunicamos directamente con proveedores japoneses en nombre de compradores en el extranjero.",
+      about_p5: "Seguimos un proceso que prioriza la cotización. Los compradores revisan y aprueban todas las cotizaciones antes de cualquier compra.",
+      payment_cta_note: "Solicite el formulario para comenzar el abastecimiento desde Japón.",
       section_cta_note: "Cuéntenos qué desea obtener de Japón.",
       notice_cta_note: "Confirme las reglas de importación en su país antes de enviar una solicitud.",
       cta_button: "Formulario de solicitud",
@@ -1167,9 +1391,14 @@
       nav_supported: "Cobertura",
       nav_process: "Proceso",
       nav_notice: "Aviso",
+      nav_payment_process: "Proceso de pago",
+      nav_payment_policy: "Política de pago",
       nav_faq: "Preguntas frecuentes",
       nav_about: "Acerca de",
       nav_contact: "Contacto",
+      services_h2_plain: "Ofrecemos",
+      payment_process_h2: "Proceso de pago",
+      payment_policy_h2: "Política de pago",
       svc1_title: "Abastecimiento de productos japoneses nuevos",
       svc1_desc: "Obtenemos productos nuevos directamente de minoristas, fabricantes y mayoristas japoneses.",
       svc2_title: "Abastecimiento de vehículos usados",
@@ -1253,6 +1482,39 @@
       hero_subtitle: "Basé au Japon",
       hero_desc: "Support d’approvisionnement et d’exportation pour acheteurs internationaux",
       hero_notice: "Nous prenons actuellement en charge uniquement les <strong>nouveaux produits japonais</strong> et les <strong>véhicules d’occasion</strong>.",
+      hero_title: "Approvisionnement et exportation depuis le Japon pour acheteurs internationaux",
+      hero_card1: "Support d’approvisionnement basé au Japon",
+      hero_card2: "Communication directe avec les fournisseurs",
+      hero_card3: "Support pour acheteurs du monde entier",
+      payment_process_desc: "Pour protéger à la fois les acheteurs et notre entreprise, tous les achats sont traités uniquement après confirmation du paiement.",
+      payment_step1: "Soumettre la demande",
+      payment_step2: "Recevoir le devis",
+      payment_step3: "Approbation de l’acheteur",
+      payment_step4: "Facture émise",
+      payment_step5: "Confirmation du paiement",
+      payment_step6: "Achat et exportation",
+      payment_step7: "Expédition et suivi",
+      payment_step8: "Politique de paiement",
+      payment_policy1: "Les devis sont fournis avant toute demande de paiement.",
+      payment_policy2: "Aucun achat n’est effectué sans l’approbation de l’acheteur.",
+      payment_policy3: "La confirmation du paiement complet est requise avant l’achat de produits ou de véhicules.",
+      payment_policy4: "Sakura Mint Trading n’achète pas de produits ou de véhicules avant réception du paiement.",
+      payment_policy5: "Les frais d’expédition internationale n’incluent pas les droits d’importation, taxes, frais de douane ou frais imposés par le pays de destination.",
+      payment_policy6: "Les droits d’importation, taxes, frais de douane, frais d’enregistrement, frais d’inspection et tous les autres frais du pays de destination sont à la charge de l’acheteur.",
+      notice5: "Tous les achats sont effectués uniquement après confirmation du paiement.",
+      notice6: "Sakura Mint Trading n’achète pas de produits ou de véhicules avant réception du paiement.",
+      notice7: "Les frais d’expédition internationale n’incluent pas les droits d’importation, taxes, frais de douane ou autres frais imposés par le pays de destination.",
+      faq7_q: "Quels moyens de paiement acceptez-vous ?",
+      faq7_a: "Les instructions de paiement sont fournies après l’approbation du devis. Les méthodes disponibles peuvent varier selon le pays et les exigences de la transaction.",
+      faq8_q: "Dois-je payer avant que vous n’achetiez l’article ?",
+      faq8_a: "Oui. La confirmation du paiement est requise avant que nous n’achetions des produits ou véhicules au nom de l’acheteur.",
+      faq9_q: "Puis-je payer après réception du produit ?",
+      faq9_a: "Non. Toutes les commandes exigent une confirmation de paiement avant le début de l’achat et de l’exportation.",
+      faq10_q: "Les droits d’importation, taxes ou frais de douane sont-ils inclus dans les frais d’expédition ?",
+      faq10_a: "Non. Les frais d’expédition internationale n’incluent pas les droits d’importation, taxes, frais de douane ou autres frais du pays de destination. Ces frais sont à la charge de l’acheteur.",
+      about_p4: "Nous sommes basés au Japon et communiquons directement avec les fournisseurs japonais pour le compte des acheteurs étrangers.",
+      about_p5: "Nous suivons un processus axé sur le devis. Les acheteurs examinent et approuvent tous les devis avant tout achat.",
+      payment_cta_note: "Demandez le formulaire pour commencer l’approvisionnement depuis le Japon.",
       section_cta_note: "Dites-nous ce que vous souhaitez sourcer depuis le Japon.",
       notice_cta_note: "Veuillez confirmer les règles d’importation de votre pays avant d’envoyer une demande.",
       cta_button: "Formulaire de demande",
@@ -1260,9 +1522,14 @@
       nav_supported: "Couverture",
       nav_process: "Processus",
       nav_notice: "Avis",
+      nav_payment_process: "Processus de paiement",
+      nav_payment_policy: "Politique de paiement",
       nav_faq: "FAQ",
       nav_about: "À propos",
       nav_contact: "Contact",
+      services_h2_plain: "Offrons",
+      payment_process_h2: "Processus de paiement",
+      payment_policy_h2: "Politique de paiement",
       svc1_title: "Approvisionnement en nouveaux produits japonais",
       svc1_desc: "Nous sourceons des produits neufs directement auprès de détaillants, fabricants et grossistes japonais.",
       svc2_title: "Approvisionnement en véhicules d'occasion",
@@ -1346,6 +1613,39 @@
       hero_subtitle: "In Japan ansässig",
       hero_desc: "Beschaffungs- und Exportservice für internationale Käufer",
       hero_notice: "Wir unterstützen derzeit nur <strong>neue japanische Produkte</strong> und <strong>Gebrauchtfahrzeuge</strong>.",
+      hero_title: "Beschaffung und Export aus Japan für internationale Käufer",
+      hero_card1: "Beschaffungsunterstützung aus Japan",
+      hero_card2: "Direkte Lieferantenkommunikation",
+      hero_card3: "Weltweite Käuferunterstützung",
+      payment_process_desc: "Zum Schutz von Käufern und unserem Geschäft werden alle Einkäufe nur nach Zahlungsbestätigung abgewickelt.",
+      payment_step1: "Anfrage senden",
+      payment_step2: "Angebot erhalten",
+      payment_step3: "Käufergenehmigung",
+      payment_step4: "Rechnung ausgestellt",
+      payment_step5: "Zahlungsbestätigung",
+      payment_step6: "Kauf und Export",
+      payment_step7: "Versand und Tracking",
+      payment_step8: "Zahlungsrichtlinie",
+      payment_policy1: "Angebote werden vor jeder Zahlungsanforderung bereitgestellt.",
+      payment_policy2: "Es wird kein Kauf ohne Genehmigung des Käufers getätigt.",
+      payment_policy3: "Vor dem Kauf von Produkten oder Fahrzeugen ist die vollständige Zahlungsbestätigung erforderlich.",
+      payment_policy4: "Sakura Mint Trading kauft keine Produkte oder Fahrzeuge, bevor die Zahlung eingegangen ist.",
+      payment_policy5: "Internationale Versandkosten beinhalten keine Einfuhrzölle, Steuern, Zollgebühren oder Gebühren, die vom Bestimmungsland erhoben werden.",
+      payment_policy6: "Einfuhrzölle, Steuern, Zollgebühren, Registrierungsgebühren, Inspektionsgebühren und andere Gebühren des Bestimmungslandes liegen in der Verantwortung des Käufers.",
+      notice5: "Alle Einkäufe werden nur nach Zahlungsbestätigung getätigt.",
+      notice6: "Sakura Mint Trading kauft keine Produkte oder Fahrzeuge, bevor die Zahlung eingegangen ist.",
+      notice7: "Internationale Versandkosten beinhalten keine Einfuhrzölle, Steuern, Zollgebühren oder andere vom Bestimmungsland erhobene Gebühren.",
+      faq7_q: "Welche Zahlungsmethoden akzeptieren Sie?",
+      faq7_a: "Zahlungsanweisungen werden nach Angebotsfreigabe bereitgestellt. Die verfügbaren Methoden können je nach Land und Transaktionsanforderungen variieren.",
+      faq8_q: "Muss ich bezahlen, bevor Sie den Artikel kaufen?",
+      faq8_a: "Ja. Vor dem Kauf von Produkten oder Fahrzeugen im Namen des Käufers ist die Zahlungsbestätigung erforderlich.",
+      faq9_q: "Kann ich nach Erhalt des Produkts bezahlen?",
+      faq9_a: "Nein. Alle Bestellungen erfordern eine Zahlungsbestätigung, bevor der Kauf und die Exportabwicklung beginnen.",
+      faq10_q: "Sind Einfuhrzölle, Steuern oder Zollgebühren im Versandpreis enthalten?",
+      faq10_a: "Nein. Internationale Versandkosten beinhalten keine Einfuhrzölle, Steuern, Zollgebühren oder andere Gebühren des Bestimmungslandes. Diese Gebühren trägt der Käufer.",
+      about_p4: "Wir haben unseren Sitz in Japan und kommunizieren direkt mit japanischen Lieferanten im Namen ausländischer Käufer.",
+      about_p5: "Wir folgen einem anfragebasierten Angebotsprozess. Käufer prüfen und genehmigen alle Angebote, bevor ein Kauf getätigt wird.",
+      payment_cta_note: "Fordern Sie das Formular an, um die Beschaffung aus Japan zu starten.",
       section_cta_note: "Teilen Sie uns mit, was Sie aus Japan beschaffen möchten.",
       notice_cta_note: "Bitte prüfen Sie die Importregeln Ihres Landes, bevor Sie eine Anfrage senden.",
       cta_button: "Anforderungsformular",
@@ -1353,9 +1653,14 @@
       nav_supported: "Abdeckung",
       nav_process: "Ablauf",
       nav_notice: "Hinweis",
+      nav_payment_process: "Zahlungsprozess",
+      nav_payment_policy: "Zahlungsrichtlinie",
       nav_faq: "FAQ",
       nav_about: "Über uns",
       nav_contact: "Kontakt",
+      services_h2_plain: "Bieten",
+      payment_process_h2: "Zahlungsprozess",
+      payment_policy_h2: "Zahlungsrichtlinie",
       svc1_title: "Beschaffung neuer japanischer Produkte",
       svc1_desc: "Wir beschaffen neue Produkte direkt von japanischen Händlern, Herstellern und Großhändlern.",
       svc2_title: "Gebrauchtfahrzeug-Beschaffung",
@@ -1439,6 +1744,43 @@
       hero_subtitle: "مقرها في اليابان",
       hero_desc: "دعم التوريد والتصدير للمشترين الدوليين",
       hero_notice: "ندعم حالياً فقط <strong>المنتجات اليابانية الجديدة</strong> و<strong>السيارات المستعملة</strong>.",
+      hero_title: "التوريد والتصدير من اليابان للمشترين الدوليين",
+      hero_card1: "دعم التوريد من اليابان",
+      hero_card2: "التواصل المباشر مع الموردين",
+      hero_card3: "دعم المشترين حول العالم",
+      payment_process_desc: "لحماية كل من المشترين وأعمالنا، تتم جميع عمليات الشراء فقط بعد تأكيد الدفع.",
+      payment_step1: "إرسال الطلب",
+      payment_step2: "استلام عرض السعر",
+      payment_step3: "موافقة المشتري",
+      payment_step4: "إصدار الفاتورة",
+      payment_step5: "تأكيد الدفع",
+      payment_step6: "الشراء والتصدير",
+      payment_step7: "الشحن والتتبع",
+      payment_step8: "سياسة الدفع",
+      payment_policy1: "يتم تقديم عروض الأسعار قبل أي طلب للدفع.",
+      payment_policy2: "لا يتم إجراء أي عملية شراء دون موافقة المشتري.",
+      nav_payment_process: "عملية الدفع",
+      nav_payment_policy: "سياسة الدفع",
+      payment_process_h2: "عملية الدفع",
+      payment_policy_h2: "سياسة الدفع",
+      payment_policy3: "يجب تأكيد الدفع الكامل قبل شراء المنتجات أو المركبات.",
+      payment_policy4: "ساكورا مينت ترايدنج لا تشتري المنتجات أو المركبات قبل استلام الدفع.",
+      payment_policy5: "تكاليف الشحن الدولي لا تشمل الرسوم الجمركية أو الضرائب أو رسوم الجمارك أو الرسوم التي يفرضها بلد الوجهة.",
+      payment_policy6: "الرسوم الجمركية، الضرائب، رسوم الجمارك، رسوم التسجيل، رسوم الفحص، وأي رسوم أخرى في بلد الوجهة هي مسؤولية المشتري.",
+      notice5: "يتم إجراء جميع المشتريات فقط بعد تأكيد الدفع.",
+      notice6: "ساكورا مينت ترايدنج لا تشتري المنتجات أو المركبات قبل استلام الدفع.",
+      notice7: "تكاليف الشحن الدولي لا تشمل الرسوم الجمركية أو الضرائب أو رسوم الجمارك أو أي رسوم أخرى يفرضها بلد الوجهة.",
+      faq7_q: "ما طرق الدفع التي تقبلونها؟",
+      faq7_a: "سيتم تقديم تعليمات الدفع بعد الموافقة على عرض السعر. قد تختلف طرق الدفع المتاحة حسب البلد ومتطلبات المعاملة.",
+      faq8_q: "هل أحتاج إلى الدفع قبل أن تشتروا العنصر؟",
+      faq8_a: "نعم. يتم طلب تأكيد الدفع قبل أن نشتري المنتجات أو المركبات نيابة عن المشتري.",
+      faq9_q: "هل يمكنني الدفع بعد استلام المنتج؟",
+      faq9_a: "لا. تتطلب جميع الطلبات تأكيد الدفع قبل بدء عملية الشراء والترتيبات التصديرية.",
+      faq10_q: "هل تشمل تكاليف الشحن الرسوم الجمركية أو الضرائب أو رسوم الجمارك؟",
+      faq10_a: "لا. تكاليف الشحن الدولي لا تشمل الرسوم الجمركية أو الضرائب أو رسوم الجمارك أو أي رسوم أخرى لبلد الوجهة. هذه الرسوم هي مسؤولية المشتري.",
+      about_p4: "نحن نقع في اليابان ونتواصل مباشرة مع الموردين اليابانيين نيابة عن المشترين الخارجيين.",
+      about_p5: "نتبع عملية تركز على العرض. يراجع المشترون جميع العروض ويوافقون عليها قبل أي عملية شراء.",
+      payment_cta_note: "اطلب النموذج لبدء التوريد من اليابان.",
       section_cta_note: "أخبرنا بما تريد توريده من اليابان.",
       notice_cta_note: "يرجى تأكيد قواعد الاستيراد في بلدك قبل إرسال الطلب.",
       cta_button: "نموذج الطلب",
