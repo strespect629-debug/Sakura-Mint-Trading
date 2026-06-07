@@ -155,8 +155,10 @@
     position: relative;
   }
 
-  h1.hero-title span {
+  h1.hero-title span,
+  h1.hero-title em {
     color: var(--gold);
+    font-style: normal;
   }
 
   .hero-subtitle {
@@ -171,9 +173,26 @@
   .hero-desc {
     font-size: 1.1rem;
     color: var(--text-light);
-    max-width: 520px;
-    margin: 0 auto 3rem;
+    max-width: 620px;
+    margin: 0 auto 1.25rem;
     position: relative;
+  }
+
+  .hero-notice {
+    position: relative;
+    max-width: 700px;
+    margin: 0 auto 3rem;
+    padding: 1rem 1.25rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: rgba(255,255,255,0.035);
+    color: var(--text-light);
+    font-size: 0.92rem;
+  }
+
+  .hero-notice strong {
+    color: var(--gold-pale);
+    font-weight: normal;
   }
 
   .btn-primary {
@@ -220,6 +239,19 @@
     background: linear-gradient(to right, transparent, var(--border-strong), transparent);
     max-width: 1100px;
     margin: 0 auto;
+  }
+
+  .section-cta {
+    max-width: 1100px;
+    margin: -2rem auto 5rem;
+    padding: 0 2rem;
+    text-align: center;
+  }
+
+  .section-cta-note {
+    margin-top: 0.9rem;
+    color: var(--text-muted);
+    font-size: 0.86rem;
   }
 
   .section-label {
@@ -595,6 +627,7 @@
     .header-controls select { font-size: 0.7rem; padding: 0.3rem 0.4rem; padding-right: 1.4rem; }
 
     section { padding: 4rem 1.25rem; }
+    .section-cta { padding: 0 1.25rem; margin: -1rem auto 4rem; }
     .two-col { grid-template-columns: 1fr; }
     .about-grid { grid-template-columns: 1fr; gap: 2.5rem; }
     .grid-3 { grid-template-columns: 1fr; }
@@ -617,7 +650,8 @@
   .hero-title { animation-delay: 0.3s; }
   .hero-subtitle { animation-delay: 0.4s; }
   .hero-desc { animation-delay: 0.5s; }
-  .btn-primary { animation-delay: 0.6s; }
+  .hero-notice { animation-delay: 0.6s; }
+  .btn-primary { animation-delay: 0.7s; }
 </style>
 </head>
 <body>
@@ -679,7 +713,10 @@
   <p class="hero-tag" data-i18n="hero_tag">Japan Sourcing & Export</p>
   <h1 class="hero-title">Sakura Mint <em>Trading</em></h1>
   <p class="hero-subtitle" data-i18n="hero_subtitle">Established in Japan</p>
-  <p class="hero-desc" data-i18n="hero_desc">Japanese Products and Used Vehicle Sourcing from Japan</p>
+  <p class="hero-desc" data-i18n="hero_desc">Japan Sourcing &amp; Export Support for Overseas Buyers</p>
+  <div class="hero-notice">
+    <p data-i18n-html="hero_notice">We currently support <strong>new Japanese products</strong> and <strong>used vehicles</strong> only.</p>
+  </div>
   <a href="https://docs.google.com/forms/d/e/1FAIpQLSctA2PWcNKrdu-iDVQWSe3nX9YeWiDeEe7qZ1-dBR3pC6qe3Q/viewform?usp=dialog" target="_blank" rel="noopener" class="btn-primary" id="heroCtaBtn" data-i18n="cta_button">Request Form</a>
 </div>
 
@@ -722,6 +759,11 @@
     </div>
   </div>
 </section>
+
+<div class="section-cta">
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSctA2PWcNKrdu-iDVQWSe3nX9YeWiDeEe7qZ1-dBR3pC6qe3Q/viewform?usp=dialog" target="_blank" rel="noopener" class="btn-primary" data-i18n="cta_button">Request Form</a>
+  <p class="section-cta-note" data-i18n="section_cta_note">Tell us what you want to source from Japan.</p>
+</div>
 
 <div class="section-divider"></div>
 
@@ -832,6 +874,11 @@
   </div>
 </section>
 
+<div class="section-cta">
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSctA2PWcNKrdu-iDVQWSe3nX9YeWiDeEe7qZ1-dBR3pC6qe3Q/viewform?usp=dialog" target="_blank" rel="noopener" class="btn-primary" data-i18n="cta_button">Request Form</a>
+  <p class="section-cta-note" data-i18n="notice_cta_note">Please confirm import rules in your country before submitting a request.</p>
+</div>
+
 <div class="section-divider"></div>
 
 <!-- FAQ -->
@@ -859,6 +906,10 @@
       <p class="faq-q" data-i18n="faq5_q">Can all products be exported?</p>
       <p class="faq-a" data-i18n="faq5_a">Not necessarily. Availability depends on export regulations, import rules in your country, supplier conditions, and shipping limitations. We will advise on feasibility during the review stage.</p>
     </div>
+    <div class="faq-item">
+      <p class="faq-q" data-i18n="faq6_q">Do you require payment before providing a quotation?</p>
+      <p class="faq-a" data-i18n="faq6_a">No. Quotations are provided before any payment request.</p>
+    </div>
   </div>
 </section>
 
@@ -870,8 +921,9 @@
   <h2 data-i18n="about_h2">About <em>Us</em></h2>
   <div class="about-grid">
     <div class="about-text">
-      <p data-i18n="about_p1">Sakura Mint Trading is a Japan-based sourcing and export support service dedicated to helping overseas buyers access Japanese products and used vehicles.</p>
-      <p data-i18n="about_p2">We handle the entire process — from sourcing and supplier communication to export documentation and shipping coordination — so you can focus on your business.</p>
+      <p data-i18n="about_p1">Sakura Mint Trading is a Japan-based sourcing and export support service helping overseas buyers access Japanese products and used vehicles.</p>
+      <p data-i18n="about_p2">We communicate directly with Japanese suppliers, retailers, manufacturers, and exporters on behalf of our clients.</p>
+      <p data-i18n="about_p3">Our goal is to simplify the purchasing and export process for international buyers who wish to source products from Japan.</p>
     </div>
     <div class="about-meta">
       <div class="meta-row">
@@ -899,6 +951,7 @@
     <h2 data-i18n="contact_h2">Get in <em>Touch</em></h2>
     <p data-i18n="contact_desc">For sourcing inquiries, please use the request form. We will respond as promptly as possible.</p>
     <a href="https://docs.google.com/forms/d/e/1FAIpQLSctA2PWcNKrdu-iDVQWSe3nX9YeWiDeEe7qZ1-dBR3pC6qe3Q/viewform?usp=dialog" target="_blank" rel="noopener" class="btn-primary" id="contactCtaBtn" data-i18n="cta_button">Request Form</a>
+    <p class="section-cta-note" data-i18n="response_time">Response Time: Usually within 24-72 hours</p>
     <a href="mailto:strespect629@gmail.com" class="contact-email"><span data-i18n="contact_email_label">Email</span>: strespect629@gmail.com</a>
   </div>
 </section>
@@ -917,7 +970,10 @@
       site_name: "Sakura Mint Trading",
       hero_tag: "Japan Sourcing & Export",
       hero_subtitle: "Established in Japan",
-      hero_desc: "Japanese Products and Used Vehicle Sourcing from Japan",
+      hero_desc: "Japan Sourcing & Export Support for Overseas Buyers",
+      hero_notice: "We currently support <strong>new Japanese products</strong> and <strong>used vehicles</strong> only.",
+      section_cta_note: "Tell us what you want to source from Japan.",
+      notice_cta_note: "Please confirm import rules in your country before submitting a request.",
       cta_button: "Request Form",
       nav_services: "Services",
       nav_supported: "Coverage",
@@ -983,14 +1039,18 @@
       faq4_a: "Payment is requested only after you have reviewed and approved the quotation. No payment is required at the inquiry stage.",
       faq5_q: "Can all products be exported?",
       faq5_a: "Not necessarily. Availability depends on export regulations, import rules in your country, supplier conditions, and shipping limitations. We will advise on feasibility during the review stage.",
-      about_p1: "Sakura Mint Trading is a Japan-based sourcing and export support service dedicated to helping overseas buyers access Japanese products and used vehicles.",
-      about_p2: "We handle the entire process — from sourcing and supplier communication to export documentation and shipping coordination — so you can focus on your business.",
+      faq6_q: "Do you require payment before providing a quotation?",
+      faq6_a: "No. Quotations are provided before any payment request.",
+      about_p1: "Sakura Mint Trading is a Japan-based sourcing and export support service helping overseas buyers access Japanese products and used vehicles.",
+      about_p2: "We communicate directly with Japanese suppliers, retailers, manufacturers, and exporters on behalf of our clients.",
+      about_p3: "Our goal is to simplify the purchasing and export process for international buyers who wish to source products from Japan.",
       about_label_operator: "Operator",
       about_label_location: "Location",
       about_label_service: "Service Area",
       about_location_val: "Japan",
       about_service_val: "Worldwide",
       contact_desc: "For sourcing inquiries, please use the request form. We will respond as promptly as possible.",
+      response_time: "Response Time: Usually within 24-72 hours",
       contact_email_label: "Email",
       footer_copy: "© 2026 Sakura Mint Trading. All rights reserved.",
       supported_h2_plain: "Supported Requests",
@@ -1004,7 +1064,10 @@
       site_name: "サクラミント・トレーディング",
       hero_tag: "日本からの調達・輸出サポート",
       hero_subtitle: "日本拠点",
-      hero_desc: "日本の新品商品・中古車の調達と輸出をサポートします",
+      hero_desc: "海外バイヤー向けの日本調達・輸出サポート",
+      hero_notice: "現在の対応範囲は<strong>日本の新品商品</strong>と<strong>中古車</strong>のみです。",
+      section_cta_note: "日本から調達したい商品・車両をお知らせください。",
+      notice_cta_note: "リクエスト前に、輸入国側の規制をご確認ください。",
       cta_button: "お問い合わせフォーム",
       nav_services: "サービス",
       nav_supported: "対応範囲",
@@ -1070,14 +1133,18 @@
       faq4_a: "見積もりをご確認・ご承認いただいた後のみ、お支払いをお願いいたします。お問い合わせ段階での支払いは不要です。",
       faq5_q: "すべての商品を輸出できますか？",
       faq5_a: "必ずしも可能とは限りません。輸出規制・輸入国のルール・サプライヤーの条件・輸送制限によって異なります。確認結果は審査段階でお知らせします。",
-      about_p1: "サクラミント・トレーディングは、日本拠点の調達・輸出サポートサービスです。海外バイヤーの方々が日本の新品商品や中古車を入手できるよう、全力でサポートします。",
-      about_p2: "調達・サプライヤー交渉から輸出書類・配送手配まで、すべてのプロセスを代行します。",
+      faq6_q: "見積もり前に支払いが必要ですか？",
+      faq6_a: "いいえ。お支払いは見積もりをご確認・ご承認いただいた後のみです。",
+      about_p1: "サクラミント・トレーディングは、日本拠点の調達・輸出サポートサービスです。海外バイヤーの方々が日本の新品商品や中古車を入手できるようサポートします。",
+      about_p2: "お客様に代わって、日本国内のサプライヤー、小売店、メーカー、輸出関係者と直接やり取りします。",
+      about_p3: "日本から商品を調達したい海外バイヤーの購入・輸出プロセスを、できるだけ分かりやすく簡単にすることを目的としています。",
       about_label_operator: "運営者",
       about_label_location: "所在地",
       about_label_service: "サービス地域",
       about_location_val: "日本",
       about_service_val: "全世界対応",
       contact_desc: "調達に関するお問い合わせは、リクエストフォームよりお送りください。できる限り迅速にご返答いたします。",
+      response_time: "返信目安：通常24〜72時間以内",
       contact_email_label: "メール",
       footer_copy: "© 2026 Sakura Mint Trading. All rights reserved.",
       supported_h2_plain: "対応リクエスト",
@@ -1091,7 +1158,10 @@
       site_name: "Sakura Mint Trading",
       hero_tag: "Abastecimiento y exportación desde Japón",
       hero_subtitle: "Con sede en Japón",
-      hero_desc: "Abastecimiento de productos japoneses y vehículos usados desde Japón",
+      hero_desc: "Abastecimiento y exportación para compradores internacionales",
+      hero_notice: "Actualmente apoyamos solo <strong>productos japoneses nuevos</strong> y <strong>vehículos usados</strong>.",
+      section_cta_note: "Cuéntenos qué desea obtener de Japón.",
+      notice_cta_note: "Confirme las reglas de importación en su país antes de enviar una solicitud.",
       cta_button: "Formulario de solicitud",
       nav_services: "Servicios",
       nav_supported: "Cobertura",
@@ -1156,14 +1226,18 @@
       faq4_a: "El pago se solicita solo después de aprobar la cotización.",
       faq5_q: "¿Todos los productos pueden exportarse?",
       faq5_a: "No necesariamente. Depende de regulaciones de exportación, reglas de importación y limitaciones de envío.",
+      faq6_q: "¿Requieren pago antes de proporcionar una cotización?",
+      faq6_a: "No. Las cotizaciones se proporcionan antes de solicitar cualquier pago.",
       about_p1: "Sakura Mint Trading es un servicio de abastecimiento y exportación con sede en Japón.",
       about_p2: "Gestionamos todo el proceso para que usted pueda centrarse en su negocio.",
+      about_p3: "Nuestro objetivo es simplificar la compra y exportación para compradores internacionales que desean obtener productos de Japón.",
       about_label_operator: "Operador",
       about_label_location: "Ubicación",
       about_label_service: "Área de servicio",
       about_location_val: "Japón",
       about_service_val: "Mundial",
       contact_desc: "Para consultas, use el formulario de solicitud.",
+      response_time: "Tiempo de respuesta: normalmente dentro de 24-72 horas",
       contact_email_label: "Correo",
       footer_copy: "© 2026 Sakura Mint Trading. Todos los derechos reservados.",
       supported_h2_plain: "Solicitudes aceptadas",
@@ -1177,7 +1251,10 @@
       site_name: "Sakura Mint Trading",
       hero_tag: "Approvisionnement & exportation depuis le Japon",
       hero_subtitle: "Basé au Japon",
-      hero_desc: "Approvisionnement en produits japonais et véhicules d'occasion depuis le Japon",
+      hero_desc: "Support d’approvisionnement et d’exportation pour acheteurs internationaux",
+      hero_notice: "Nous prenons actuellement en charge uniquement les <strong>nouveaux produits japonais</strong> et les <strong>véhicules d’occasion</strong>.",
+      section_cta_note: "Dites-nous ce que vous souhaitez sourcer depuis le Japon.",
+      notice_cta_note: "Veuillez confirmer les règles d’importation de votre pays avant d’envoyer une demande.",
       cta_button: "Formulaire de demande",
       nav_services: "Services",
       nav_supported: "Couverture",
@@ -1242,14 +1319,18 @@
       faq4_a: "Le paiement n'est demandé qu'après approbation du devis.",
       faq5_q: "Tous les produits peuvent-ils être exportés ?",
       faq5_a: "Pas nécessairement. Cela dépend des réglementations d'exportation et d'importation.",
+      faq6_q: "Demandez-vous un paiement avant le devis ?",
+      faq6_a: "Non. Les devis sont fournis avant toute demande de paiement.",
       about_p1: "Sakura Mint Trading est un service d'approvisionnement et d'exportation basé au Japon.",
       about_p2: "Nous gérons l'ensemble du processus pour que vous puissiez vous concentrer sur votre activité.",
+      about_p3: "Notre objectif est de simplifier le processus d’achat et d’exportation pour les acheteurs internationaux qui souhaitent sourcer des produits du Japon.",
       about_label_operator: "Opérateur",
       about_label_location: "Localisation",
       about_label_service: "Zone de service",
       about_location_val: "Japon",
       about_service_val: "Mondial",
       contact_desc: "Pour toute demande, veuillez utiliser le formulaire de demande.",
+      response_time: "Délai de réponse : généralement sous 24 à 72 heures",
       contact_email_label: "Email",
       footer_copy: "© 2026 Sakura Mint Trading. Tous droits réservés.",
       supported_h2_plain: "Demandes acceptées",
@@ -1263,7 +1344,10 @@
       site_name: "Sakura Mint Trading",
       hero_tag: "Beschaffung & Export aus Japan",
       hero_subtitle: "In Japan ansässig",
-      hero_desc: "Beschaffung japanischer Produkte und Gebrauchtfahrzeuge aus Japan",
+      hero_desc: "Beschaffungs- und Exportservice für internationale Käufer",
+      hero_notice: "Wir unterstützen derzeit nur <strong>neue japanische Produkte</strong> und <strong>Gebrauchtfahrzeuge</strong>.",
+      section_cta_note: "Teilen Sie uns mit, was Sie aus Japan beschaffen möchten.",
+      notice_cta_note: "Bitte prüfen Sie die Importregeln Ihres Landes, bevor Sie eine Anfrage senden.",
       cta_button: "Anforderungsformular",
       nav_services: "Leistungen",
       nav_supported: "Abdeckung",
@@ -1328,14 +1412,18 @@
       faq4_a: "Die Zahlung wird erst nach Genehmigung des Angebots angefordert.",
       faq5_q: "Können alle Produkte exportiert werden?",
       faq5_a: "Nicht unbedingt. Dies hängt von Export- und Importvorschriften ab.",
+      faq6_q: "Verlangen Sie eine Zahlung vor dem Angebot?",
+      faq6_a: "Nein. Angebote werden vor jeder Zahlungsanforderung bereitgestellt.",
       about_p1: "Sakura Mint Trading ist ein in Japan ansässiger Beschaffungs- und Exportservice.",
       about_p2: "Wir übernehmen den gesamten Prozess, damit Sie sich auf Ihr Geschäft konzentrieren können.",
+      about_p3: "Unser Ziel ist es, den Kauf- und Exportprozess für internationale Käufer zu vereinfachen, die Produkte aus Japan beschaffen möchten.",
       about_label_operator: "Betreiber",
       about_label_location: "Standort",
       about_label_service: "Servicegebiet",
       about_location_val: "Japan",
       about_service_val: "Weltweit",
       contact_desc: "Für Anfragen nutzen Sie bitte das Anfrageformular.",
+      response_time: "Antwortzeit: normalerweise innerhalb von 24-72 Stunden",
       contact_email_label: "E-Mail",
       footer_copy: "© 2026 Sakura Mint Trading. Alle Rechte vorbehalten.",
       supported_h2_plain: "Unterstützte Anfragen",
@@ -1349,7 +1437,10 @@
       site_name: "ساكورا مينت ترايدنج",
       hero_tag: "التوريد والتصدير من اليابان",
       hero_subtitle: "مقرها في اليابان",
-      hero_desc: "توريد المنتجات اليابانية والسيارات المستعملة من اليابان",
+      hero_desc: "دعم التوريد والتصدير للمشترين الدوليين",
+      hero_notice: "ندعم حالياً فقط <strong>المنتجات اليابانية الجديدة</strong> و<strong>السيارات المستعملة</strong>.",
+      section_cta_note: "أخبرنا بما تريد توريده من اليابان.",
+      notice_cta_note: "يرجى تأكيد قواعد الاستيراد في بلدك قبل إرسال الطلب.",
       cta_button: "نموذج الطلب",
       nav_services: "الخدمات",
       nav_supported: "التغطية",
@@ -1414,14 +1505,18 @@
       faq4_a: "يُطلب الدفع فقط بعد مراجعة وموافقة عرض الأسعار.",
       faq5_q: "هل يمكن تصدير جميع المنتجات؟",
       faq5_a: "ليس بالضرورة. يعتمد ذلك على لوائح التصدير والاستيراد وقيود الشحن.",
+      faq6_q: "هل تطلبون الدفع قبل تقديم عرض السعر؟",
+      faq6_a: "لا. يتم تقديم عروض الأسعار قبل أي طلب للدفع.",
       about_p1: "ساكورا مينت ترايدنج خدمة توريد وتصدير مقرها اليابان.",
       about_p2: "نتولى العملية بأكملها حتى تتمكن من التركيز على عملك.",
+      about_p3: "هدفنا هو تبسيط عملية الشراء والتصدير للمشترين الدوليين الذين يرغبون في توريد المنتجات من اليابان.",
       about_label_operator: "المشغل",
       about_label_location: "الموقع",
       about_label_service: "منطقة الخدمة",
       about_location_val: "اليابان",
       about_service_val: "عالمي",
       contact_desc: "للاستفسارات، يرجى استخدام نموذج الطلب.",
+      response_time: "وقت الرد: عادة خلال 24-72 ساعة",
       contact_email_label: "البريد الإلكتروني",
       footer_copy: "© 2026 Sakura Mint Trading. جميع الحقوق محفوظة.",
       supported_h2_plain: "الطلبات المدعومة",
@@ -1485,6 +1580,13 @@
     document.documentElement.dir = dir;
 
     var specialH2 = ['services_h2','supported_h2','process_h2','notice_h2','faq_h2','about_h2','contact_h2'];
+
+    document.querySelectorAll('[data-i18n-html]').forEach(function(el) {
+      var key = el.getAttribute('data-i18n-html');
+      if (t[key] !== undefined) {
+        el.innerHTML = t[key];
+      }
+    });
 
     document.querySelectorAll('[data-i18n]').forEach(function(el) {
       var key = el.getAttribute('data-i18n');
