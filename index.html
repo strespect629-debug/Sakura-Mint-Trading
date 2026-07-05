@@ -3,1111 +3,151 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sakura Mint Trading | Japan Sourcing & Export</title>
-<meta name="description" content="Japan sourcing and export support for overseas buyers. We help source new Japanese products and used vehicles from Japan.">
+<title>Terms & Conditions | Sakura Mint Trading</title>
+<meta name="description" content="Terms and conditions for Sakura Mint Trading.">
 <style>
   :root {
     --navy: #0a1628;
-    --navy-mid: #0f2040;
-    --navy-light: #162d55;
     --gold: #c9a84c;
-    --gold-light: #e8c96a;
-    --gold-pale: #f5e6b8;
     --cream: #faf6ee;
     --white: #ffffff;
-    --text-light: #b8c8e0;
     --text-muted: #7a92b4;
     --border: rgba(201,168,76,0.2);
-    --border-strong: rgba(201,168,76,0.45);
-    --shadow: 0 4px 32px rgba(0,0,0,0.35);
     --radius: 4px;
   }
 
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-  html { scroll-behavior: smooth; }
-
   body {
     font-family: 'Georgia', 'Times New Roman', serif;
     background: var(--navy);
     color: var(--cream);
     line-height: 1.7;
-    font-size: 16px;
-  }
-
-  /* ── HEADER ── */
-  header {
-    position: fixed;
-    top: 0; left: 0; right: 0;
-    z-index: 100;
-    background: rgba(10,22,40,0.96);
-    backdrop-filter: blur(12px);
-    border-bottom: 1px solid var(--border);
-    padding: 0 2rem;
-    height: 64px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  .header-logo {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    text-decoration: none;
-  }
-
-  .header-logo .mark {
-    width: 32px;
-    height: 32px;
-  }
-
-  .header-logo .wordmark {
-    font-size: 0.95rem;
-    font-weight: normal;
-    letter-spacing: 0.12em;
-    color: var(--gold);
-    text-transform: uppercase;
-  }
-
-  .menu-toggle {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 44px;
-    height: 44px;
-    border: 1px solid rgba(201,168,76,0.35);
-    border-radius: 8px;
-    background: rgba(255,255,255,0.05);
-    color: var(--gold);
-    cursor: pointer;
-    transition: background 0.3s, border-color 0.3s;
-  }
-
-  .menu-toggle:hover {
-    background: rgba(201,168,76,0.12);
-    border-color: var(--gold);
-  }
-
-  .menu-toggle span {
-    display: block;
-    width: 18px;
-    height: 2px;
-    background: currentColor;
-    box-shadow: 0 6px 0 currentColor, 0 -6px 0 currentColor;
-  }
-
-  .nav-menu {
-    position: fixed;
-    inset: 0;
-    display: none;
-    align-items: flex-start;
-    justify-content: flex-end;
-    background: rgba(10,22,40,0.85);
-    backdrop-filter: blur(8px);
-    z-index: 200;
-    padding: 4rem 1rem 1rem;
-  }
-
-  .nav-menu.open {
-    display: flex;
-  }
-
-  .nav-menu-content {
-    width: min(320px, calc(100% - 2rem));
-    background: rgba(10,22,40,0.98);
-    border: 1px solid rgba(201,168,76,0.2);
-    border-radius: 16px;
-    padding: 1.5rem 1.25rem;
-    box-shadow: 0 24px 80px rgba(0,0,0,0.35);
-  }
-
-  .nav-menu-list {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    margin: 0;
-    padding: 0;
-  }
-
-  .nav-menu-list a {
-    display: block;
-    color: var(--cream);
-    text-decoration: none;
-    font-size: 0.95rem;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    padding: 0.85rem 1rem;
-    border-radius: 10px;
-    transition: background 0.25s, color 0.25s;
-  }
-
-  .nav-menu-list a:hover {
-    background: rgba(201,168,76,0.12);
-    color: var(--gold);
-  }
-
-  .header-controls {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-  }
-
-  .header-controls select {
-    background: rgba(255,255,255,0.06);
-    border: 1px solid var(--border-strong);
-    color: var(--gold-pale);
-    font-family: inherit;
-    font-size: 0.78rem;
-    letter-spacing: 0.05em;
-    padding: 0.35rem 0.6rem;
-    border-radius: var(--radius);
-    cursor: pointer;
-    outline: none;
-    appearance: none;
-    -webkit-appearance: none;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%23c9a84c'/%3E%3C/svg%3E");
-    background-repeat: no-repeat;
-    background-position: right 0.5rem center;
-    padding-right: 1.6rem;
-  }
-
-  .header-controls select:hover {
-    border-color: var(--gold);
-  }
-
-  /* ── HERO ── */
-  .hero {
     min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 8rem 2rem 6rem;
-    position: relative;
-    overflow: hidden;
   }
 
-  .hero-bg {
-    position: absolute;
-    inset: 0;
-    background:
-      radial-gradient(ellipse 70% 60% at 50% 40%, rgba(201,168,76,0.07) 0%, transparent 70%),
-      radial-gradient(ellipse 40% 40% at 20% 80%, rgba(201,168,76,0.04) 0%, transparent 60%);
-  }
-
-  .hero-seigaiha {
-    position: absolute;
-    inset: 0;
-    opacity: 0.025;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60'%3E%3Ccircle cx='30' cy='60' r='30' fill='none' stroke='%23c9a84c' stroke-width='1.5'/%3E%3Ccircle cx='0' cy='60' r='30' fill='none' stroke='%23c9a84c' stroke-width='1.5'/%3E%3Ccircle cx='60' cy='60' r='30' fill='none' stroke='%23c9a84c' stroke-width='1.5'/%3E%3Ccircle cx='15' cy='30' r='30' fill='none' stroke='%23c9a84c' stroke-width='1.5'/%3E%3Ccircle cx='45' cy='30' r='30' fill='none' stroke='%23c9a84c' stroke-width='1.5'/%3E%3Ccircle cx='30' cy='0' r='30' fill='none' stroke='%23c9a84c' stroke-width='1.5'/%3E%3C/svg%3E");
-    background-size: 60px 60px;
-  }
-
-  .hero-line {
-    width: 1px;
-    height: 80px;
-    background: linear-gradient(to bottom, transparent, var(--gold), transparent);
-    margin: 0 auto 2.5rem;
-    position: relative;
-  }
-
-  .hero-tag {
-    font-size: 0.72rem;
-    letter-spacing: 0.35em;
-    text-transform: uppercase;
-    color: var(--gold);
-    margin-bottom: 1.5rem;
-    position: relative;
-  }
-
-  h1.hero-title {
-    font-size: clamp(2.4rem, 5vw, 4rem);
-    font-weight: normal;
-    letter-spacing: 0.06em;
-    color: var(--white);
-    line-height: 1.1;
-    margin-bottom: 0.5rem;
-    position: relative;
-  }
-
-  h1.hero-title span,
-  h1.hero-title em {
-    color: var(--gold);
-    font-style: normal;
-  }
-
-  .hero-subtitle {
-    font-size: 0.8rem;
-    letter-spacing: 0.3em;
-    text-transform: uppercase;
-    color: var(--text-muted);
-    margin-bottom: 2rem;
-    position: relative;
-  }
-
-  .hero-desc {
-    font-size: 1.1rem;
-    color: var(--text-light);
-    max-width: 620px;
-    margin: 0 auto 1.25rem;
-    position: relative;
-  }
-
-  .hero-notice {
-    position: relative;
-    max-width: 700px;
-    margin: 0 auto 2rem;
-    padding: 1rem 1.25rem;
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    background: rgba(255,255,255,0.035);
-    color: var(--text-light);
-    font-size: 0.92rem;
-  }
-
-  .hero-notice strong {
-    color: var(--gold-pale);
-    font-weight: normal;
-  }
-
-  .hero-cards {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    flex-wrap: wrap;
-    max-width: 900px;
-    margin: 0 auto 3rem;
-  }
-
-  .hero-card {
-    background: rgba(255,255,255,0.06);
-    border: 1px solid var(--border);
-    border-radius: 1rem;
-    padding: 1rem 1.25rem;
-    min-width: 220px;
-    text-align: center;
-  }
-
-  .hero-card h3 {
-    font-size: 0.95rem;
-    color: var(--white);
-    margin: 0;
-    line-height: 1.4;
-  }
-
-  .hero-title {
-    font-size: clamp(2.4rem, 5vw, 4rem);
-    font-weight: normal;
-    letter-spacing: 0.06em;
-    color: var(--white);
-    line-height: 1.15;
-    margin-bottom: 0.75rem;
-    position: relative;
-    word-break: break-word;
-  }
-
-  .process-list {
-    margin: 1.5rem 0 0 1.25rem;
-    padding-left: 1rem;
-    color: var(--text-light);
-    font-size: 0.95rem;
-    line-height: 1.75;
-  }
-
-  .process-list li {
-    margin-bottom: 0.75rem;
-  }
-
-  .btn-primary {
-    display: inline-block;
-    position: relative;
-    padding: 1rem 2.5rem;
-    background: transparent;
-    border: 1px solid var(--gold);
-    color: var(--gold);
-    font-family: inherit;
-    font-size: 0.8rem;
-    letter-spacing: 0.25em;
-    text-transform: uppercase;
-    text-decoration: none;
-    cursor: pointer;
-    transition: background 0.3s, color 0.3s, box-shadow 0.3s;
-    border-radius: var(--radius);
-  }
-
-  .btn-primary::before {
-    content: '';
-    position: absolute;
-    inset: -4px;
-    border: 1px solid rgba(201,168,76,0.2);
-    border-radius: calc(var(--radius) + 2px);
-    transition: opacity 0.3s;
-  }
-
-  .btn-primary:hover {
-    background: var(--gold);
-    color: var(--navy);
-    box-shadow: 0 0 30px rgba(201,168,76,0.3);
-  }
-
-  /* ── SECTIONS ── */
-  section {
-    padding: 6rem 2rem;
-    max-width: 1100px;
+  body > .page {
+    max-width: 800px;
     margin: 0 auto;
+    padding: 4rem 2rem;
   }
 
-  .section-divider {
-    height: 1px;
-    background: linear-gradient(to right, transparent, var(--border-strong), transparent);
-    max-width: 1100px;
-    margin: 0 auto;
-  }
-
-  .section-cta {
-    max-width: 1100px;
-    margin: -2rem auto 5rem;
-    padding: 0 2rem;
-    text-align: center;
-  }
-
-  .section-cta-note {
-    margin-top: 0.9rem;
-    color: var(--text-muted);
-    font-size: 0.86rem;
-  }
-
-  .section-label {
-    font-size: 0.68rem;
-    letter-spacing: 0.4em;
-    text-transform: uppercase;
-    color: var(--gold);
-    margin-bottom: 0.75rem;
-    display: block;
-  }
-
-  h2 {
-    font-size: clamp(1.6rem, 3vw, 2.2rem);
-    font-weight: normal;
-    letter-spacing: 0.04em;
+  h1 {
+    font-size: clamp(2rem, 4vw, 2.8rem);
     color: var(--white);
-    margin-bottom: 3rem;
-  }
-
-  h2 em {
-    color: var(--gold);
-    font-style: normal;
-  }
-
-  /* ── SERVICES GRID ── */
-  .grid-3 {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 1.5rem;
-  }
-
-  .card {
-    background: rgba(255,255,255,0.03);
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    padding: 2rem 1.75rem;
-    transition: border-color 0.3s, background 0.3s;
-    position: relative;
-    overflow: hidden;
-  }
-
-  .card::before {
-    content: '';
-    position: absolute;
-    top: 0; left: 0; right: 0;
-    height: 2px;
-    background: linear-gradient(to right, transparent, var(--gold), transparent);
-    opacity: 0;
-    transition: opacity 0.3s;
-  }
-
-  .card:hover {
-    border-color: var(--border-strong);
-    background: rgba(201,168,76,0.04);
-  }
-
-  .card:hover::before {
-    opacity: 1;
-  }
-
-  .card-icon {
-    width: 40px;
-    height: 40px;
-    margin-bottom: 1.25rem;
-    color: var(--gold);
-  }
-
-  .card h3 {
-    font-size: 1rem;
-    font-weight: normal;
-    letter-spacing: 0.06em;
-    color: var(--white);
-    margin-bottom: 0.75rem;
-  }
-
-  .card p {
-    font-size: 0.88rem;
-    color: var(--text-muted);
-    line-height: 1.6;
-  }
-
-  /* ── SUPPORTED / NOT SUPPORTED ── */
-  .two-col {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-  }
-
-  .check-list, .x-list {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
-  }
-
-  .check-list li, .x-list li {
-    display: flex;
-    align-items: flex-start;
-    gap: 0.75rem;
-    font-size: 0.9rem;
-    color: var(--text-light);
-  }
-
-  .check-list li::before {
-    content: '✦';
-    color: var(--gold);
-    font-size: 0.7rem;
-    margin-top: 0.3rem;
-    flex-shrink: 0;
-  }
-
-  .x-list li::before {
-    content: '×';
-    color: #c05555;
-    font-size: 1rem;
-    line-height: 1.3;
-    flex-shrink: 0;
-  }
-
-  .panel {
-    background: rgba(255,255,255,0.025);
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    padding: 2rem 1.75rem;
-  }
-
-  .panel h3 {
-    font-size: 0.75rem;
-    letter-spacing: 0.25em;
-    text-transform: uppercase;
-    color: var(--gold);
-    margin-bottom: 1.5rem;
-  }
-
-  /* ── HOW IT WORKS ── */
-  .steps {
-    display: flex;
-    flex-direction: column;
-    gap: 0;
-    position: relative;
-    max-width: 680px;
-  }
-
-  .steps::before {
-    content: '';
-    position: absolute;
-    left: 19px;
-    top: 10px;
-    bottom: 10px;
-    width: 1px;
-    background: linear-gradient(to bottom, var(--gold), rgba(201,168,76,0.1));
-  }
-
-  .step {
-    display: flex;
-    gap: 1.5rem;
-    align-items: flex-start;
-    padding: 1.25rem 0;
-  }
-
-  .step-num {
-    width: 40px;
-    height: 40px;
-    border: 1px solid var(--gold);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 0.75rem;
-    color: var(--gold);
-    letter-spacing: 0.05em;
-    flex-shrink: 0;
-    background: var(--navy);
-    position: relative;
-    z-index: 1;
-  }
-
-  .step-body h3 {
-    font-size: 1rem;
-    font-weight: normal;
-    color: var(--white);
-    margin-bottom: 0.25rem;
-  }
-
-  .step-body p {
-    font-size: 0.85rem;
-    color: var(--text-muted);
-  }
-
-  /* ── NOTICE ── */
-  .notice-box {
-    border: 1px solid rgba(201,168,76,0.35);
-    border-left: 3px solid var(--gold);
-    background: rgba(201,168,76,0.04);
-    border-radius: var(--radius);
-    padding: 2rem 2.25rem;
-  }
-
-  .notice-box h3 {
-    font-size: 0.7rem;
-    letter-spacing: 0.35em;
-    text-transform: uppercase;
-    color: var(--gold);
-    margin-bottom: 1.25rem;
-  }
-
-  .notice-box ul {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 0.85rem;
-  }
-
-  .notice-box li {
-    font-size: 0.88rem;
-    color: var(--text-light);
-    padding-left: 1.25rem;
-    position: relative;
-  }
-
-  .notice-box li::before {
-    content: '—';
-    position: absolute;
-    left: 0;
-    color: var(--gold);
-  }
-
-  /* ── FAQ ── */
-  .faq-list {
-    display: flex;
-    flex-direction: column;
-    gap: 0;
-    max-width: 780px;
-  }
-
-  .faq-item {
-    border-bottom: 1px solid var(--border);
-    padding: 1.75rem 0;
-  }
-
-  .faq-q {
-    font-size: 1rem;
-    color: var(--white);
-    margin-bottom: 0.75rem;
-    display: flex;
-    gap: 1rem;
-  }
-
-  .faq-q::before {
-    content: 'Q';
-    color: var(--gold);
-    font-size: 0.8rem;
-    letter-spacing: 0.1em;
-    margin-top: 0.1rem;
-    flex-shrink: 0;
-  }
-
-  .faq-a {
-    font-size: 0.88rem;
-    color: var(--text-muted);
-    padding-left: 1.75rem;
-    line-height: 1.7;
-  }
-
-  /* ── ABOUT ── */
-  .about-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
-    align-items: start;
-  }
-
-  .about-text p {
-    font-size: 0.95rem;
-    color: var(--text-light);
     margin-bottom: 1rem;
   }
 
-  .about-meta {
-    display: flex;
-    flex-direction: column;
-    gap: 1.25rem;
+  h2 {
+    font-size: 1.15rem;
+    color: var(--white);
+    margin: 1.5rem 0 0.75rem;
   }
 
-  .meta-row {
-    display: flex;
-    flex-direction: column;
-    gap: 0.25rem;
-    border-left: 2px solid var(--gold);
-    padding-left: 1rem;
-  }
-
-  .meta-label {
-    font-size: 0.65rem;
-    letter-spacing: 0.35em;
-    text-transform: uppercase;
-    color: var(--gold);
-  }
-
-  .meta-value {
-    font-size: 0.9rem;
-    color: var(--text-light);
-  }
-
-  /* ── CONTACT ── */
-  .contact-inner {
-    text-align: center;
-    max-width: 560px;
-    margin: 0 auto;
-  }
-
-  .contact-inner p {
+  p, li {
+    color: #b8c7d9;
     font-size: 0.95rem;
-    color: var(--text-muted);
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
   }
 
-  /* ── FOOTER ── */
-  footer {
-    border-top: 1px solid var(--border);
-    padding: 3rem 2rem;
-    text-align: center;
-  }
+  ul { list-style: none; padding-left: 1rem; }
+  ul li { margin-bottom: 0.75rem; }
+  ul li::before { content: '•'; margin-right: 0.5rem; color: var(--gold); }
 
-  .footer-logo {
-    font-size: 1rem;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
+  a {
     color: var(--gold);
-    margin-bottom: 0.25rem;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.45rem;
+    text-decoration: none;
   }
 
-  .footer-logo img {
-    display: block;
-    width: 28px;
-    height: 28px;
+  .back-link {
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 0.95rem 1.5rem;
+    border: 1px solid var(--gold);
+    border-radius: var(--radius);
+    color: var(--gold);
+    transition: background 0.25s, color 0.25s;
   }
 
-  .footer-sub {
-    font-size: 0.7rem;
-    letter-spacing: 0.3em;
-    text-transform: uppercase;
-    color: var(--text-muted);
-    margin-bottom: 1.5rem;
+  .back-link:hover {
+    background: var(--gold);
+    color: var(--navy);
   }
-
-  .footer-copy {
-    font-size: 0.75rem;
-    color: var(--text-muted);
-    letter-spacing: 0.05em;
-  }
-
-  /* ── SAKURA MARK SVG ── */
-  .sakura-mark {
-    display: block;
-  }
-
-  /* ── RESPONSIVE ── */
-  @media (max-width: 768px) {
-    header { padding: 0 1rem; }
-    .header-logo .wordmark { font-size: 0.78rem; }
-    .header-controls { gap: 0.5rem; }
-    .header-controls select { font-size: 0.7rem; padding: 0.3rem 0.4rem; padding-right: 1.4rem; }
-
-    .menu-toggle { width: 40px; height: 40px; }
-
-    section { padding: 4rem 1.25rem; }
-    .section-cta { padding: 0 1.25rem; margin: -1rem auto 4rem; }
-    .two-col { grid-template-columns: 1fr; }
-    .about-grid { grid-template-columns: 1fr; gap: 2.5rem; }
-    .grid-3 { grid-template-columns: 1fr; }
-    .steps::before { left: 19px; }
-  }
-
-  /* ── ANIMATIONS ── */
-  @keyframes fadeUp {
-    from { opacity: 0; transform: translateY(24px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
-
-  .hero > * {
-    position: relative;
-    animation: fadeUp 0.9s ease both;
-  }
-
-  .hero-line { animation-delay: 0.1s; }
-  .hero-tag { animation-delay: 0.2s; }
-  .hero-title { animation-delay: 0.3s; }
-  .hero-subtitle { animation-delay: 0.4s; }
-  .hero-desc { animation-delay: 0.5s; }
-  .hero-notice { animation-delay: 0.6s; }
-  .btn-primary { animation-delay: 0.7s; }
 </style>
 </head>
 <body>
+  <main class="page">
+    <h1>Sakura Mint Trading</h1>
+    <h2>Terms & Conditions</h2>
+    <p><strong>Effective Date:</strong> July 5, 2026</p>
+    <p>These Terms & Conditions apply to sourcing, purchasing, and export support services provided by Sakura Mint Trading. By submitting a request, approving a quotation, authorizing a purchase, or making a payment, the buyer confirms that they have read and agreed to these Terms & Conditions.</p>
 
-<!-- HEADER -->
-<header>
-  <a href="#" class="header-logo">
-    <img class="mark" src="sakura-mint-trading-logo-mark.png" alt="Sakura Mint Trading logo" width="32" height="32">
-    <span class="wordmark">Sakura Mint Trading</span>
-  </a>
-  <button class="menu-toggle" type="button" aria-label="Open menu">
-    <span></span>
-  </button>
-  <nav class="nav-menu" aria-hidden="true">
-    <div class="nav-menu-content">
-      <ul class="nav-menu-list">
-        <li><a href="#hero" data-menu-item>Home</a></li>
-        <li><a href="#services" data-menu-item>Services</a></li>
-        <li><a href="#process" data-menu-item>How It Works</a></li>
-        <li><a href="#about" data-menu-item>About Us</a></li>
-        <li><a href="#contact" data-menu-item>Contact</a></li>
-        <li><a href="terms.html" data-menu-item>Terms &amp; Conditions</a></li>
-      </ul>
-    </div>
-  </nav>
-  </header>
+    <h2>1. Service Scope</h2>
+    <p>Sakura Mint Trading provides sourcing, purchasing, communication, and export support for products and used vehicles available in Japan.</p>
+    <p>Submission of a request does not guarantee that the requested product or vehicle can be sourced, purchased, exported, shipped, or imported into the destination country.</p>
+    <p>Sakura Mint Trading may decline requests involving prohibited, restricted, counterfeit, dangerous, unavailable, or legally non-exportable items.</p>
 
-<!-- HERO -->
-<div class="hero">
-  <div class="hero-bg"></div>
-  <div class="hero-seigaiha"></div>
-  <div class="hero-line"></div>
-  <p class="hero-tag">Japan Sourcing & Export</p>
-  <h1 class="hero-title">Source Products from Japan</h1>
-  <p class="hero-subtitle">Established in Japan</p>
-  <p class="hero-desc">We help overseas buyers source new Japanese products and used vehicles from Japan.</p>
-  <div class="hero-notice">
-    <p>We currently support <strong>new Japanese products</strong> and <strong>used vehicles</strong> only.</p>
-  </div>
-  <div class="hero-cards">
-    <div class="hero-card"><h3>Japan-Based Sourcing Support</h3></div>
-    <div class="hero-card"><h3>Direct Supplier Communication</h3></div>
-    <div class="hero-card"><h3>Worldwide Buyer Support</h3></div>
-  </div>
-  <a href="https://docs.google.com/forms/d/e/1FAIpQLSctA2PWcNKrdu-iDVQWSe3nX9YeWiDeEe7qZ1-dBR3pC6qe3Q/viewform?usp=dialog" target="_blank" rel="noopener" class="btn-primary" id="heroCtaBtn">Request Form</a>
-</div>
+    <h2>2. Quotations and Payment</h2>
+    <p>The buyer must review and approve the quotation before payment.</p>
+    <p>Full payment must be received and confirmed before Sakura Mint Trading begins purchasing or sourcing activities.</p>
+    <p>The applicable payment currency, total amount, service fees, estimated shipping costs, and other charges will be stated in the quotation.</p>
+    <p>Bank transfer fees, intermediary bank fees, currency conversion fees, and any payment-related charges are the buyer’s responsibility unless otherwise stated in the quotation.</p>
+    <p>If the amount received is less than the required total, the buyer may be asked to pay the difference before purchasing or sourcing begins.</p>
 
-<div class="section-divider"></div>
+    <h2>3. Purchase and Sourcing</h2>
+    <p>Purchasing or sourcing will begin only after:</p>
+    <ol>
+      <li>The quotation has been approved;</li>
+      <li>Payment has been confirmed; and</li>
+      <li>Any required final purchase authorization has been received.</li>
+    </ol>
+    <p>Product availability, supplier prices, exchange rates, shipping costs, and other related expenses may change before purchase.</p>
+    <p>If a significant change occurs before purchasing begins, Sakura Mint Trading may revise or cancel the quotation and notify the buyer.</p>
 
-<!-- SERVICES -->
-<section id="services">
-  <span class="section-label">Services</span>
-  <h2>What We <em>Offer</em></h2>
-  <div class="grid-3">
-    <div class="card">
-      <svg class="card-icon" viewBox="0 0 40 40" fill="none"><rect x="6" y="10" width="28" height="22" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M14 10V8a6 6 0 0112 0v2" stroke="currentColor" stroke-width="1.5"/><circle cx="20" cy="21" r="3" stroke="currentColor" stroke-width="1.5"/></svg>
-      <h3>New Japanese Product Sourcing</h3>
-      <p>We source new products directly from Japanese retailers, manufacturers, and wholesalers on your behalf.</p>
-    </div>
-    <div class="card">
-      <svg class="card-icon" viewBox="0 0 40 40" fill="none"><rect x="4" y="18" width="32" height="12" rx="3" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="30" r="4" stroke="currentColor" stroke-width="1.5"/><circle cx="28" cy="30" r="4" stroke="currentColor" stroke-width="1.5"/><path d="M4 22l5-10h22l5 10" stroke="currentColor" stroke-width="1.5"/></svg>
-      <h3>Used Vehicle Sourcing</h3>
-      <p>We assist with the purchase and export of used vehicles from Japan's well-maintained domestic market.</p>
-    </div>
-    <div class="card">
-      <svg class="card-icon" viewBox="0 0 40 40" fill="none"><path d="M8 20a12 12 0 1024 0A12 12 0 008 20z" stroke="currentColor" stroke-width="1.5"/><path d="M20 8v12l6 4" stroke="currentColor" stroke-width="1.5"/></svg>
-      <h3>Supplier Communication</h3>
-      <p>We handle all communication with Japanese suppliers, bridging the language and cultural gap for you.</p>
-    </div>
-    <div class="card">
-      <svg class="card-icon" viewBox="0 0 40 40" fill="none"><path d="M8 32l6-14 6 8 6-16 6 22" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
-      <h3>Export Support</h3>
-      <p>We prepare and manage documentation required for international export from Japan.</p>
-    </div>
-    <div class="card">
-      <svg class="card-icon" viewBox="0 0 40 40" fill="none"><rect x="4" y="10" width="22" height="16" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M26 16h6l4 6v6h-10V16z" stroke="currentColor" stroke-width="1.5"/><circle cx="10" cy="30" r="3" stroke="currentColor" stroke-width="1.5"/><circle cx="30" cy="30" r="3" stroke="currentColor" stroke-width="1.5"/></svg>
-      <h3>Shipping Coordination</h3>
-      <p>We coordinate with freight forwarders and shipping companies to arrange delivery to your location.</p>
-    </div>
-    <div class="card">
-      <svg class="card-icon" viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="14" stroke="currentColor" stroke-width="1.5"/><path d="M20 6C20 6 28 12 28 20C28 28 20 34 20 34" stroke="currentColor" stroke-width="1.5"/><path d="M20 6C20 6 12 12 12 20C12 28 20 34 20 34" stroke="currentColor" stroke-width="1.5"/><path d="M6 20h28" stroke="currentColor" stroke-width="1.5"/></svg>
-      <h3>International Shipping Support</h3>
-      <p>We provide guidance on international logistics, customs clearance preparation, and tracking support.</p>
-    </div>
-  </div>
-</section>
+    <h2>4. Cancellation, Changes, and Refunds</h2>
+    <p>Cancellation, changes, or refunds may not be possible after purchasing or sourcing has begun.</p>
+    <p>If cancellation is possible, any supplier charges, bank fees, intermediary bank fees, currency conversion losses, handling costs, or other expenses already incurred may be deducted from the refund.</p>
+    <p>Refund timing and method may depend on the payment method, financial institutions, supplier policies, and transaction circumstances.</p>
 
-<div class="section-cta">
-  <a href="https://docs.google.com/forms/d/e/1FAIpQLSctA2PWcNKrdu-iDVQWSe3nX9YeWiDeEe7qZ1-dBR3pC6qe3Q/viewform?usp=dialog" target="_blank" rel="noopener" class="btn-primary">Request Form</a>
-  <p class="section-cta-note">Tell us what you want to source from Japan.</p>
-</div>
+    <h2>5. Product Condition</h2>
+    <p>New products will be sourced according to the product details stated in the quotation or purchase authorization.</p>
+    <p>Used products and used vehicles are sold in their existing condition at the time of purchase.</p>
+    <p>Normal wear, scratches, deterioration, repairs, replaced parts, prior use, age-related defects, and other conditions may be present in used products or vehicles.</p>
+    <p>Photographs, inspection information, supplier descriptions, auction sheets, and other reference materials are provided for informational purposes and may not reveal every defect or condition.</p>
+    <p>The buyer is responsible for reviewing all available information before giving final purchase authorization.</p>
 
-<div class="section-divider"></div>
+    <h2>6. Import Responsibility</h2>
+    <p>The buyer is responsible for confirming whether the requested product or vehicle can be legally imported, registered, used, or resold in the destination country.</p>
+    <p>Import duties, taxes, customs fees, inspection fees, registration fees, permits, certifications, storage charges, and other destination-country expenses are the buyer’s responsibility unless clearly included in the quotation.</p>
+    <p>Sakura Mint Trading does not guarantee customs clearance, import approval, registration, certification, or legal use in the destination country.</p>
 
-<!-- SUPPORTED REQUESTS -->
-<section id="supported">
-  <span class="section-label">Coverage</span>
-  <h2>Supported <em>Requests</em></h2>
-  <div class="two-col">
-    <div class="panel">
-      <h3>✦ Available</h3>
-      <ul class="check-list">
-        <li>New Japanese Products</li>
-        <li>Used Vehicles</li>
-        <li>Automotive Parts</li>
-        <li>Tools &amp; Equipment</li>
-        <li>Electronics (new)</li>
-        <li>Anime &amp; Japanese Goods</li>
-        <li>Japanese Consumer Products</li>
-        <li>Industrial Equipment</li>
-      </ul>
-    </div>
-    <div class="panel">
-      <h3>× Not Supported</h3>
-      <ul class="x-list">
-        <li>Used consumer goods (excluding vehicles)</li>
-        <li>Prohibited or restricted items</li>
-        <li>Counterfeit products</li>
-        <li>Dangerous goods</li>
-        <li>Items not legally exportable from Japan or importable into your country</li>
-      </ul>
-    </div>
-  </div>
-</section>
+    <h2>7. Shipping and Delivery</h2>
+    <p>Shipping methods, estimated costs, and estimated delivery times may be stated in the quotation.</p>
+    <p>Delivery dates are estimates and are not guaranteed.</p>
+    <p>Sakura Mint Trading is not responsible for delays caused by shipping carriers, ports, customs authorities, inspections, weather, strikes, natural disasters, government action, destination-country procedures, or other circumstances outside its reasonable control.</p>
+    <p>The buyer must provide complete and accurate delivery information.</p>
+    <p>Additional costs caused by incorrect information, failed delivery, storage, redelivery, customs delays, or refusal to accept the shipment may be charged to the buyer.</p>
 
-<div class="section-divider"></div>
+    <h2>8. Limitation of Liability</h2>
+    <p>To the maximum extent permitted by applicable law, Sakura Mint Trading’s liability relating to a transaction will not exceed the amount of service fees paid to Sakura Mint Trading for that transaction.</p>
+    <p>Sakura Mint Trading is not responsible for indirect, incidental, special, consequential, or business losses, including loss of profit, loss of opportunity, loss of use, customs delays, registration failure, or resale losses.</p>
+    <p>Nothing in these Terms & Conditions excludes liability that cannot legally be excluded or limited.</p>
 
-<!-- HOW IT WORKS -->
-<section id="process">
-  <span class="section-label">Process</span>
-  <h2>How It <em>Works</em></h2>
-  <div class="steps">
-    <div class="step">
-      <div class="step-num">01</div>
-      <div class="step-body">
-        <h3>Submit Request</h3>
-        <p>Submit your sourcing request using our request form.</p>
-      </div>
-    </div>
-    <div class="step">
-      <div class="step-num">02</div>
-      <div class="step-body">
-        <h3>Receive Quotation</h3>
-        <p>We review your request and provide a quotation.</p>
-      </div>
-    </div>
-    <div class="step">
-      <div class="step-num">03</div>
-      <div class="step-body">
-        <h3>Approve & Pay</h3>
-        <p>Review the quotation and complete payment if you agree.</p>
-      </div>
-    </div>
-    <div class="step">
-      <div class="step-num">04</div>
-      <div class="step-body">
-        <h3>Sourcing</h3>
-        <p>We purchase and prepare the requested products or vehicles.</p>
-      </div>
-    </div>
-    <div class="step">
-      <div class="step-num">05</div>
-      <div class="step-body">
-        <h3>Shipping</h3>
-        <p>We arrange international shipping and provide tracking information.</p>
-      </div>
-    </div>
-  </div>
-</section>
+    <h2>9. Buyer Information</h2>
+    <p>The buyer must provide accurate and complete information when submitting a request, approving a quotation, authorizing a purchase, or providing delivery details.</p>
+    <p>Sakura Mint Trading may suspend or cancel a transaction if information is false, incomplete, inconsistent, or appears to involve fraud, illegal activity, sanctions, prohibited goods, or other unacceptable risk.</p>
 
-<div class="section-divider"></div>
+    <h2>10. Communications and Records</h2>
+    <p>The buyer agrees that quotations, approvals, payment confirmations, purchase authorizations, emails, form submissions, and electronic records may be used as evidence of the transaction and the buyer’s instructions.</p>
+    <p>The buyer is responsible for checking messages sent to the email address or other contact information provided.</p>
 
-<!-- IMPORTANT NOTICE -->
-<section id="notice">
-  <span class="section-label">Notice</span>
-  <h2>Important <em>Notice</em></h2>
-  <div class="notice-box">
-    <h3>Please Read Before Ordering</h3>
-    <ul>
-      <li>Buyers are responsible for confirming whether requested products or vehicles can be legally imported into their country.</li>
-      <li>Import and export regulations vary by country. Buyers must confirm import restrictions, customs duties, taxes, permits, manufacturer restrictions, country-specific prohibitions, and shipping limitations before placing an order.</li>
-      <li>Sakura Mint Trading does not guarantee that every requested item can be purchased, exported, or imported.</li>
-      <li>No purchase will be made without buyer approval of the quotation.</li>
-      <li>All purchases are made only after payment confirmation.</li>
-      <li>Sakura Mint Trading does not purchase products or vehicles before payment is received.</li>
-      <li>International shipping costs do not include import duties, taxes, customs fees, or other charges imposed by the destination country.</li>
-    </ul>
-  </div>
-</section>
+    <h2>11. Changes to These Terms</h2>
+    <p>Sakura Mint Trading may update these Terms & Conditions when necessary.</p>
+    <p>The version applicable to a transaction will normally be the version presented or linked when the buyer submits the relevant request or approval.</p>
 
-<div class="section-cta">
-  <a href="https://docs.google.com/forms/d/e/1FAIpQLSctA2PWcNKrdu-iDVQWSe3nX9YeWiDeEe7qZ1-dBR3pC6qe3Q/viewform?usp=dialog" target="_blank" rel="noopener" class="btn-primary">Request Form</a>
-  <p class="section-cta-note">Please confirm import rules in your country before submitting a request.</p>
-</div>
+    <h2>12. Contact</h2>
+    <p>Questions regarding these Terms & Conditions may be submitted through the contact method provided on the Sakura Mint Trading website.</p>
 
-<div class="section-divider"></div>
-
-<!-- FAQ -->
-<section id="faq">
-  <span class="section-label">FAQ</span>
-  <h2>Frequently Asked <em>Questions</em></h2>
-  <div class="faq-list">
-    <div class="faq-item">
-      <p class="faq-q">Can you source used vehicles?</p>
-      <p class="faq-a">Yes, we can assist with used vehicle sourcing from Japan.</p>
-    </div>
-    <div class="faq-item">
-      <p class="faq-q">Can you purchase products from Japanese websites?</p>
-      <p class="faq-a">Yes, we can assist with new Japanese product sourcing from domestic retailers and online platforms.</p>
-    </div>
-    <div class="faq-item">
-      <p class="faq-q">Do you handle used products?</p>
-      <p class="faq-a">Currently, used items are limited to vehicles only. We do not handle used consumer goods, used electronics, or used brand items at this time.</p>
-    </div>
-    <div class="faq-item">
-      <p class="faq-q">When do I pay?</p>
-      <p class="faq-a">Payment is requested only after you have reviewed and approved the quotation. No payment is required at the inquiry stage.</p>
-    </div>
-    <div class="faq-item">
-      <p class="faq-q">Can all products be exported?</p>
-      <p class="faq-a">Not necessarily. Availability depends on export regulations, import rules in your country, supplier conditions, and shipping limitations. We will advise on feasibility during the review stage.</p>
-    </div>
-    <div class="faq-item">
-      <p class="faq-q">What currencies do you accept?</p>
-      <p class="faq-a">We accept payments in USD (United States Dollar) and JPY (Japanese Yen). The payment currency will be specified in the quotation.</p>
-    </div>
-  </div>
-</section>
-
-<div class="section-divider"></div>
-
-<!-- ABOUT -->
-<section id="about">
-  <span class="section-label">About</span>
-  <h2>About <em>Us</em></h2>
-  <div class="about-grid">
-    <div class="about-text">
-      <p>Sakura Mint Trading is a Japan-based sourcing and export support service for overseas buyers.</p>
-
-      <p>We help international customers source new Japanese products and used vehicles from Japan by communicating directly with Japanese suppliers, retailers, manufacturers, and exporters.</p>
-
-      <p>Our goal is to simplify the sourcing process and help buyers access products available in the Japanese market.</p>
-
-      <h3 style="margin-top:1rem;">Why Choose Sakura Mint Trading</h3>
-      <ul style="margin-top:0.5rem; list-style: none; padding-left: 0;">
-        <li style="margin:0.35rem 0;">• Based in Japan</li>
-        <li style="margin:0.35rem 0;">• Direct communication with Japanese suppliers</li>
-        <li style="margin:0.35rem 0;">• Support for overseas buyers</li>
-        <li style="margin:0.35rem 0;">• Quotation approval before purchase</li>
-        <li style="margin:0.35rem 0;">• Worldwide export assistance</li>
-      </ul>
-    </div>
-    <div class="about-meta">
-      <div class="meta-row">
-        <span class="meta-label">Business Type</span>
-        <span class="meta-value">Japan Sourcing & Export Service</span>
-      </div>
-      <div class="meta-row">
-        <span class="meta-label">Location</span>
-        <span class="meta-value">Japan</span>
-      </div>
-      <div class="meta-row">
-        <span class="meta-label">Service Area</span>
-        <span class="meta-value">Worldwide</span>
-      </div>
-      <div class="meta-row">
-        <span class="meta-label">Support</span>
-        <span class="meta-value">Product Sourcing & Used Vehicle Export</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-<div class="section-divider"></div>
-
-<!-- CONTACT -->
-<section id="contact">
-  <div class="contact-inner">
-    <span class="section-label">Contact</span>
-    <h2>Ready to <em>Source Products from Japan?</em></h2>
-    <p>Tell us what product or vehicle you are looking for. Submit your request form and we will review your inquiry.</p>
-    <p>We operate from Friday to Tuesday (JST). Closed on Wednesdays and Thursdays.</p>
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLSctA2PWcNKrdu-iDVQWSe3nX9YeWiDeEe7qZ1-dBR3pC6qe3Q/viewform?usp=dialog" target="_blank" rel="noopener" class="btn-primary" id="contactCtaBtn">Request Form</a>
-  </div>
-</section>
-
-<!-- FOOTER -->
-<footer>
-  <div class="footer-logo">
-    <img src="sakura-mint-trading-logo-mark.png" alt="Sakura Mint Trading logo" width="28" height="28">
-    <span>Sakura Mint Trading</span>
-  </div>
-  <div class="footer-sub">Japan Sourcing &amp; Export</div>
-  <div class="footer-copy">© 2026 Sakura Mint Trading. All rights reserved.</div>
-</footer>
-
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    var menuToggle = document.querySelector('.menu-toggle');
-    var navMenu = document.querySelector('.nav-menu');
-    var menuLinks = document.querySelectorAll('[data-menu-item]');
-
-    function closeMenu() {
-      navMenu.classList.remove('open');
-      navMenu.setAttribute('aria-hidden', 'true');
-    }
-
-    function openMenu() {
-      navMenu.classList.add('open');
-      navMenu.setAttribute('aria-hidden', 'false');
-    }
-
-    menuToggle.addEventListener('click', function (event) {
-      event.stopPropagation();
-      if (navMenu.classList.contains('open')) {
-        closeMenu();
-      } else {
-        openMenu();
-      }
-    });
-
-    navMenu.addEventListener('click', function (event) {
-      if (event.target === navMenu) {
-        closeMenu();
-      }
-    });
-
-    menuLinks.forEach(function (link) {
-      link.addEventListener('click', function () {
-        closeMenu();
-      });
-    });
-  });
-</script>
-
+    <a href="https://strespect629-debug.github.io/Sakura-Mint-Trading/#" class="back-link">Back to Home</a>
+  </main>
 </body>
 </html>
