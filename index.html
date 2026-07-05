@@ -70,6 +70,84 @@
     text-transform: uppercase;
   }
 
+  .menu-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border: 1px solid rgba(201,168,76,0.35);
+    border-radius: 8px;
+    background: rgba(255,255,255,0.05);
+    color: var(--gold);
+    cursor: pointer;
+    transition: background 0.3s, border-color 0.3s;
+  }
+
+  .menu-toggle:hover {
+    background: rgba(201,168,76,0.12);
+    border-color: var(--gold);
+  }
+
+  .menu-toggle span {
+    display: block;
+    width: 18px;
+    height: 2px;
+    background: currentColor;
+    box-shadow: 0 6px 0 currentColor, 0 -6px 0 currentColor;
+  }
+
+  .nav-menu {
+    position: fixed;
+    inset: 0;
+    display: none;
+    align-items: flex-start;
+    justify-content: flex-end;
+    background: rgba(10,22,40,0.85);
+    backdrop-filter: blur(8px);
+    z-index: 200;
+    padding: 4rem 1rem 1rem;
+  }
+
+  .nav-menu.open {
+    display: flex;
+  }
+
+  .nav-menu-content {
+    width: min(320px, calc(100% - 2rem));
+    background: rgba(10,22,40,0.98);
+    border: 1px solid rgba(201,168,76,0.2);
+    border-radius: 16px;
+    padding: 1.5rem 1.25rem;
+    box-shadow: 0 24px 80px rgba(0,0,0,0.35);
+  }
+
+  .nav-menu-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav-menu-list a {
+    display: block;
+    color: var(--cream);
+    text-decoration: none;
+    font-size: 0.95rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 0.85rem 1rem;
+    border-radius: 10px;
+    transition: background 0.25s, color 0.25s;
+  }
+
+  .nav-menu-list a:hover {
+    background: rgba(201,168,76,0.12);
+    color: var(--gold);
+  }
+
   .header-controls {
     display: flex;
     align-items: center;
@@ -668,6 +746,8 @@
     .header-controls { gap: 0.5rem; }
     .header-controls select { font-size: 0.7rem; padding: 0.3rem 0.4rem; padding-right: 1.4rem; }
 
+    .menu-toggle { width: 40px; height: 40px; }
+
     section { padding: 4rem 1.25rem; }
     .section-cta { padding: 0 1.25rem; margin: -1rem auto 4rem; }
     .two-col { grid-template-columns: 1fr; }
@@ -704,6 +784,21 @@
     <img class="mark" src="sakura-mint-trading-logo-mark.png" alt="Sakura Mint Trading logo" width="32" height="32">
     <span class="wordmark">Sakura Mint Trading</span>
   </a>
+  <button class="menu-toggle" type="button" aria-label="Open menu">
+    <span></span>
+  </button>
+  <nav class="nav-menu" aria-hidden="true">
+    <div class="nav-menu-content">
+      <ul class="nav-menu-list">
+        <li><a href="#hero" data-menu-item>Home</a></li>
+        <li><a href="#services" data-menu-item>Services</a></li>
+        <li><a href="#process" data-menu-item>How It Works</a></li>
+        <li><a href="#about" data-menu-item>About Us</a></li>
+        <li><a href="#contact" data-menu-item>Contact</a></li>
+        <li><a href="terms.html" data-menu-item>Terms &amp; Conditions</a></li>
+      </ul>
+    </div>
+  </nav>
   </header>
 
 <!-- HERO -->
@@ -975,6 +1070,44 @@
   <div class="footer-copy">© 2026 Sakura Mint Trading. All rights reserved.</div>
 </footer>
 
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var menuToggle = document.querySelector('.menu-toggle');
+    var navMenu = document.querySelector('.nav-menu');
+    var menuLinks = document.querySelectorAll('[data-menu-item]');
+
+    function closeMenu() {
+      navMenu.classList.remove('open');
+      navMenu.setAttribute('aria-hidden', 'true');
+    }
+
+    function openMenu() {
+      navMenu.classList.add('open');
+      navMenu.setAttribute('aria-hidden', 'false');
+    }
+
+    menuToggle.addEventListener('click', function (event) {
+      event.stopPropagation();
+      if (navMenu.classList.contains('open')) {
+        closeMenu();
+      } else {
+        openMenu();
+      }
+    });
+
+    navMenu.addEventListener('click', function (event) {
+      if (event.target === navMenu) {
+        closeMenu();
+      }
+    });
+
+    menuLinks.forEach(function (link) {
+      link.addEventListener('click', function () {
+        closeMenu();
+      });
+    });
+  });
+</script>
 
 </body>
 </html>
