@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Used Vehicle Sourcing from Japan | Sakura Mint Trading</title>
+  <meta name="description" content="Used vehicle sourcing and export support from Japan for overseas buyers. Sakura Mint Trading helps buyers request quotations, review vehicle information, and proceed after approval and payment confirmation.">
+  <style>
+    :root {
+      --navy: #0a1628;
+      --navy-mid: #0f2040;
+      --navy-light: #162d55;
+      --gold: #c9a84c;
+      --gold-light: #e8c96a;
+      --gold-pale: #f5e6b8;
+      --cream: #faf6ee;
+      --white: #ffffff;
+      --text-light: #b8c8e0;
+      --text-muted: #7a92b4;
+      --border: rgba(201,168,76,0.2);
+      --border-strong: rgba(201,168,76,0.45);
+      --radius: 4px;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Georgia', 'Times New Roman', serif;
+      background: var(--navy);
+      color: var(--cream);
+      line-height: 1.7;
+      font-size: 16px;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .page {
+      min-height: 100vh;
+      background:
+        radial-gradient(ellipse at top, rgba(201,168,76,0.08), transparent 45%),
+        var(--navy);
+    }
+
+    header {
+      padding: 1.25rem 2rem;
+      border-bottom: 1px solid var(--border);
+      background: rgba(10,22,40,0.96);
+      backdrop-filter: blur(12px);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      text-decoration: none;
+      color: var(--gold);
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      font-size: 0.95rem;
+    }
+
+    .brand img {
+      width: 32px;
+      height: 32px;
+      display: block;
+    }
+
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 4rem 2rem 5rem;
+    }
+
+    .hero {
+      padding: 2.5rem 0 2rem;
+    }
+
+    .hero-tag {
+      color: var(--gold);
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      font-size: 0.75rem;
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: normal;
+      line-height: 1.15;
+      color: var(--white);
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      color: var(--text-light);
+      font-size: 1.05rem;
+      max-width: 760px;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.03);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 2rem 1.75rem;
+      margin-top: 1.5rem;
+    }
+
+    .section-title {
+      color: var(--gold);
+      font-size: 0.72rem;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+      display: block;
+    }
+
+    h2 {
+      font-size: clamp(1.4rem, 2.4vw, 1.8rem);
+      font-weight: normal;
+      color: var(--white);
+      margin-bottom: 1rem;
+    }
+
+    .card p,
+    .card li {
+      color: var(--text-light);
+      font-size: 0.95rem;
+      line-height: 1.8;
+    }
+
+    .card ul {
+      margin-top: 0.75rem;
+      padding-left: 1.2rem;
+    }
+
+    .card li + li {
+      margin-top: 0.5rem;
+    }
+
+    .steps {
+      display: grid;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .step {
+      border-left: 2px solid var(--gold);
+      padding-left: 1rem;
+    }
+
+    .step strong {
+      color: var(--gold-pale);
+      font-weight: normal;
+      display: block;
+      margin-bottom: 0.2rem;
+    }
+
+    .cta {
+      margin-top: 2rem;
+      text-align: center;
+    }
+
+    .btn-primary {
+      display: inline-block;
+      padding: 1rem 2.5rem;
+      background: transparent;
+      border: 1px solid var(--gold);
+      color: var(--gold);
+      text-decoration: none;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      border-radius: var(--radius);
+      transition: background 0.3s, color 0.3s;
+    }
+
+    .btn-primary:hover {
+      background: var(--gold);
+      color: var(--navy);
+    }
+
+    .links {
+      margin-top: 2.5rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem 1.25rem;
+      justify-content: center;
+    }
+
+    .links a {
+      color: var(--text-light);
+      text-decoration: none;
+    }
+
+    .links a:hover {
+      color: var(--gold);
+    }
+
+    @media (max-width: 768px) {
+      header { padding: 1rem 1.25rem; }
+      main { padding: 3rem 1.25rem 4rem; }
+      .card { padding: 1.5rem 1.1rem; }
+      .hero { padding: 1.5rem 0 1rem; }
+      .btn-primary { width: 100%; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <a href="https://strespect629-debug.github.io/Sakura-Mint-Trading/" class="brand">
+        <img src="sakura-mint-trading-logo-mark.png" alt="Sakura Mint Trading logo" width="32" height="32">
+        <span>Sakura Mint Trading</span>
+      </a>
+    </header>
+
+    <main>
+      <section class="hero">
+        <p class="hero-tag">Japan Sourcing &amp; Export</p>
+        <h1>Used Vehicle Sourcing from Japan</h1>
+        <p>Sakura Mint Trading helps overseas buyers request quotations for used vehicles from Japan and supports the sourcing and export-related process after approval and payment confirmation.</p>
+      </section>
+
+      <section class="card">
+        <span class="section-title">What We Support</span>
+        <h2>Used Vehicle Sourcing Support</h2>
+        <p>We assist overseas buyers with the following parts of the used vehicle sourcing process:</p>
+        <ul>
+          <li>Used vehicle sourcing requests from overseas buyers</li>
+          <li>Quotation preparation</li>
+          <li>Vehicle information review support</li>
+          <li>Supplier, dealer, or auction-related communication support</li>
+          <li>Purchase support after quotation approval and payment confirmation</li>
+          <li>Export-related support from Japan</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <span class="section-title">Important Notes for Used Vehicles</span>
+        <h2>Important Considerations</h2>
+        <p>Used vehicles are handled with special care and attention because the buyer must make an informed decision before purchase.</p>
+        <ul>
+          <li>Sakura Mint Trading currently accepts used vehicles as supported used items.</li>
+          <li>Used vehicles are supplied in their existing condition at the time of purchase.</li>
+          <li>Vehicle condition, mileage, repair history, auction sheet information, photos, and supplier descriptions may not reveal every issue.</li>
+          <li>The buyer is responsible for reviewing all available information before final purchase authorization.</li>
+          <li>Sakura Mint Trading does not guarantee registration, customs clearance, certification, legal use, or resale in the buyer’s country.</li>
+          <li>Import duties, taxes, customs fees, registration fees, inspection fees, and destination-country charges are the buyer’s responsibility unless clearly stated in the quotation.</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <span class="section-title">How the Process Works</span>
+        <h2>Step-by-Step Process</h2>
+        <div class="steps">
+          <div class="step">
+            <strong>Step 1: Submit a sourcing request</strong>
+            <p>Provide your request for a used vehicle sourcing inquiry through the request form.</p>
+          </div>
+          <div class="step">
+            <strong>Step 2: Sakura Mint Trading reviews the request</strong>
+            <p>We review the request and assess the available sourcing options.</p>
+          </div>
+          <div class="step">
+            <strong>Step 3: A quotation is prepared</strong>
+            <p>We prepare the quotation based on the requested vehicle and related support requirements.</p>
+          </div>
+          <div class="step">
+            <strong>Step 4: The buyer reviews and approves the quotation</strong>
+            <p>Quotation approval is required before any purchase or sourcing activity proceeds.</p>
+          </div>
+          <div class="step">
+            <strong>Step 5: Payment instructions are provided</strong>
+            <p>Payment instructions are shared after quotation review and approval.</p>
+          </div>
+          <div class="step">
+            <strong>Step 6: Purchase or sourcing activities begin after payment confirmation</strong>
+            <p>All purchase or sourcing activities begin only after payment confirmation.</p>
+          </div>
+          <div class="step">
+            <strong>Step 7: Export-related and shipping support proceeds as applicable</strong>
+            <p>Export-related assistance and shipping coordination proceed based on the agreed scope.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSctA2PWcNKrdu-iDVQWSe3nX9YeWiDeEe7qZ1-dBR3pC6qe3Q/viewform?usp=dialog" target="_blank" rel="noopener" class="btn-primary">Submit a Used Vehicle Request</a>
+      </section>
+
+      <div class="links">
+        <a href="https://strespect629-debug.github.io/Sakura-Mint-Trading/">Back to Home</a>
+        <a href="https://strespect629-debug.github.io/Sakura-Mint-Trading/terms.html">Terms &amp; Conditions</a>
+        <a href="https://strespect629-debug.github.io/Sakura-Mint-Trading/privacy.html">Privacy Policy</a>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
