@@ -26,7 +26,7 @@
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
   html { scroll-behavior: smooth; }
-<test>
+
   body {
     font-family: 'Georgia', 'Times New Roman', serif;
     background: var(--navy);
@@ -254,6 +254,29 @@
     max-width: 620px;
     margin: 0 auto 1.25rem;
     position: relative;
+  }
+
+  .hero-seo {
+    width: min(760px, 100%);
+    margin: 0 auto 1.5rem;
+    padding: 1.25rem 1.5rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: rgba(10, 22, 40, 0.55);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.03);
+    position: relative;
+  }
+
+  .hero-seo .hero-desc {
+    max-width: none;
+    margin: 0 0 1rem;
+    text-align: left;
+    font-size: 1rem;
+    line-height: 1.8;
+  }
+
+  .hero-seo .hero-desc:last-child {
+    margin-bottom: 0;
   }
 
   .hero-notice {
@@ -748,6 +771,15 @@
 
     .menu-toggle { width: 40px; height: 40px; }
 
+    .hero-seo {
+      padding: 1rem 1rem;
+      width: 100%;
+    }
+
+    .hero-seo .hero-desc {
+      font-size: 0.95rem;
+    }
+
     section { padding: 4rem 1.25rem; }
     .section-cta { padding: 0 1.25rem; margin: -1rem auto 4rem; }
     .two-col { grid-template-columns: 1fr; }
@@ -811,8 +843,10 @@
   <h1 class="hero-title">Source Products from Japan</h1>
   <p class="hero-subtitle">Established in Japan</p>
   <p class="hero-desc">We help overseas buyers source new Japanese products and used vehicles from Japan.</p>
-  <p class="hero-desc">Sakura Mint Trading helps overseas buyers source new Japanese products and used vehicles from Japan. We provide quotation support, supplier communication, purchase support, and export-related assistance for international buyers.</p>
-  <p class="hero-desc">Our service is designed for buyers who are looking for Japanese products, used vehicles, sourcing support, quotation assistance, and Japan export support. All purchases or sourcing activities begin only after quotation approval and payment confirmation.</p>
+  <div class="hero-seo">
+    <p class="hero-desc">Sakura Mint Trading helps overseas buyers source new Japanese products and used vehicles from Japan. We provide quotation support, supplier communication, purchase support, and export-related assistance for international buyers.</p>
+    <p class="hero-desc">Our service is designed for buyers who are looking for Japanese products, used vehicles, sourcing support, quotation assistance, and Japan export support. All purchases or sourcing activities begin only after quotation approval and payment confirmation.</p>
+  </div>
   <div class="hero-notice">
     <p>We currently support <strong>new Japanese products</strong> and <strong>used vehicles</strong> only.</p>
   </div>
