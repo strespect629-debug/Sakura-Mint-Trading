@@ -482,6 +482,28 @@
     line-height: 1.6;
   }
 
+  .card-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.95rem;
+    padding: 0.7rem 1rem;
+    border: 1px solid var(--gold);
+    border-radius: var(--radius);
+    color: var(--gold);
+    text-decoration: none;
+    font-size: 0.8rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+  }
+
+  .card-link:hover {
+    background: var(--gold);
+    color: var(--navy);
+    box-shadow: 0 0 20px rgba(201,168,76,0.2);
+  }
+
   /* ── SUPPORTED / NOT SUPPORTED ── */
   .two-col {
     display: grid;
@@ -875,7 +897,7 @@
       <h3>Used Vehicle Sourcing</h3>
       <p>We assist with the purchase and export of used vehicles from Japan's well-maintained domestic market.</p>
       <p style="margin-top: 0.75rem;">Learn more about our used vehicle sourcing support from Japan.</p>
-      <p style="margin-top: 0.35rem;"><a href="used-vehicle-sourcing-japan.html" style="color: var(--gold); text-decoration: none;">Used Vehicle Sourcing from Japan</a></p>
+      <a href="used-vehicle-sourcing-japan.html" class="card-link">Learn More</a>
     </div>
     <div class="card">
       <svg class="card-icon" viewBox="0 0 40 40" fill="none"><path d="M8 20a12 12 0 1024 0A12 12 0 008 20z" stroke="currentColor" stroke-width="1.5"/><path d="M20 8v12l6 4" stroke="currentColor" stroke-width="1.5"/></svg>
