@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ | Sakura Mint Trading</title>
+  <meta name="description" content="Frequently asked questions about Sakura Mint Trading, Japan sourcing support, used vehicle sourcing, quotations, payment, export support, and buyer responsibilities.">
+  <style>
+    :root {
+      --navy: #0a1628;
+      --navy-mid: #0f2040;
+      --navy-light: #162d55;
+      --gold: #c9a84c;
+      --gold-light: #e8c96a;
+      --gold-pale: #f5e6b8;
+      --cream: #faf6ee;
+      --white: #ffffff;
+      --text-light: #b8c8e0;
+      --text-muted: #7a92b4;
+      --border: rgba(201,168,76,0.2);
+      --border-strong: rgba(201,168,76,0.45);
+      --radius: 4px;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Georgia', 'Times New Roman', serif;
+      background: var(--navy);
+      color: var(--cream);
+      line-height: 1.7;
+      font-size: 16px;
+    }
+
+    a { color: inherit; }
+
+    .page {
+      min-height: 100vh;
+      background:
+        radial-gradient(ellipse at top, rgba(201,168,76,0.08), transparent 45%),
+        var(--navy);
+    }
+
+    header {
+      padding: 1.25rem 2rem;
+      border-bottom: 1px solid var(--border);
+      background: rgba(10,22,40,0.96);
+      backdrop-filter: blur(12px);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      text-decoration: none;
+      color: var(--gold);
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      font-size: 0.95rem;
+    }
+
+    .brand img {
+      width: 32px;
+      height: 32px;
+      display: block;
+    }
+
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 4rem 2rem 5rem;
+    }
+
+    .hero {
+      padding: 2.5rem 0 2rem;
+    }
+
+    .hero-tag {
+      color: var(--gold);
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      font-size: 0.75rem;
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: normal;
+      line-height: 1.15;
+      color: var(--white);
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      color: var(--text-light);
+      font-size: 1.05rem;
+      max-width: 760px;
+    }
+
+    .faq-list {
+      display: grid;
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+
+    .faq-item {
+      background: rgba(255,255,255,0.03);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.75rem;
+    }
+
+    .faq-question {
+      color: var(--white);
+      font-size: 1.05rem;
+      font-weight: normal;
+      line-height: 1.5;
+      margin-bottom: 0.75rem;
+    }
+
+    .faq-question::before {
+      content: 'Q';
+      color: var(--gold);
+      font-size: 0.75rem;
+      letter-spacing: 0.15em;
+      margin-right: 0.75rem;
+    }
+
+    .faq-answer {
+      color: var(--text-light);
+      font-size: 0.95rem;
+      line-height: 1.8;
+      padding-left: 1.65rem;
+    }
+
+    .related {
+      margin-top: 2rem;
+      background: rgba(255,255,255,0.03);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 2rem 1.75rem;
+    }
+
+    .section-title {
+      color: var(--gold);
+      font-size: 0.72rem;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+      display: block;
+    }
+
+    h2 {
+      font-size: clamp(1.4rem, 2.4vw, 1.8rem);
+      font-weight: normal;
+      color: var(--white);
+      margin-bottom: 1rem;
+    }
+
+    .related-links {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0.75rem;
+    }
+
+    .related-links a {
+      display: block;
+      border-left: 2px solid var(--gold);
+      padding: 0.7rem 0.9rem;
+      color: var(--text-light);
+      text-decoration: none;
+      transition: background 0.25s, color 0.25s;
+    }
+
+    .related-links a:hover {
+      background: rgba(201,168,76,0.08);
+      color: var(--gold-light);
+    }
+
+    .cta {
+      margin-top: 2rem;
+      text-align: center;
+    }
+
+    .btn-primary {
+      display: inline-block;
+      padding: 1rem 2.5rem;
+      background: transparent;
+      border: 1px solid var(--gold);
+      color: var(--gold);
+      text-decoration: none;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      border-radius: var(--radius);
+      transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+    }
+
+    .btn-primary:hover {
+      background: var(--gold);
+      color: var(--navy);
+      box-shadow: 0 0 20px rgba(201,168,76,0.2);
+    }
+
+    .home-link {
+      margin-top: 2.5rem;
+      text-align: center;
+    }
+
+    @media (max-width: 768px) {
+      header { padding: 1rem 1.25rem; }
+      main { padding: 3rem 1.25rem 4rem; }
+      .hero { padding: 1.5rem 0 1rem; }
+      .faq-item { padding: 1.5rem 1.1rem; }
+      .related { padding: 1.5rem 1.1rem; }
+      .related-links { grid-template-columns: 1fr; }
+      .btn-primary { width: 100%; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <a href="https://strespect629-debug.github.io/Sakura-Mint-Trading/" class="brand">
+        <img src="sakura-mint-trading-logo-mark.png" alt="Sakura Mint Trading logo" width="32" height="32">
+        <span>Sakura Mint Trading</span>
+      </a>
+    </header>
+
+    <main>
+      <section class="hero">
+        <p class="hero-tag">Japan Sourcing &amp; Export</p>
+        <h1>Frequently Asked Questions</h1>
+        <p>Find answers about Sakura Mint Trading’s Japan sourcing, quotation, payment, used vehicle sourcing, and export-related support services.</p>
+      </section>
+
+      <section class="faq-list" aria-label="Frequently asked questions">
+        <article class="faq-item">
+          <h2 class="faq-question">What does Sakura Mint Trading do?</h2>
+          <p class="faq-answer">Sakura Mint Trading helps overseas buyers request quotations for new Japanese products and used vehicles from Japan. We support sourcing requests, quotation preparation, supplier communication, purchase support, and export-related coordination after quotation approval and payment confirmation.</p>
+        </article>
+
+        <article class="faq-item">
+          <h2 class="faq-question">Can Sakura Mint Trading purchase items before payment?</h2>
+          <p class="faq-answer">No. Purchase or sourcing activities begin only after the buyer approves the quotation and Sakura Mint Trading confirms payment.</p>
+        </article>
+
+        <article class="faq-item">
+          <h2 class="faq-question">Do you support used vehicles from Japan?</h2>
+          <p class="faq-answer">Yes. Sakura Mint Trading supports used vehicle sourcing requests from Japan, subject to availability, supplier access, transaction conditions, and applicable laws.</p>
+        </article>
+
+        <article class="faq-item">
+          <h2 class="faq-question">Are used vehicles guaranteed?</h2>
+          <p class="faq-answer">Used vehicles are supplied in their existing condition at the time of purchase. Sakura Mint Trading does not guarantee that photos, auction sheets, supplier descriptions, mileage, repair history, or other information reveal every issue.</p>
+        </article>
+
+        <article class="faq-item">
+          <h2 class="faq-question">Who is responsible for import duties and taxes?</h2>
+          <p class="faq-answer">The buyer is responsible for import duties, taxes, customs fees, registration fees, inspection fees, permits, certifications, storage fees, and other destination-country charges unless clearly stated in the quotation.</p>
+        </article>
+
+        <article class="faq-item">
+          <h2 class="faq-question">Can you guarantee customs clearance or registration in my country?</h2>
+          <p class="faq-answer">No. The buyer is responsible for confirming whether the requested product or vehicle can be legally imported, registered, used, or resold in the destination country. Sakura Mint Trading does not guarantee customs clearance, import approval, registration, certification, legal use, or resale.</p>
+        </article>
+
+        <article class="faq-item">
+          <h2 class="faq-question">Can prices change after a quotation?</h2>
+          <p class="faq-answer">Product availability, supplier prices, shipping costs, exchange rates, taxes, fees, and related costs may change before payment confirmation. If a significant change occurs before purchase or sourcing begins, Sakura Mint Trading may revise or cancel the quotation.</p>
+        </article>
+
+        <article class="faq-item">
+          <h2 class="faq-question">What products can I request?</h2>
+          <p class="faq-answer">Buyers may request new Japanese products, retail products, wholesale product requests, and used vehicles from Japan. Requests involving prohibited, restricted, unsafe, counterfeit, illegal, sanctioned, or unsuitable items may be refused.</p>
+        </article>
+
+        <article class="faq-item">
+          <h2 class="faq-question">How do I submit a request?</h2>
+          <p class="faq-answer">Buyers can submit a request through the Japan Sourcing Request Form on the Sakura Mint Trading website.</p>
+        </article>
+
+        <article class="faq-item">
+          <h2 class="faq-question">What information should I provide?</h2>
+          <p class="faq-answer">Please provide as much detail as possible, such as product name, brand, model number, reference URL, photos, desired quantity, budget, delivery country, and any important requirements.</p>
+        </article>
+
+        <article class="faq-item">
+          <h2 class="faq-question">How does the process work?</h2>
+          <p class="faq-answer">The basic process is: submit a request, receive a quotation, approve the quotation, receive payment instructions, make payment, and then purchase or sourcing activities begin after payment confirmation.</p>
+        </article>
+
+        <article class="faq-item">
+          <h2 class="faq-question">Can I cancel after approval or payment?</h2>
+          <p class="faq-answer">Cancellation, changes, or refunds may not be possible after purchase or sourcing activities have begun. If cancellation or refund is possible, costs already incurred may be deducted.</p>
+        </article>
+
+        <article class="faq-item">
+          <h2 class="faq-question">Do you handle shipping?</h2>
+          <p class="faq-answer">Sakura Mint Trading may support export-related coordination and shipping arrangements when applicable. Shipping conditions, costs, delivery times, and available methods depend on the item, destination country, carrier, and transaction conditions.</p>
+        </article>
+      </section>
+
+      <section class="cta">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSctA2PWcNKrdu-iDVQWSe3nX9YeWiDeEe7qZ1-dBR3pC6qe3Q/viewform?usp=dialog" target="_blank" rel="noopener" class="btn-primary">Submit a Request</a>
+      </section>
+
+      <section class="related">
+        <span class="section-title">Related Links</span>
+        <h2>Explore Our Services</h2>
+        <nav class="related-links" aria-label="Related pages">
+          <a href="japanese-product-sourcing.html">Japanese Product Sourcing</a>
+          <a href="used-vehicle-sourcing-japan.html">Used Vehicle Sourcing from Japan</a>
+          <a href="japan-export-support.html">Japan Export Support</a>
+          <a href="terms.html">Terms &amp; Conditions</a>
+          <a href="privacy.html">Privacy Policy</a>
+        </nav>
+      </section>
+
+      <div class="home-link">
+        <a href="https://strespect629-debug.github.io/Sakura-Mint-Trading/" class="btn-primary">Back to Home</a>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
