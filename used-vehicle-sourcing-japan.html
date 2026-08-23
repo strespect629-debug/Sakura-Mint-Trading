@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Used Vehicle Sourcing from Japan | Sakura Mint Trading</title>
-  <meta name="description" content="Used vehicle sourcing and export support from Japan for overseas buyers. Sakura Mint Trading helps buyers request quotations, review vehicle information, and proceed after approval and payment confirmation.">
+  <title>Japanese Used Car Sourcing &amp; Export | Sakura Mint Trading</title>
+  <meta name="description" content="Source used vehicles from Japan with Sakura Mint Trading. We help overseas buyers search, review quotations and vehicle information, purchase after approval and payment, and coordinate Japanese used car exports.">
   <style>
     :root {
       --navy: #0a1628;
@@ -96,11 +96,13 @@
       margin-bottom: 1rem;
     }
 
-    .hero p {
+    .hero p:not(.hero-tag) {
       color: var(--text-light);
       font-size: 1.05rem;
-      max-width: 760px;
+      max-width: 780px;
     }
+
+    .hero .cta { text-align: left; margin-top: 1.75rem; }
 
     .card {
       background: rgba(255,255,255,0.03);
@@ -133,6 +135,8 @@
       line-height: 1.8;
     }
 
+    .card p + p { margin-top: 0.85rem; }
+
     .card ul {
       margin-top: 0.75rem;
       padding-left: 1.2rem;
@@ -141,6 +145,16 @@
     .card li + li {
       margin-top: 0.5rem;
     }
+
+    .detail-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0.75rem 1.5rem;
+      margin-top: 1rem;
+      padding-left: 1.2rem;
+    }
+
+    .detail-grid li { margin-top: 0; }
 
     .steps {
       display: grid;
@@ -158,6 +172,11 @@
       font-weight: normal;
       display: block;
       margin-bottom: 0.2rem;
+    }
+
+    .assurance {
+      border-color: var(--border-strong);
+      background: rgba(201,168,76,0.055);
     }
 
     .cta {
@@ -207,7 +226,9 @@
       main { padding: 3rem 1.25rem 4rem; }
       .card { padding: 1.5rem 1.1rem; }
       .hero { padding: 1.5rem 0 1rem; }
-      .btn-primary { width: 100%; text-align: center; }
+      .detail-grid { grid-template-columns: 1fr; gap: 0.5rem; }
+      .hero .cta { text-align: center; }
+      .btn-primary { width: 100%; padding-left: 1rem; padding-right: 1rem; text-align: center; }
     }
   </style>
 </head>
@@ -223,8 +244,11 @@
     <main>
       <section class="hero">
         <p class="hero-tag">Japan Sourcing &amp; Export</p>
-        <h1>Used Vehicle Sourcing from Japan</h1>
-        <p>Sakura Mint Trading helps overseas buyers request quotations for used vehicles from Japan and supports the sourcing and export-related process after approval and payment confirmation.</p>
+        <h1>Used Vehicle Sourcing from Japan for Overseas Buyers</h1>
+        <p>Tell us what you are looking for, and Sakura Mint Trading will help search for suitable used vehicles in Japan, prepare a quotation, support your review, and coordinate the approved purchase and export process within the agreed scope. Vehicle search and quotation preparation may take place before purchase authorization, but we will not purchase, reserve, bid on, or otherwise commit to acquiring a vehicle until the required quotation approval and payment confirmation have been completed.</p>
+        <div class="cta">
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSctA2PWcNKrdu-iDVQWSe3nX9YeWiDeEe7qZ1-dBR3pC6qe3Q/viewform?usp=dialog" target="_blank" rel="noopener" class="btn-primary">Submit a Used Vehicle Request</a>
+        </div>
       </section>
 
       <section class="card">
@@ -239,6 +263,71 @@
           <li>Purchase support after quotation approval and payment confirmation</li>
           <li>Export-related support from Japan</li>
         </ul>
+      </section>
+
+      <section class="card">
+        <span class="section-title">Vehicle Categories</span>
+        <h2>What We Can Source</h2>
+        <p>Depending on your requirements and current availability in Japan, we can search for suitable options across categories such as:</p>
+        <ul class="detail-grid">
+          <li>Passenger cars</li>
+          <li>SUVs</li>
+          <li>Vans</li>
+          <li>Commercial vehicles</li>
+          <li>Other vehicles, subject to availability</li>
+        </ul>
+        <p>Submitting a request does not guarantee that a matching vehicle can be sourced. Availability, condition, price, timing, and export suitability vary by vehicle and transaction.</p>
+      </section>
+
+      <section class="card">
+        <span class="section-title">Japan-Side Search</span>
+        <h2>How We Source Vehicles</h2>
+        <p>We review possible sourcing options in Japan according to the buyer’s request. These may include Japanese dealers, vehicle suppliers, used vehicle markets, and auctions where applicable. The sources considered depend on the requested vehicle, availability, transaction conditions, and the agreed scope of support.</p>
+      </section>
+
+      <section class="card">
+        <span class="section-title">Your Request</span>
+        <h2>What Buyers Should Tell Us</h2>
+        <p>The more detail you provide, the easier it is for us to understand your priorities and assess possible sourcing options. Please include, where relevant:</p>
+        <ul class="detail-grid">
+          <li>Make and model</li>
+          <li>Preferred model year or range</li>
+          <li>Budget</li>
+          <li>Mileage preference</li>
+          <li>Transmission</li>
+          <li>Fuel type</li>
+          <li>Destination country and port</li>
+          <li>Other requirements or priorities</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <span class="section-title">Clear Cost Review</span>
+        <h2>What the Quotation May Include</h2>
+        <p>Depending on the transaction and the information available, the quotation may show:</p>
+        <ul class="detail-grid">
+          <li>Vehicle price</li>
+          <li>Sakura Mint Trading service or support charges</li>
+          <li>Estimated Japan-side costs</li>
+          <li>Estimated shipping costs, when available</li>
+          <li>Other applicable charges</li>
+        </ul>
+        <p>Estimated amounts may change if carrier rates, schedules, port charges, vehicle details, or other circumstances change. The quotation does not guarantee destination-country duties, taxes, registration, inspection, compliance, or other import-side costs.</p>
+      </section>
+
+      <section class="card">
+        <span class="section-title">Review Before Approval</span>
+        <h2>Vehicle Information</h2>
+        <p>Before making a purchase decision, buyers can review the vehicle information that is reasonably available for the proposed vehicle. Depending on the source and vehicle, this may include:</p>
+        <ul class="detail-grid">
+          <li>Photos</li>
+          <li>Mileage</li>
+          <li>Vehicle specifications</li>
+          <li>Condition information</li>
+          <li>Auction sheet or inspection information, when available</li>
+          <li>Supplier information</li>
+        </ul>
+        <p>Information availability and detail vary by supplier and vehicle. Buyers should review all available material carefully before authorizing a purchase.</p>
       </section>
 
       <section class="card">
@@ -259,37 +348,23 @@
 
       <section class="card">
         <span class="section-title">How the Process Works</span>
-        <h2>Step-by-Step Process</h2>
+        <h2>Request, Approval, Purchase and Export</h2>
         <div class="steps">
-          <div class="step">
-            <strong>Step 1: Submit a sourcing request</strong>
-            <p>Provide your request for a used vehicle sourcing inquiry through the request form.</p>
-          </div>
-          <div class="step">
-            <strong>Step 2: Sakura Mint Trading reviews the request</strong>
-            <p>We review the request and assess the available sourcing options.</p>
-          </div>
-          <div class="step">
-            <strong>Step 3: A quotation is prepared</strong>
-            <p>We prepare the quotation based on the requested vehicle and related support requirements.</p>
-          </div>
-          <div class="step">
-            <strong>Step 4: The buyer reviews and approves the quotation</strong>
-            <p>Quotation approval is required before any purchase or sourcing activity proceeds.</p>
-          </div>
-          <div class="step">
-            <strong>Step 5: Payment instructions are provided</strong>
-            <p>Payment instructions are shared after quotation review and approval.</p>
-          </div>
-          <div class="step">
-            <strong>Step 6: Purchase or sourcing activities begin after payment confirmation</strong>
-            <p>All purchase or sourcing activities begin only after payment confirmation.</p>
-          </div>
-          <div class="step">
-            <strong>Step 7: Export-related and shipping support proceeds as applicable</strong>
-            <p>Export-related assistance and shipping coordination proceed based on the agreed scope.</p>
-          </div>
+          <div class="step"><strong>Step 1: Request</strong><p>Submit a used vehicle sourcing inquiry through the request form and tell us what you need.</p></div>
+          <div class="step"><strong>Step 2: Vehicle search</strong><p>We review the request and assess available sourcing options in Japan.</p></div>
+          <div class="step"><strong>Step 3: Quotation</strong><p>We prepare a quotation based on the requested vehicle and related support requirements.</p></div>
+          <div class="step"><strong>Step 4: Buyer review</strong><p>Review the quotation and all vehicle information made available before deciding whether to proceed.</p></div>
+          <div class="step"><strong>Step 5: Approval</strong><p>Your quotation approval is required before we purchase, reserve, bid on, or otherwise commit to acquiring a vehicle on your behalf.</p></div>
+          <div class="step"><strong>Step 6: Payment confirmation</strong><p>Payment instructions are shared after approval. We confirm the required payment before committing to the purchase or acquisition of a vehicle.</p></div>
+          <div class="step"><strong>Step 7: Purchase / acquisition</strong><p>After quotation approval and payment confirmation, we proceed with the authorized vehicle purchase or acquisition steps.</p></div>
+          <div class="step"><strong>Step 8: Export and shipping coordination</strong><p>Export-related assistance and shipping coordination proceed as applicable, based on the agreed scope.</p></div>
         </div>
+      </section>
+
+      <section class="card assurance">
+        <span class="section-title">Buyer Control &amp; Transparency</span>
+        <h2>You Stay in Control Before Purchase</h2>
+        <p>Sakura Mint Trading may review and search available vehicle options before purchase authorization. However, we will not purchase, reserve, bid on, or otherwise commit to acquiring a vehicle on your behalf until the required quotation approval and payment confirmation have been completed. You have the opportunity to review the available vehicle information and quoted transaction terms before authorizing us to proceed.</p>
       </section>
 
       <section class="cta">
